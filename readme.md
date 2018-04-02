@@ -153,6 +153,7 @@ Packed full of mods that we know and love!
 1. [Refined Storage (by raoulvdberge)](https://minecraft.curseforge.com/mc-mods/243076)
 1. [Refined Storage Addons (by raoulvdberge)](https://minecraft.curseforge.com/mc-mods/272302)
 1. [Reliquary v1.3 (by P3pp3rF1y)](https://minecraft.curseforge.com/mc-mods/241319)
+1. [Resource Loader (by lumien231)](https://minecraft.curseforge.com/mc-mods/226447)
 1. [RF Lux (by romelo333)](https://minecraft.curseforge.com/mc-mods/250207)
 1. [RFTools (by McJty)](https://minecraft.curseforge.com/mc-mods/224641)
 1. [RFTools Control (by McJty)](https://minecraft.curseforge.com/mc-mods/250763)
