@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.imgur.com/E8rnZkc.png" height="200" align="center" />
+<img src="https://i.imgur.com/uVLLkYc.png" height="200" width="800" align="center" />
 </p>
 
 # Peanut Craft
