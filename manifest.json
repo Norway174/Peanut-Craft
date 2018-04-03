@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Peanut Craft",
-  "version": "1.0",
+  "version": "1.0.2",
   "author": "norway174",
   "files": [
     {
@@ -503,11 +503,6 @@
       "projectID": 241319,
       "fileID": 2538537,
       "required": true
-    },
-    {
-      "projectID": 246183,
-      "fileID": 2510836,
-      "required": false
     },
     {
       "projectID": 245755,

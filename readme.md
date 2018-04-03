@@ -161,7 +161,7 @@ Packed full of mods that we know and love!
 1. [RFTools (by McJty)](https://minecraft.curseforge.com/mc-mods/224641)
 1. [RFTools Control (by McJty)](https://minecraft.curseforge.com/mc-mods/250763)
 1. [RFTools Dimensions (by McJty)](https://minecraft.curseforge.com/mc-mods/240950)
-1. [Roots (by elucent)](https://minecraft.curseforge.com/mc-mods/246183)
+1. ~~[Roots (by elucent)](https://minecraft.curseforge.com/mc-mods/246183)~~ (REMOVED in 1.0.2)
 1. [Shadowfacts' Forgelin (by shadowfactsmc)](https://minecraft.curseforge.com/mc-mods/248453)
 1. [ShetiPhianCore (by ShetiPhian)](https://minecraft.curseforge.com/mc-mods/71738)
 1. [Solar Flux Reborn (by apengu_)](https://minecraft.curseforge.com/mc-mods/246974)
