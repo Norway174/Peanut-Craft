@@ -11,8 +11,6 @@ Packed full of mods that we know and love!
 ## Links
 [Curse Forge page](https://minecraft.curseforge.com/projects/peanut-craft)
 
-[How to install from GitHub](https://github.com/Norway174/Peanut-Craft/wiki/How-to-install-the-pack-from-GitHub)
-
 [Report issues here](https://github.com/Norway174/Peanut-Craft/issues)
 
 [Join our Discord](https://discord.gg/JdjcSHw)
