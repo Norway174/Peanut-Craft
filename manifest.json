@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Peanut Craft",
-  "version": "1.0.1",
+  "version": "1.0",
   "author": "norway174",
   "files": [
     {
@@ -336,12 +336,12 @@
     },
     {
       "projectID": 239418,
-      "fileID": 2536247,
+      "fileID": 2548047,
       "required": true
     },
     {
       "projectID": 248020,
-      "fileID": 2537059,
+      "fileID": 2548059,
       "required": true
     },
     {
@@ -480,21 +480,6 @@
       "required": true
     },
     {
-      "projectID": 277064,
-      "fileID": 2533966,
-      "required": true
-    },
-    {
-      "projectID": 282775,
-      "fileID": 2533971,
-      "required": true
-    },
-    {
-      "projectID": 282776,
-      "fileID": 2534128,
-      "required": true
-    },
-    {
       "projectID": 250207,
       "fileID": 2514033,
       "required": true
@@ -522,7 +507,7 @@
     {
       "projectID": 246183,
       "fileID": 2510836,
-      "required": true
+      "required": false
     },
     {
       "projectID": 245755,
@@ -690,16 +675,6 @@
       "required": true
     },
     {
-      "projectID": 227391,
-      "fileID": 2510914,
-      "required": true
-    },
-    {
-      "projectID": 233398,
-      "fileID": 2514028,
-      "required": true
-    },
-    {
       "projectID": 268566,
       "fileID": 2510813,
       "required": true
@@ -756,7 +731,7 @@
     },
     {
       "projectID": 260327,
-      "fileID": 2544302,
+      "fileID": 2547911,
       "required": true
     },
     {
@@ -887,6 +862,16 @@
     {
       "projectID": 235595,
       "fileID": 2523975,
+      "required": true
+    },
+    {
+      "projectID": 286845,
+      "fileID": 2535048,
+      "required": true
+    },
+    {
+      "projectID": 256989,
+      "fileID": 2501071,
       "required": true
     }
   ],
