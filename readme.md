@@ -3,10 +3,32 @@
 </p>
 
 # Peanut Craft
-A custom mod pack by Norway174 and FluxBlunt.
-
-The pack is made with the ultimate sandbox experience in mind.
-Packed full of mods that we know and love!
+<p><strong>Peanut Craft</strong> is the one-stop mod pack for all your automation needs in Minecraft.</p>
+<h3><span style="font-size: 18px;"><strong>Features:</strong></span></h3>
+<ul>
+<li>A tech-heavy mod pack, with a generous touch of magic.</li>
+<li>Designed for total freedom. The ultimate sandbox experience.</li>
+<li>Includes <a href="https://minecraft.curseforge.com/mc-mods/226410" rel="nofollow">ProjectE</a>, to let you focus more on building, and what you want to do.</li>
+<li>Also includes other mods, such as...
+<ul>
+<li><a href="https://minecraft.curseforge.com/mc-mods/64578" rel="nofollow">Ender IO</a></li>
+<li><a href="https://minecraft.curseforge.com/mc-mods/222880" rel="nofollow">Thermal Foundation</a></li>
+<li><a href="https://minecraft.curseforge.com/mc-mods/268560" rel="nofollow">Mekanism</a></li>
+<li><a href="https://minecraft.curseforge.com/mc-mods/242638" rel="nofollow">Industrial Craft</a></li>
+<li><a href="https://minecraft.curseforge.com/mc-mods/266515" rel="nofollow">Industrial Foregoing</a></li>
+<li><a href="https://minecraft.curseforge.com/mc-mods/67504" rel="nofollow">ComputerCraft</a> &amp; <a href="https://minecraft.curseforge.com/mc-mods/223008" rel="nofollow">OpenComputers</a></li>
+<li><a href="https://minecraft.curseforge.com/mc-mods/223794" rel="nofollow">Applied Energistics 2</a> &amp; <a href="https://minecraft.curseforge.com/mc-mods/243076" rel="nofollow">Refined Storage</a></li>
+<li>... &amp; many more!</li>
+</ul>
+</li>
+</ul>
+<p>With those awesome mods as those listed above, you'll be able to automate pretty much everything in Minecraft, or build anything you could only dream of!</p>
+<p>&nbsp;</p>
+<p>Not only is the sky the limit, but the whole galaxy and multi-verse is!</p>
+<p>It's the <strong>ultimate sandbox experience</strong>!</p>
+<p>This pack is designed for our server, but it's fully functional for other servers hosting this pack, or for single player!</p>
+<p>&nbsp;</p>
+<p><strong>This is a very large mod pack, at least 8 GB of RAM allocated is recommended.</strong></p>
 
 ## Links
 [Curse Forge page](https://minecraft.curseforge.com/projects/peanut-craft)
