@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Peanut Craft",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "norway174",
   "files": [
     {
@@ -91,7 +91,7 @@
     },
     {
       "projectID": 220954,
-      "fileID": 2542884,
+      "fileID": 2548987,
       "required": true
     },
     {
@@ -131,12 +131,12 @@
     },
     {
       "projectID": 237167,
-      "fileID": 2541122,
+      "fileID": 2548712,
       "required": true
     },
     {
       "projectID": 237102,
-      "fileID": 2541125,
+      "fileID": 2548713,
       "required": true
     },
     {
@@ -276,7 +276,7 @@
     },
     {
       "projectID": 59751,
-      "fileID": 2546678,
+      "fileID": 2549144,
       "required": true
     },
     {
@@ -331,7 +331,7 @@
     },
     {
       "projectID": 248020,
-      "fileID": 2548059,
+      "fileID": 2549043,
       "required": true
     },
     {
@@ -346,7 +346,7 @@
     },
     {
       "projectID": 236307,
-      "fileID": 2543752,
+      "fileID": 2549070,
       "required": true
     },
     {
@@ -366,12 +366,12 @@
     },
     {
       "projectID": 266515,
-      "fileID": 2545545,
+      "fileID": 2548675,
       "required": true
     },
     {
       "projectID": 237903,
-      "fileID": 2548625,
+      "fileID": 2548853,
       "required": true
     },
     {
@@ -436,7 +436,7 @@
     },
     {
       "projectID": 226254,
-      "fileID": 2547236,
+      "fileID": 2549003,
       "required": true
     },
     {
@@ -706,7 +706,7 @@
     },
     {
       "projectID": 255177,
-      "fileID": 2541362,
+      "fileID": 2548715,
       "required": true
     },
     {
@@ -796,7 +796,7 @@
     },
     {
       "projectID": 250850,
-      "fileID": 2543545,
+      "fileID": 2548908,
       "required": true
     },
     {
@@ -856,12 +856,17 @@
     },
     {
       "projectID": 256989,
-      "fileID": 2501071,
+      "fileID": 2548951,
       "required": true
     },
     {
       "projectID": 250294,
       "fileID": 2545026,
+      "required": true
+    },
+    {
+      "projectID": 278494,
+      "fileID": 2548752,
       "required": true
     }
   ],

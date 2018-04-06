@@ -27,6 +27,406 @@
     {
       "item": "mekanism:atomicalloy|0",
       "emc": 16720
+    },
+    {
+      "item": "mekanism:controlcircuit|0",
+      "emc": 576
+    },
+    {
+      "item": "mekanism:ingot|0",
+      "emc": 8720
+    },
+    {
+      "item": "mekanism:ingot|3",
+      "emc": 896
+    },
+    {
+      "item": "mekanism:compressedcarbon|0",
+      "emc": 256
+    },
+    {
+      "item": "mekanism:compressedredstone|0",
+      "emc": 128
+    },
+    {
+      "item": "mekanism:compresseddiamond|0",
+      "emc": 16384
+    },
+    {
+      "item": "mekanism:compressedobsidian|0",
+      "emc": 16416
+    },
+    {
+      "item": "mekanism:gastank|0",
+      "emc": 0
+    },
+    {
+      "item": "mekanism:energycube|0",
+      "emc": 0
+    },
+    {
+      "item": "mekanism:transmitter|6",
+      "emc": 0
+    },
+    {
+      "item": "mekanism:transmitter|5",
+      "emc": 0
+    },
+    {
+      "item": "mekanism:transmitter|1",
+      "emc": 0
+    },
+    {
+      "item": "mekanism:transmitter|2",
+      "emc": 0
+    },
+    {
+      "item": "mekanism:transmitter|3",
+      "emc": 0
+    },
+    {
+      "item": "mekanism:enrichediron|0",
+      "emc": 256
+    },
+    {
+      "item": "mekanism:otherdust|1",
+      "emc": 384
+    },
+    {
+      "item": "mekanism:ingot|4",
+      "emc": 512
+    },
+    {
+      "item": "OD|ingotSteel",
+      "emc": 512
+    },
+    {
+      "item": "libvulpes:productingot|6",
+      "emc": 512
+    },
+    {
+      "item": "tp:steel_ingot|0",
+      "emc": 512
+    },
+    {
+      "item": "thermalfoundation:material|160",
+      "emc": 512
+    },
+    {
+      "item": "nuclearcraft:alloy|5",
+      "emc": 512
+    },
+    {
+      "item": "ic2:ingot|5",
+      "emc": 512
+    },
+    {
+      "item": "immersiveengineering:metal|8",
+      "emc": 512
+    },
+    {
+      "item": "bigreactors:ingotmetals|5",
+      "emc": 512
+    },
+    {
+      "item": "enderio:item_material|20",
+      "emc": 64
+    },
+    {
+      "item": "enderio:item_material|41",
+      "emc": 0
+    },
+    {
+      "item": "OD|dustLapis",
+      "emc": 864
+    },
+    {
+      "item": "enderio:item_material|32",
+      "emc": 864
+    },
+    {
+      "item": "enderio:item_material|3",
+      "emc": 2880
+    },
+    {
+      "item": "OD|enlightenedFusedQuartz",
+      "emc": 1728
+    },
+    {
+      "item": "OD|enlightenedFusedGlass",
+      "emc": 1537
+    },
+    {
+      "item": "OD|darkFusedQuartz",
+      "emc": 1040
+    },
+    {
+      "item": "OD|darkFusedGlass",
+      "emc": 15
+    },
+    {
+      "item": "OD|itemPlantgreen",
+      "emc": 16
+    },
+    {
+      "item": "OD|itemPlantbrown",
+      "emc": 16
+    },
+    {
+      "item": "enderio:item_material|48",
+      "emc": 48
+    },
+    {
+      "item": "enderio:item_material|49",
+      "emc": 48
+    },
+    {
+      "item": "enderio:item_material|50",
+      "emc": 48
+    },
+    {
+      "item": "enderio:item_material|51",
+      "emc": 322
+    },
+    {
+      "item": "enderio:item_material|1",
+      "emc": 3404
+    },
+    {
+      "item": "enderio:item_material|28",
+      "emc": 114
+    },
+    {
+      "item": "enderio:item_material|9",
+      "emc": 16
+    },
+    {
+      "item": "enderio:item_material|10",
+      "emc": 20
+    },
+    {
+      "item": "OD|dustIron",
+      "emc": 256
+    },
+    {
+      "item": "OD|dustGold",
+      "emc": 2048
+    },
+    {
+      "item": "OD|dustCopper",
+      "emc": 128
+    },
+    {
+      "item": "OD|dustTin",
+      "emc": 125
+    },
+    {
+      "item": "OD|dustSilver",
+      "emc": 512
+    },
+    {
+      "item": "OD|dustLead",
+      "emc": 512
+    },
+    {
+      "item": "OD|dustOsmium",
+      "emc": 512
+    },
+    {
+      "item": "sgcraft:naquadah|0",
+      "emc": 256
+    },
+    {
+      "item": "sgcraft:naquadahingot|0",
+      "emc": 512
+    },
+    {
+      "item": "nuclearcraft:ingot|3",
+      "emc": 1024
+    },
+    {
+      "item": "nuclearcraft:ingot|6",
+      "emc": 256
+    },
+    {
+      "item": "nuclearcraft:ingot|5",
+      "emc": 256
+    },
+    {
+      "item": "nuclearcraft:ingot|7",
+      "emc": 256
+    },
+    {
+      "item": "tp:wub_gem|0",
+      "emc": 2048
+    },
+    {
+      "item": "nuclearcraft:alloy|6",
+      "emc": 508
+    },
+    {
+      "item": "nuclearcraft:alloy|1",
+      "emc": 764
+    },
+    {
+      "item": "nuclearcraft:ingot|8",
+      "emc": 128
+    },
+    {
+      "item": "nuclearcraft:dust|8",
+      "emc": 128
+    },
+    {
+      "item": "soulshardstow:materials|2",
+      "emc": 49
+    },
+    {
+      "item": "soulshardstow:materials|1",
+      "emc": 1056
+    },
+    {
+      "item": "soulshardstow:materials|0",
+      "emc": 4676
+    },
+    {
+      "item": "woot:stygianirondust|0",
+      "emc": 102
+    },
+    {
+      "item": "woot:stygianironingot|0",
+      "emc": 102
+    },
+    {
+      "item": "woot:shard|2",
+      "emc": 85
+    },
+    {
+      "item": "woot:shard|0",
+      "emc": 2730
+    },
+    {
+      "item": "woot:shard|1",
+      "emc": 5461
+    },
+    {
+      "item": "woot:shard|3",
+      "emc": 15473
+    },
+    {
+      "item": "woot:factorycore|0",
+      "emc": 1250
+    },
+    {
+      "item": "woot:factorycore|1",
+      "emc": 1629
+    },
+    {
+      "item": "woot:factorycore|5",
+      "emc": 1356
+    },
+    {
+      "item": "woot:factorycore|6",
+      "emc": 780
+    },
+    {
+      "item": "woot:factorycore|2",
+      "emc": 2572
+    },
+    {
+      "item": "woot:factorycore|3",
+      "emc": 19020
+    },
+    {
+      "item": "woot:factorycore|4",
+      "emc": 74188
+    },
+    {
+      "item": "woot:upgrade|0",
+      "emc": 5196
+    },
+    {
+      "item": "woot:upgrade|1",
+      "emc": 22144
+    },
+    {
+      "item": "woot:upgrade|2",
+      "emc": 77812
+    },
+    {
+      "item": "woot:upgrade|9",
+      "emc": 7196
+    },
+    {
+      "item": "woot:upgrade|10",
+      "emc": 26144
+    },
+    {
+      "item": "woot:upgrade|11",
+      "emc": 83812
+    },
+    {
+      "item": "woot:upgrade|3",
+      "emc": 7196
+    },
+    {
+      "item": "woot:upgrade|4",
+      "emc": 26144
+    },
+    {
+      "item": "woot:upgrade|5",
+      "emc": 83812
+    },
+    {
+      "item": "woot:upgrade|6",
+      "emc": 7196
+    },
+    {
+      "item": "woot:upgrade|7",
+      "emc": 26144
+    },
+    {
+      "item": "woot:upgrade|8",
+      "emc": 83812
+    },
+    {
+      "item": "woot:upgrade|12",
+      "emc": 5196
+    },
+    {
+      "item": "woot:upgradeb|0",
+      "emc": 5196
+    },
+    {
+      "item": "woot:upgrade|13",
+      "emc": 22144
+    },
+    {
+      "item": "woot:upgradeb|1",
+      "emc": 22144
+    },
+    {
+      "item": "woot:upgrade|14",
+      "emc": 77812
+    },
+    {
+      "item": "woot:upgradeb|2",
+      "emc": 77812
+    },
+    {
+      "item": "woot:endershard|0",
+      "emc": 0
+    },
+    {
+      "item": "redstonearsenal:material|0",
+      "emc": 1408
+    },
+    {
+      "item": "redstonearsenal:material|32",
+      "emc": 1408
+    },
+    {
+      "item": "redstonearsenal:material|128",
+      "emc": 1408
     }
   ]
 }
