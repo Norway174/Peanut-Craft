@@ -780,3 +780,13 @@ MODS
 	- Fixed barrels glitching for 1 tick when placed
 	- Barrel models can no longer be added with resource packs, only skins
 	- Barrels can no longer be placed facing upwards or downwards
+	
+CONFIGS:
+
+	Actually Additions:
+		- Added plustic:katana to the item repairer.
+
+	The One Probe:
+		- Chest contents displayed by default. Sneak for extra information.
+
+	Everything else is just auto-matic generations & updates.
