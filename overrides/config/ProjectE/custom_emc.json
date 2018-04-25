@@ -427,6 +427,90 @@
     {
       "item": "redstonearsenal:material|128",
       "emc": 1408
+    },
+    {
+      "item": "fluxnetworks:flux|0",
+      "emc": 64
+    },
+    {
+      "item": "actuallyadditions:item_misc|5",
+      "emc": 256
+    },
+    {
+      "item": "actuallyadditions:item_crystal|5",
+      "emc": 256
+    },
+    {
+      "item": "actuallyadditions:item_crystal|4",
+      "emc": 16384
+    },
+    {
+      "item": "actuallyadditions:item_crystal|3",
+      "emc": 128
+    },
+    {
+      "item": "actuallyadditions:item_crystal|2",
+      "emc": 8192
+    },
+    {
+      "item": "actuallyadditions:item_crystal|1",
+      "emc": 864
+    },
+    {
+      "item": "actuallyadditions:item_crystal|0",
+      "emc": 64
+    },
+    {
+      "item": "actuallyadditions:item_color_lens|0",
+      "emc": 264
+    },
+    {
+      "item": "actuallyadditions:item_explosion_lens|0",
+      "emc": 264
+    },
+    {
+      "item": "actuallyadditions:item_damage_lens|0",
+      "emc": 264
+    },
+    {
+      "item": "actuallyadditions:block_laser_relay_fluids|0",
+      "emc": 966
+    },
+    {
+      "item": "actuallyadditions:block_laser_relay_item|0",
+      "emc": 966
+    },
+    {
+      "item": "actuallyadditions:item_crystal_empowered|0",
+      "emc": 161
+    },
+    {
+      "item": "actuallyadditions:item_crystal_empowered|1",
+      "emc": 2068
+    },
+    {
+      "item": "actuallyadditions:item_crystal_empowered|2",
+      "emc": 8304
+    },
+    {
+      "item": "actuallyadditions:item_crystal_empowered|3",
+      "emc": 181
+    },
+    {
+      "item": "actuallyadditions:item_crystal_empowered|4",
+      "emc": 16477
+    },
+    {
+      "item": "actuallyadditions:item_crystal_empowered|5",
+      "emc": 291
+    },
+    {
+      "item": "actuallyadditions:block_testifi_bucks_green_wall|0",
+      "emc": 1024
+    },
+    {
+      "item": "actuallyadditions:block_testifi_bucks_white_wall|0",
+      "emc": 1024
     }
   ]
 }
