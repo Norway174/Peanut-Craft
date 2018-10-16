@@ -8,7 +8,8 @@
 <ul>
 <li>A tech-heavy mod pack, with a generous touch of magic.</li>
 <li>Designed for total freedom. The ultimate sandbox experience.</li>
-<li>Includes <a href="https://minecraft.curseforge.com/mc-mods/226410" rel="nofollow">ProjectE</a>, to let you focus more on building, and what you want to do.</li>
+<li>Version 2.0 does NOT include <a href="https://minecraft.curseforge.com/mc-mods/226410" rel="nofollow">ProjectE</a> anymore. v1.0+ was focused around the simple classical modded experience.
+v2.0 will focus on more hardcore experience. But still allowing you that total freedom.</li>
 <li>Also includes other mods, such as...
 <ul>
 <li><a href="https://minecraft.curseforge.com/mc-mods/64578" rel="nofollow">Ender IO</a></li>
@@ -28,7 +29,7 @@
 <p>It's the <strong>ultimate sandbox experience</strong>!</p>
 <p>This pack is designed for our server, but it's fully functional for other servers hosting this pack, or for single player!</p>
 <p>&nbsp;</p>
-<p><strong>This is a very large mod pack, at least 8 GB of RAM allocated is recommended.</strong></p>
+<p><strong>This is a very large mod pack, at least 6 GB of RAM allocated is recommended.</strong></p>
 
 ## Links
 [Curse Forge page](https://minecraft.curseforge.com/projects/peanut-craft)
@@ -137,7 +138,7 @@
 1. [Mekanism Tools (by aidancbrady)](https://minecraft.curseforge.com/mc-mods/268567)
 1. [MineTogether (by Creeperhost)](https://minecraft.curseforge.com/mc-mods/267172)
 1. [Mob Grinding Utils (by Vadis365)](https://minecraft.curseforge.com/mc-mods/254241)
-1. [Mod Name Tooltip (by mezz)](https://minecraft.curseforge.com/mc-mods/238747) (NEW in 1.1.0)
+1. [Mod Name Tooltip (by mezz)](https://minecraft.curseforge.com/mc-mods/238747)
 1. [ModTweaker (by jaredlll08)](https://minecraft.curseforge.com/mc-mods/220954)
 1. [Modular Routers (by desht)](https://minecraft.curseforge.com/mc-mods/250294)
 1. [More Overlays (by feldim2425)](https://minecraft.curseforge.com/mc-mods/243478)
@@ -158,7 +159,7 @@
 1. [p455w0rd's Library (by TheRealp455w0rd)](https://minecraft.curseforge.com/mc-mods/255232)
 1. [Pam's HarvestCraft (by MatrexsVigil)](https://minecraft.curseforge.com/mc-mods/221857)
 1. [PlusTiC (by Landmaster_phuong0429)](https://minecraft.curseforge.com/mc-mods/260327)
-1. [ProjectE (by sinkillerj)](https://minecraft.curseforge.com/mc-mods/226410)
+1. ~[ProjectE (by sinkillerj)](https://minecraft.curseforge.com/mc-mods/226410)~ (REMOVED in v2.0)
 1. [Psi (by Vazkii)](https://minecraft.curseforge.com/mc-mods/241665)
 1. [QuantumStorage (by Gigabit1011)](https://minecraft.curseforge.com/mc-mods/235121)
 1. [Quark (by Vazkii)](https://minecraft.curseforge.com/mc-mods/243121)
@@ -185,7 +186,7 @@
 1. [Soul Shards: The Old Ways (by SgtPunishment)](https://minecraft.curseforge.com/mc-mods/226958)
 1. [Stargate Atlantiscraft (by AngelShadow9451)](https://minecraft.curseforge.com/mc-mods/286845)
 1. [Steve's Carts Reborn (by modmuss50)](https://minecraft.curseforge.com/mc-mods/253462)
-1. [stimmedcow : NoMoreRecipeConflict (by Oliv1er)](https://minecraft.curseforge.com/mc-mods/238123)  (NEW in 1.1.0)
+1. [stimmedcow : NoMoreRecipeConflict (by Oliv1er)](https://minecraft.curseforge.com/mc-mods/238123)
 1. [Storage Drawers (by jaquadro)](https://minecraft.curseforge.com/mc-mods/223852)
 1. [Sync (by iChun)](https://minecraft.curseforge.com/mc-mods/229090)
 1. [Tesla Core Lib (by Face_of_Cat)](https://minecraft.curseforge.com/mc-mods/254602)
