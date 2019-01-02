@@ -69,6 +69,8 @@
         "thermalfoundation:tool.axe_tin"
       ],
       "blocklist": [
+        "advancedrocketry:alienleaves/0",
+        "advancedrocketry:alienwood/0",
         "biomesoplenty:leaves_0/8",
         "biomesoplenty:leaves_0/9",
         "biomesoplenty:leaves_0/10",
@@ -128,6 +130,8 @@
         "forestry:leaves.default.6",
         "forestry:leaves.default.7",
         "forestry:leaves.default.8",
+        "forestry:leaves.default.fruit.0",
+        "forestry:leaves.default.fruit.1",
         "forestry:logs.0",
         "forestry:logs.1",
         "forestry:logs.2",
@@ -455,6 +459,7 @@
         "thermalfoundation:ore_fluid/5",
         "tp:ender_ore/0",
         "tp:lava_block/0",
+        "tp:nether_lava_block/0",
         "tp:nether_wub_ore/0",
         "tp:water_block/0",
         "tp:wub_ore/0"
@@ -499,6 +504,7 @@
         "thermalfoundation:tool.shears_wood"
       ],
       "blocklist": [
+        "advancedrocketry:alienleaves/0",
         "biomesoplenty:leaves_0/8",
         "biomesoplenty:leaves_0/9",
         "biomesoplenty:leaves_0/10",
@@ -539,6 +545,8 @@
         "forestry:leaves.default.6",
         "forestry:leaves.default.7",
         "forestry:leaves.default.8",
+        "forestry:leaves.default.fruit.0",
+        "forestry:leaves.default.fruit.1",
         "ic2:leaves",
         "integrateddynamics:menril_leaves/0",
         "minecraft:deadbush",
