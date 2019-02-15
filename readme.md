@@ -36,7 +36,7 @@ v2.0 will focus on more hardcore experience. But still allowing you that total f
 
 [Report issues here](https://github.com/Norway174/Peanut-Craft/issues)
 
-[Join our Discord](https://discord.gg/JdjcSHw)
+[Join our Discord](https://discord.gg/nTZnxAS)
 
 ## Mods:
 1. [/dank/null (by TheRealp455w0rd)](https://minecraft.curseforge.com/mc-mods/272514)
