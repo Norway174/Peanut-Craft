@@ -1,6 +1,0 @@
-TWEAKED:
-- The Angel Ring recipie. Changed it back to the original.
-
-UPDATED:
-- Construct's Armory
-- Dragon Mounts 2
