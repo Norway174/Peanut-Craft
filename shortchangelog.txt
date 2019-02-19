@@ -1,0 +1,85 @@
+Peanut Craft 2.2 to Peanut Craft 2.3
+
+Added:
+	- Better Builder's Wands
+	- BiblioCraft
+	- Bonsai Trees
+	- CraftPresence
+	- Decocraft2
+	- Diet Hoppers
+	- Featured Servers
+	- Gas Conduits
+	- IE Cloche Compat
+	- Just Enough Reactors
+	- LagGoggles
+	- Ore Excavation
+	- PTRLib
+	- RandomPatches
+	- RandomTweaks
+	- Refined Storage: Requestify
+	- Scannable
+	- Simply Jetpacks 2
+	- Snad
+	- Thermal Innovation
+	- UniDict
+	- VanillaFix
+	- WanionLib
+	- Wireless Crafting Terminal
+
+Updated:
+	Advanced Rocketry (went from AdvancedRocketry 1.12.2-1.5.0-128-UNSTABLE build -128 for 1.12.2 to AdvancedRocketry 1.12.2-1.5.0-130-UNSTABLE build -130 for 1.12.2):
+		AdvancedRocketry 1.12.2-1.5.0-130-UNSTABLE build -130 for 1.12.2:
+			https://minecraft.curseforge.com/projects/advanced-rocketry/files/2676027
+
+	Building Gadgets (went from BuildingGadgets v2.4.6 to BuildingGadgets v2.6.4):
+		BuildingGadgets v2.6.4:
+			https://minecraft.curseforge.com/projects/building-gadgets/files/2676134
+		BuildingGadgets v2.6.3:
+			https://minecraft.curseforge.com/projects/building-gadgets/files/2672284
+		BuildingGadgets v2.6.2:
+			https://minecraft.curseforge.com/projects/building-gadgets/files/2671993
+		BuildingGadgets v2.6.1:
+			https://minecraft.curseforge.com/projects/building-gadgets/files/2670027
+		BuildingGadgets v2.6.0:
+			https://minecraft.curseforge.com/projects/building-gadgets/files/2667653
+		BuildingGadgets v2.5.0:
+			https://minecraft.curseforge.com/projects/building-gadgets/files/2653875
+
+	Common Capabilities (went from CommonCapabilities-1.12.2-2.0.2.jar to CommonCapabilities-1.12.2-2.0.3.jar):
+		CommonCapabilities-1.12.2-2.0.3.jar:
+			https://minecraft.curseforge.com/projects/common-capabilities/files/2675830
+
+	Cyclops Core (went from CyclopsCore-1.12.2-1.0.3.jar to CyclopsCore-1.12.2-1.0.4.jar):
+		CyclopsCore-1.12.2-1.0.4.jar:
+			https://minecraft.curseforge.com/projects/cyclops-core/files/2675834
+
+	FTB Utilities (went from FTBUtilities-5.3.0.81.jar to FTBUtilities-5.3.0.82.jar):
+		FTBUtilities-5.3.0.82.jar:
+			https://minecraft.curseforge.com/projects/ftb-utilities/files/2674723
+
+	Integrated Dynamics (went from IntegratedDynamics-1.12.2-1.0.4.jar to IntegratedDynamics-1.12.2-1.0.6.jar):
+		IntegratedDynamics-1.12.2-1.0.6.jar:
+			https://minecraft.curseforge.com/projects/integrated-dynamics/files/2675914
+		IntegratedDynamics-1.12.2-1.0.5.jar:
+			https://minecraft.curseforge.com/projects/integrated-dynamics/files/2675838
+
+	Integrated Tunnels (went from IntegratedTunnels-1.12.2-1.6.5.jar to IntegratedTunnels-1.12.2-1.6.6.jar):
+		IntegratedTunnels-1.12.2-1.6.6.jar:
+			https://minecraft.curseforge.com/projects/integrated-tunnels/files/2675861
+
+	Minecraft Forge (went from 1.12.2-14.23.5.2814 to 1.12.2-14.23.5.2815):
+		View changelog at:
+			https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.5.2814/forge-1.12.2-14.23.5.2814-changelog.txt
+
+	PlusTiC (went from plustic-7.0.5.0.jar to plustic-7.0.5.1.jar):
+		plustic-7.0.5.1.jar:
+			https://minecraft.curseforge.com/projects/plustic/files/2675451
+
+	YABBA (went from YABBA-1.1.2.40.jar to YABBA-1.1.2.41.jar):
+		YABBA-1.1.2.41.jar:
+			https://minecraft.curseforge.com/projects/yabba/files/2674728
+
+Removed:
+	- VeinMiner
+
+* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.13)

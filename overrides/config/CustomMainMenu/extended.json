@@ -44,12 +44,7 @@
             "height" : 20,
             "alignment" : "top_left",
             "texture" : "mainmenu:textures/menu/button3.png",
-            "shadow" : false,
-            "action" : 
-            {
-                "type" : "openGui",
-                "gui" : "singleplayer"
-            }
+            "shadow" : false
         },
        
         "multiplayer":
@@ -61,12 +56,7 @@
             "height" : 20,
             "alignment" : "top_left",
             "texture" : "mainmenu:textures/menu/button3.png",
-            "shadow" : false,
-            "action" : 
-            {
-                "type" : "openGui",
-                "gui" : "multiplayer"
-            }
+            "shadow" : false
         },
        
         "mods":
@@ -78,12 +68,7 @@
             "height" : 20,
             "alignment" : "top_left",
             "texture" : "mainmenu:textures/menu/button3.png",
-            "shadow" : false,
-            "action" : 
-            {
-                "type" : "openGui",
-                "gui" : "mods"
-            }
+            "shadow" : false
         },
            
         "options":
@@ -95,12 +80,7 @@
             "height" : 20,
             "alignment" : "top_left",
             "texture" : "mainmenu:textures/menu/button3.png",
-            "shadow" : false,
-            "action" : 
-            {
-                "type" : "openGui",
-                "gui" : "options"
-            }
+            "shadow" : false
         },
        
         "language":
@@ -112,12 +92,7 @@
             "height" : 20,
             "alignment" : "top_left",
             "texture" : "mainmenu:textures/menu/button3.png",
-            "shadow" : false,
-            "action" : 
-            {
-                "type" : "openGui",
-                "gui" : "languages"
-            }
+            "shadow" : false
         },
        
         "quit":
@@ -129,16 +104,12 @@
             "height" : 20,
             "alignment" : "top_left",
             "texture" : "mainmenu:textures/menu/button3.png",
-            "shadow" : false,
-            "action" : 
-            {
-                "type" : "quit"
-            }
+            "shadow" : false
         },
 		
 		"expander":
         {
-            "text" : ">",
+            "text" : "<",
 			"posX" : 65,
             "posY" : -42,
             "width" : 20,
@@ -149,10 +120,63 @@
             "action" : 
             {
                 "type" : "openGui",
-				"gui" : "custom.extended"
+				"gui" : "custom.mainmenu"
+            }
+            
+        },
+		
+		"curse":
+        {
+            "text" : "Curse",
+			"posX" : 85,
+            "posY" : -82,
+            "width" : 100,
+            "height" : 20,
+            "alignment" : "bottom_left",
+            "texture" : "mainmenu:textures/menu/button3.png",
+            "shadow" : false,
+            "action" : 
+            {
+                "type" : "openLink",
+				"link" : "https://minecraft.curseforge.com/projects/peanut-craft"
+            }
+            
+        },
+		"github":
+        {
+            "text" : "GitHub",
+			"posX" : 85,
+            "posY" : -62,
+            "width" : 100,
+            "height" : 20,
+            "alignment" : "bottom_left",
+            "texture" : "mainmenu:textures/menu/button3.png",
+            "shadow" : false,
+            "action" : 
+            {
+                "type" : "openLink",
+				"link" : "https://github.com/Norway174/Peanut-Craft"
+            }
+            
+        },
+		"discord":
+        {
+            "text" : "Discord",
+			"posX" : 85,
+            "posY" : -42,
+            "width" : 100,
+            "height" : 20,
+            "alignment" : "bottom_left",
+            "texture" : "mainmenu:textures/menu/button3.png",
+            "shadow" : false,
+            "action" : 
+            {
+                "type" : "openLink",
+				"link" : "https://discord.gg/v8PyXCS"
             }
             
         }
+		
 	},
     
     "labels":
