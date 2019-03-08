@@ -1,17 +1,28 @@
 {
     "images":
     {
-		"logo":
+		"menubanner_bg":
         {
-            "image" : "mainmenu:textures/pncraft.png",
-            "posX" : 0,
-            "posY" : -84,
-            "width" : 64,
-            "height" : 64,
-            "alignment" : "bottom_left"
+            "image" : "mainmenu:textures/user_background.png",
+            "posX" : 10,
+            "posY" : 10,
+            "width" : 100,
+            "height" : 55,
+            "alignment" : "top_left"
         },
-		
-		"user_background":
+
+        "menubanner":
+        {
+            "image" : "mainmenu:textures/pncraft_banner_bg.png",
+            "posX" : 10,
+            "posY" : 10,
+            "width" : 100,
+            "height" : 50,
+            "alignment" : "top_left"
+        },
+        
+
+		"user_bg":
 		{
 			"image" : "mainmenu:textures/user_background.png",
             "posX" : -135,
@@ -39,83 +50,79 @@
         {
             "text" : "menu.singleplayer",
             "posX" : 10,
-            "posY" : 10,
+            "posY" : 65,
             "width" : 100,
             "height" : 20,
             "alignment" : "top_left",
-            "texture" : "mainmenu:textures/menu/button3.png",
-            "shadow" : false
+            "texture" : "mainmenu:textures/menu/button.png",
+            "shadow" : false,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
         },
        
         "multiplayer":
         {
             "text" : "menu.multiplayer",
             "posX" : 10,
-            "posY" : 30,
+            "posY" : 85,
             "width" : 100,
             "height" : 20,
             "alignment" : "top_left",
-            "texture" : "mainmenu:textures/menu/button3.png",
-            "shadow" : false
+            "texture" : "mainmenu:textures/menu/button.png",
+            "shadow" : false,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
         },
        
         "mods":
         {
             "text" : "fml.menu.mods",
             "posX" : 10,
-            "posY" : 50,
+            "posY" : 105,
             "width" : 100,
             "height" : 20,
             "alignment" : "top_left",
-            "texture" : "mainmenu:textures/menu/button3.png",
-            "shadow" : false
+            "texture" : "mainmenu:textures/menu/button.png",
+            "shadow" : false,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
         },
            
         "options":
         {
             "text" : "menu.options",
             "posX" : 10,
-            "posY" : 70,
+            "posY" : 125,
             "width" : 100,
             "height" : 20,
             "alignment" : "top_left",
-            "texture" : "mainmenu:textures/menu/button3.png",
-            "shadow" : false
-        },
-       
-        "language":
-        {
-            "text" : "Language",
-            "posX" : 10,
-            "posY" : 90,
-            "width" : 100,
-            "height" : 20,
-            "alignment" : "top_left",
-            "texture" : "mainmenu:textures/menu/button3.png",
-            "shadow" : false
-        },
-       
-        "quit":
-        {
-            "text" : "menu.quit",
-            "posX" : 10,
-            "posY" : 110,
-            "width" : 100,
-            "height" : 20,
-            "alignment" : "top_left",
-            "texture" : "mainmenu:textures/menu/button3.png",
-            "shadow" : false
+            "texture" : "mainmenu:textures/menu/button.png",
+            "shadow" : false,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
         },
 		
-		"expander":
+		"links":
         {
-            "text" : "<",
-			"posX" : 65,
-            "posY" : -42,
-            "width" : 20,
+            "text" : "Peanut Craft <",
+			"posX" : 10,
+            "posY" : 145,
+            "width" : 100,
             "height" : 20,
-            "alignment" : "bottom_left",
-            "texture" : "mainmenu:textures/menu/button3.png",
+            "alignment" : "top_left",
+            "texture" : "mainmenu:textures/menu/button.png",
             "shadow" : false,
             "action" : 
             {
@@ -124,16 +131,33 @@
             }
             
         },
+       
+        "quit":
+        {
+            "text" : "menu.quit",
+            "posX" : 10,
+            "posY" : 165,
+            "width" : 100,
+            "height" : 20,
+            "alignment" : "top_left",
+            "texture" : "mainmenu:textures/menu/button.png",
+            "shadow" : false,
+            "action" : 
+            {
+                "type" : "openGui",
+				"gui" : "custom.quit"
+            }
+        },
 		
 		"curse":
         {
             "text" : "Curse",
-			"posX" : 85,
-            "posY" : -82,
+			"posX" : 110,
+            "posY" : 145,
             "width" : 100,
             "height" : 20,
-            "alignment" : "bottom_left",
-            "texture" : "mainmenu:textures/menu/button3.png",
+            "alignment" : "top_left",
+            "texture" : "mainmenu:textures/menu/button_link3.png",
             "shadow" : false,
             "action" : 
             {
@@ -145,12 +169,12 @@
 		"github":
         {
             "text" : "GitHub",
-			"posX" : 85,
-            "posY" : -62,
+			"posX" : 110,
+            "posY" : 165,
             "width" : 100,
             "height" : 20,
-            "alignment" : "bottom_left",
-            "texture" : "mainmenu:textures/menu/button3.png",
+            "alignment" : "top_left",
+            "texture" : "mainmenu:textures/menu/button_link3.png",
             "shadow" : false,
             "action" : 
             {
@@ -162,12 +186,12 @@
 		"discord":
         {
             "text" : "Discord",
-			"posX" : 85,
-            "posY" : -42,
+			"posX" : 110,
+            "posY" : 185,
             "width" : 100,
             "height" : 20,
-            "alignment" : "bottom_left",
-            "texture" : "mainmenu:textures/menu/button3.png",
+            "alignment" : "top_left",
+            "texture" : "mainmenu:textures/menu/button_link3.png",
             "shadow" : false,
             "action" : 
             {
