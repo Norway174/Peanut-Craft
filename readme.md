@@ -111,6 +111,7 @@ v2.0 will focus on more hardcore experience. But still allowing you that total f
 1. [Forestry (by SirSengir)](https://minecraft.curseforge.com/mc-mods/59751)
 1. [Forge MultiPart CBE (by covers1624)](https://minecraft.curseforge.com/mc-mods/258426)
 1. [FTB Utilities (by FTB)](https://minecraft.curseforge.com/mc-mods/237102)
+1. [FTB Utilities: Backups (by LatvianModder)](https://minecraft.curseforge.com/mc-mods/314904)
 1. [FTBLib (by FTB)](https://minecraft.curseforge.com/mc-mods/237167)
 1. [Funky Locomotion (by RWTema)](https://minecraft.curseforge.com/mc-mods/224190)
 1. [Gendustry (by bdew)](https://minecraft.curseforge.com/mc-mods/70492)
