@@ -55,6 +55,7 @@ v2.0 will focus on more hardcore experience. But still allowing you that total f
 1. [Armory Expansion (by YaibaToKen)](https://minecraft.curseforge.com/mc-mods/293602)
 1. [Aroma1997Core (by Aroma1997)](https://minecraft.curseforge.com/mc-mods/223735)
 1. [Aroma1997s Dimensional World (by Aroma1997)](https://minecraft.curseforge.com/mc-mods/60092)
+1. [ArtemisLib (by Inazuma262)](https://minecraft.curseforge.com/mc-mods/313590)
 1. [Astral Sorcery (by HellFirePvP)](https://minecraft.curseforge.com/mc-mods/241721)
 1. [AutoRegLib (by Vazkii)](https://minecraft.curseforge.com/mc-mods/250363)
 1. [Bad Wither No Cookie - Reloaded (by kreezxil)](https://minecraft.curseforge.com/mc-mods/261251)

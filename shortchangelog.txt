@@ -1,6 +1,0 @@
-Peanut Craft 2.6 to Peanut Craft 2.7
-
-Removed:
-	- Refined Storage Requestify
-	
-This is an hotfix. Refined Storage updated, and broke combability with Requestify.
