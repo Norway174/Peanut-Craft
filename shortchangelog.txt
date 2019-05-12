@@ -1,32 +1,20 @@
-Peanut Craft 2.8 to Peanut Craft 3.0
+Peanut Craft 3.0 to Peanut Craft 3.1
+
+Changed:
+Many config changes.
+Synchronized most configs with those used on the server. As those are proven to be working well with this pack.
 
 Added:
-	- AppleCore
-	- Baubley Heart Canisters
-	- Clumps
-	- Deep Mob Learning
-	- Deep Mob Learning - Blood Magic Addon
-	- Enchantment Descriptions
-	- Engineers Workshop Reborn
-	- Farming for Blockheads
-	- Forgiving Void
-	- InstantUnify
-	- Matter Overdrive: Legacy Edition
-	- Modular Powersuits
-	- Nature Overhaul
-	- Numina
-	- Patchouli
-	- Phosphor
-	- Portality
-	- Spice of Life: Carrot Edition
-	- Stargate Network
-	- Tech Reborn
-	- Tinkering with Blood Magic
-	- Too Many Efficiency Losses
-	- Uppers
+    - Chunk Animator
+    - Chunk-Pregenerator
 
-Removed:
-	- Genetics Reborn
-	- Stargate Atlantiscraft
+Updated:
+    Astral Sorcery (went from AstralSorcery-1.12.2-1.10.17.jar to AstralSorcery-1.12.2-1.10.18.jar):
+        AstralSorcery-1.12.2-1.10.18.jar:
+            https://minecraft.curseforge.com/projects/astral-sorcery/files/2709438
+
+    Quark (went from Quark-r1.5-149.jar to Quark-r1.5-150.jar):
+        Quark-r1.5-150.jar:
+            https://minecraft.curseforge.com/projects/quark/files/2708706
 
 * Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.13)

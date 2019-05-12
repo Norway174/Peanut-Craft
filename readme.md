@@ -81,6 +81,8 @@ v2.0 will focus on more hardcore experience. But still allowing you that total f
 1. [Chest Transporter (by CubeX2)](https://minecraft.curseforge.com/mc-mods/78778)
 1. [Chisel (by tterrag1098)](https://minecraft.curseforge.com/mc-mods/235279)
 1. [Chisels & Bits (by AlgorithmX2)](https://minecraft.curseforge.com/mc-mods/231095)
+1. [Chunk Animator (by lumien231)](https://minecraft.curseforge.com/mc-mods/236484)
+1. [Chunk-Pregenerator (by Speiger)](https://minecraft.curseforge.com/mc-mods/267193)
 1. [Clumps (by jaredlll08)](https://minecraft.curseforge.com/mc-mods/256717)
 1. [CodeChicken Lib 1.8.+ (by covers1624)](https://minecraft.curseforge.com/mc-mods/242818)
 1. [CoFH Core (by TeamCoFH)](https://minecraft.curseforge.com/mc-mods/69162)

@@ -242,7 +242,7 @@ general {
 
     # TCP port for the Voice server to listen on.
     I:VoicePort=36123
-    B:VoiceServerEnabled=false
+    B:VoiceServerEnabled=true
 
     # Enables the voice server for Walkie Talkies.
     B:WalkieTalkieServerEnabled=false

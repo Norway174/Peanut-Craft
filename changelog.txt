@@ -1,32 +1,48 @@
-Peanut Craft 2.8 to Peanut Craft 3.0
+Peanut Craft 3.0 to Peanut Craft 3.1
+
+Changed:
+Many config changes.
+Synchronized most configs with those used on the server. As those are proven to be working well with this pack.
 
 Added:
-	- AppleCore
-	- Baubley Heart Canisters
-	- Clumps
-	- Deep Mob Learning
-	- Deep Mob Learning - Blood Magic Addon
-	- Enchantment Descriptions
-	- Engineers Workshop Reborn
-	- Farming for Blockheads
-	- Forgiving Void
-	- InstantUnify
-	- Matter Overdrive: Legacy Edition
-	- Modular Powersuits
-	- Nature Overhaul
-	- Numina
-	- Patchouli
-	- Phosphor
-	- Portality
-	- Spice of Life: Carrot Edition
-	- Stargate Network
-	- Tech Reborn
-	- Tinkering with Blood Magic
-	- Too Many Efficiency Losses
-	- Uppers
+	- Chunk Animator
+	- Chunk-Pregenerator
 
-Removed:
-	- Genetics Reborn
-	- Stargate Atlantiscraft
+Updated:
+	Astral Sorcery (went from AstralSorcery-1.12.2-1.10.17.jar to AstralSorcery-1.12.2-1.10.18.jar):
+		AstralSorcery-1.12.2-1.10.18.jar:
+			Additions:
+
+			- Added debug logging config option for tree beacon block capturing and processing
+
+			Fixes:
+
+			- Don't create a dedicated fake player for each chain mining operation
+
+			- Elytra flight now properly grants exp
+
+			- Potion duration perk does no longer extend existing potion effects
+
+			- Remove obsolete debug print
+
+			- Fix phoenix blessing perk not triggering correctly
+
+			- World no longer being accessed off the main thread on packet
+
+	Quark (went from Quark-r1.5-149.jar to Quark-r1.5-150.jar):
+		Quark-r1.5-150.jar:
+			- General: The required forge version is now properly marked as a depedency.
+			- Automation: Fixed piston pushing being weaker than intended.
+			- Client: Improved rendering for the invalid slot highlight and made it not show slots that are disabled.
+			- Client: The feature to show invalid slots now requires shift to be held by default.
+			- Decoration: Axes now break paper walls faster.
+			- Decoration: Blacklisted botania functional flowers from being placed in flower pots because they can't handle the complex nature of them.
+			- Management: Fixed trying to saddle a hippocampus from the Ultimate Unicorn crashing.
+			- Oddities: Fixed an animation bug with pipes, again.
+			- Oddities: Pipes now shoot out items if they were to leave the pipe.
+			- Vanity: Custom emotes can now have sounds.
+			- Vanity: Custom emotes can now move the entire player model at once.
+			- Vanity: Emotes can now be cancelled by starting a new emote.
+			- Vanity: Tweaked the emote GUI a bit.
 
 * Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.13)
