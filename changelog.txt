@@ -1,48 +1,251 @@
-Peanut Craft 3.0 to Peanut Craft 3.1
+Peanut Craft 3.1 to Peanut Craft 3.2
 
-Changed:
-Many config changes.
-Synchronized most configs with those used on the server. As those are proven to be working well with this pack.
+Config changes:
+	- Changed the show invalid slot option in Quark to only show when holding Shift.
 
-Added:
-	- Chunk Animator
-	- Chunk-Pregenerator
+Removed:
+	- Wireless Redstone CBE
+	
+Forge:
+	Updated from forge-14.23.5.2837 to forge-14.23.5.2838
 
 Updated:
-	Astral Sorcery (went from AstralSorcery-1.12.2-1.10.17.jar to AstralSorcery-1.12.2-1.10.18.jar):
-		AstralSorcery-1.12.2-1.10.18.jar:
-			Additions:
+	Armory Expansion (went from Armory Expansion 1.1.10c to Armory Expansion 1.2.4):
+		Armory Expansion 1.2.4:
+			Full support for custom alloy registration through JSON
 
-			- Added debug logging config option for tree beacon block capturing and processing
+	AutoRegLib (went from AutoRegLib-1.3-28.jar to AutoRegLib-1.3-29.jar):
+		AutoRegLib-1.3-29.jar:
+			- Fixed using right click to add items leaving client artifacts behind.
+
+	Biomes O' Plenty (went from BiomesOPlenty-1.12.2-7.0.1.2438-universal.jar to BiomesOPlenty-1.12.2-7.0.1.2439-universal.jar)
+
+	Brandon's Core (went from BrandonsCore-1.12.2-2.4.10.198-universal to BrandonsCore-1.12.2-2.4.12.205-universal):
+		BrandonsCore-1.12.2-2.4.12.205-universal:
+			No changelog provided.
+
+	Common Capabilities (went from CommonCapabilities-1.12.2-2.2.1.jar to CommonCapabilities-1.12.2-2.3.0.jar):
+		CommonCapabilities-1.12.2-2.3.0.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.2.0 or higher.
+
+			Changes:
+			* Add containsAll and isEmpty methods to IMixedIngredients
+			 Needed for CyclopsMC/IntegratedCrafting#30
+			* Make single recipe inputs more loose
+			 For recipes that only require a single input,
+			 they can now appear anywhere within the recipe,
+			 even if there are empty slots before them.
+			 Needed for CyclopsMC/IntegratedCrafting#30
+			* Remove CyclopsCore dependency in prototyped alternatives
+			* Make ItemMatch in API independent from main mod
 
 			Fixes:
+			* Fix ingredients being equal even if their ingred length is non-equal
+			* Fix edge-case when comparing null ItemStack tags, Closes #6
 
-			- Don't create a dedicated fake player for each chain mining operation
+	Cyclops Core (went from CyclopsCore-1.12.2-1.2.0.jar to CyclopsCore-1.12.2-1.2.1.jar):
+		CyclopsCore-1.12.2-1.2.1.jar:
+			As always, don't forget to backup your world before updating!
 
-			- Elytra flight now properly grants exp
+			Fixes:
+			* Fix recipe handlers having invalid interfaces, Closes CyclopsMC/IntegratedDynamics#722
 
-			- Potion duration perk does no longer extend existing potion effects
+	Draconic Evolution (went from Draconic-Evolution-1.12.2-2.3.21.342-universal to Draconic-Evolution-1.12.2-2.3.22.343-universal):
+		Draconic-Evolution-1.12.2-2.3.22.343-universal:
+			######## 2.3.22.343 ########
+			-Fixed crash when Baubles is not installed.
+			-Optimized retro gen a little.
+			-Fixed some compounding residual particle lag.
 
-			- Remove obsolete debug print
+			######## 2.3.21.342 ########
+			-Fixed impossible null pointer exception in ExplosionFX
+			-Added compatibility between ICustomArmor and Baubles (Allows other mods to add baubles DE armor abilities)
+			-Fixed capacitor only charging baubles when in a baubles slot.
+			-Fixed capacitor always charging baubles when in a baubles slot. (even when disabled)
+			-Added optional key bindings to cycle tool AOE.
+			-Added fully upgraded versions of all tools and armor to creative menu (and JEI).
+			-Added item blacklist for draconium chest.
+			-Particle gen render distance now depends on particle sale.
+			-Fixed Particle gen tile not getting removed when the tile is destroyed.
+			-Fixed upgrading tools not copying enchantments.
+			-Shift clicking to add fuel to a Dislocator now adds 64 at a time.
+			-Fixed out of order rows in GuiToolConfig
+			-Fixed ore generating in chaos island rings when ore gen is disabled.
+			-Fixed fusion crafter comparator output not accounting for injector tier.
 
-			- Fix phoenix blessing perk not triggering correctly
+			######## 2.3.20.333 ########
+			-Fixed crash crashing/broken dislocators.
+			-Re added ore dict for nether and end draconium.
+			-Made nether, end and overworld draconium ore equivalent. (they all have the same drop rate for dusts)
+			-Increased the cluster size for overworld and nether draconium ore.
+			-Pulled PR to add shield-related config values and fixed spelling/grammar in config file
 
-			- World no longer being accessed off the main thread on packet
+	Hammer (Lib) Core (went from [1.12.2] Hammer Core - 2.0.4.6 to [1.12.2] Hammer Core - 2.0.4.7):
+		[1.12.2] Hammer Core - 2.0.4.7:
+			Changes:
 
-	Quark (went from Quark-r1.5-149.jar to Quark-r1.5-150.jar):
-		Quark-r1.5-150.jar:
-			- General: The required forge version is now properly marked as a depedency.
-			- Automation: Fixed piston pushing being weaker than intended.
-			- Client: Improved rendering for the invalid slot highlight and made it not show slots that are disabled.
-			- Client: The feature to show invalid slots now requires shift to be held by default.
-			- Decoration: Axes now break paper walls faster.
-			- Decoration: Blacklisted botania functional flowers from being placed in flower pots because they can't handle the complex nature of them.
-			- Management: Fixed trying to saddle a hippocampus from the Ultimate Unicorn crashing.
-			- Oddities: Fixed an animation bug with pipes, again.
-			- Oddities: Pipes now shoot out items if they were to leave the pipe.
-			- Vanity: Custom emotes can now have sounds.
-			- Vanity: Custom emotes can now move the entire player model at once.
-			- Vanity: Emotes can now be cancelled by starting a new emote.
-			- Vanity: Tweaked the emote GUI a bit.
+			 * [ Fix GuiWTFMojang!](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252ffedc32f1ae50332)
+			 * [ Update README.MD](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252feb1d1ece903cef7)
+			 * [ 47th build. A little cleanup, added IWitherProofBlock.](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fc9475514a4ea8c7)
+			 * [ Because... Mojang.](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f25c34888dd40409)
+			 * [ Add scissors, image helper, more drawing methods. Removed unused code.](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fde1fbd1231ec57f)
+			 * [ Fixed #81...](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f5ef49841597510f)
+			 * [ Fixed #90 and #93](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f628fd78c6ccbf8f)
+			 * [ Changes to client methods, recipe registry fixes.](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252ff065e8ac61d50a6)
+			 * [ Shrunk symbols, ported configs, optimised and added few things here and there](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fc5e4b1c8e731c76)
+			 * [ Fixed #85](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fd726a8f10dd5153)
+			 * [ Shaded OKHTTP3, OKIO and IO.Socket libraries.](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fc86b7d701c05062)
+			 * [ Added part rendering](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f00b8bdf508bdd6d)
+			 * [ Added langs](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f0b91c2213a93c21)
+			 * [ Added item rendering on the fly, fixed transport session send to all.](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f2b60ee8708f1ca0)
+			 * [ Added ItemStack renderer](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f0de8eebfd8dda8f)
+			 * [ 2.0.3.2](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f13c9dd2e00c2894)
+			 * [ Buch 'o' tweaks and GIF image decoder.](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252feb9cd6cf2ad7fa1)
+			 * [ Improvements to manual, remove duplicate IndexedMap](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f817f8fc3245affe)
+			 * [ Removed quite a few unused features, removed caching and ASM file saving](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fb2743ebbef8e9c2)
+
+	Integrated Dynamics (went from IntegratedDynamics-1.12.2-1.0.11.jar to IntegratedDynamics-1.12.2-1.0.12.jar):
+		IntegratedDynamics-1.12.2-1.0.12.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Additions:
+
+			Changes:
+			* Improve first input determination in recipe handlers
+			 Related to CyclopsMC/IntegratedCrafting#30
+			* Clarify Reader dependency in Redstone Writer advancement
+			 Closes #713
+			* Add check for list proxies that have a missing default constructor, #721
+
+			Fixes:
+			* Make JEI recipe wrapper type checking in categories stricter
+			 Closes CyclopsMC/IntegratedDynamics#717
+			* Fix broken texture when silk touching logic programmer, Closes #728
+			* Fix fluid-based recipes matching with all fluids
+			 Closes CyclopsMC/IntegratedCrafting#28
+			* Allow all items to be inserted into mechanical machines
+			 This fixes problems with insertion order of ingredients
+			 in Integrated Crafting causing crafting errors, Closes #29
+			* Fix all list value proxies that have no default constructor
+			 This could cause a lot of log spam when list were being used
+			 with partially applied operators.
+			 Closes #721
+			* Fix crash on operator pipes with invalid second operators
+			 Closes CyclopsMC/IntegratedTunnels#160
+
+	LibVulpes (went from LibVulpes 1.12.2-0.4.0-56-UNSTABLE build -56 for 1.12.2 to LibVulpes 1.12.2-0.4.0-57-UNSTABLE build -57 for 1.12.2):
+		LibVulpes 1.12.2-0.4.0-57-UNSTABLE build -57 for 1.12.2:
+			 Highly untested and may break world
+
+			Current release 1.12.2-0.4.0-57
+
+			 * [ Volcano processing stuff](https://github.com/zmaster587/LibVulpes/commit/73cc9cd44ca508b)
+			 * [ deprecation warning](https://github.com/zmaster587/LibVulpes/commit/c51b3d5d5500a59)
+			 * [ fix broken default machine recipies](https://github.com/zmaster587/LibVulpes/commit/9e638ca5005933e)
+			 * [ Add support for full screen centered interfaces](https://github.com/zmaster587/LibVulpes/commit/523b06c66681410)
+			 * [ Fix issues where a stack with a damage of 32767 was not being consumed](https://github.com/zmaster587/LibVulpes/commit/82b0dfbd3dbf608)
+			 * [ make sure we support data values on the input](https://github.com/zmaster587/LibVulpes/commit/c30e70037d61fb9)
+			 * [ Add tooltips to multiblock machines](https://github.com/zmaster587/LibVulpes/commit/4ec17772a0e4add)
+			 * [ fix motor recipe](https://github.com/zmaster587/LibVulpes/commit/e94307c210f3175)
+			 * [ Should probably simulate fluid insertion before committing, leads to dupe if the bottom slot is full. Resolves https://github.com/zmaster587/AdvancedRocketry/issues/1502](https://github.com/zmaster587/LibVulpes/commit/3c079e1fa798cb9)
+			 * [ possible fix for https://github.com/zmaster587/AdvancedRocketry/issues/1501](https://github.com/zmaster587/LibVulpes/commit/7dbc75ce439eebd)
+			 * [ Update ru_RU.lang MC 1.12.2. LibVulpes 0.4.0-48.](https://github.com/zmaster587/LibVulpes/commit/8eadbce9177acd6)
+			 * [ Switch recipes over to the 1.12+ JSON system](https://github.com/zmaster587/LibVulpes/commit/1ef1c6daca73805)
+			 * [ Update ru_RU.lang MC 1.12.2. LibVulpes 0.3.0-45.](https://github.com/zmaster587/LibVulpes/commit/f63521bb9de6f7e)
+			 * [ when item decrmented out of existance, retain NBT data long enough to assign to the dropped item, fixes #1451](https://github.com/zmaster587/LibVulpes/commit/b6f0ff4cf1f28bd)
+			 * [ finish adding GT support](https://github.com/zmaster587/LibVulpes/commit/5737145e805c6a5)
+			 * [ add minimal GT files needed for compile](https://github.com/zmaster587/LibVulpes/commit/d15119025c8f034)
+			 * [ Refactor power stuff, add GT support](https://github.com/zmaster587/LibVulpes/commit/4a4ca41b89eb66e)
+			 * [ fix some language issues (I hope), fix issues with chunk boundries and multiblock machines](https://github.com/zmaster587/LibVulpes/commit/6ca703fe1dd8711)
+			 * [ fixes #30](https://github.com/zmaster587/LibVulpes/commit/d49963cc8859ce0)
+			 * [ Update IC2 support for 1.12 https://github.com/zmaster587/AdvancedRocketry/issues/1197](https://github.com/zmaster587/LibVulpes/commit/ded8c6dae2e6d4a)
+			 * [ prevent machines from being too greedy, fixes #1359](https://github.com/zmaster587/LibVulpes/commit/2fa75ac9df07933)
+			 * [ Don't print 'air' as a required block in the holoprojector](https://github.com/zmaster587/LibVulpes/commit/490614f2d1bab1f)
+			 * [ fix https://github.com/zmaster587/AdvancedRocketry/issues/1331](https://github.com/zmaster587/LibVulpes/commit/bf354dfa6fe9966)
+			 * [ Fluid machines will start processing when a fluid is added by bucket instead of requiring manual restart, https://github.com/zmaster587/AdvancedRocketry/issues/1313](https://github.com/zmaster587/LibVulpes/commit/77950a4c6253519)
+			 * [ update dilithium texture](https://github.com/zmaster587/LibVulpes/commit/03cc9fd03231d9a)
+			 * [ fix textures with lootbags, etc](https://github.com/zmaster587/LibVulpes/commit/9ec4208a755a1b7)
+			 * [ fix items not dropping](https://github.com/zmaster587/LibVulpes/commit/d9918b1904b9854)
+			 * [ support for https://github.com/zmaster587/AdvancedRocketry/issues/1068](https://github.com/zmaster587/LibVulpes/commit/09cfdea529c9ff0)
+			 * [ fix for https://github.com/zmaster587/AdvancedRocketry/issues/1069](https://github.com/zmaster587/LibVulpes/commit/9af291ee939dd5a)
+			 * [ fix https://github.com/zmaster587/AdvancedRocketry/issues/1039](https://github.com/zmaster587/LibVulpes/commit/33632836dac0ef8)
+			 * [ Add locale overrides for #1012](https://github.com/zmaster587/LibVulpes/commit/182587bc99b89b2)
+			 * [ Fixes jetpack toggle key #26](https://github.com/zmaster587/LibVulpes/commit/fc7f6413f69e433)
+			 * [ fix https://github.com/zmaster587/AdvancedRocketry/issues/977](https://github.com/zmaster587/LibVulpes/commit/a47c9e24e25b1e5)
+			 * [ fixes https://github.com/zmaster587/AdvancedRocketry/issues/991](https://github.com/zmaster587/LibVulpes/commit/970f3ced89b8171)
+			 * [ fixes https://github.com/zmaster587/AdvancedRocketry/issues/938#issuecomment-351028819](https://github.com/zmaster587/LibVulpes/commit/baf62e827720d18)
+			 * [ add getters for outputs](https://github.com/zmaster587/LibVulpes/commit/f603dbb45bd2941)
+			 * [ add getters for outputs, update build num](https://github.com/zmaster587/LibVulpes/commit/5c39a00e823ef8d)
+			 * [ fix itemHandler, https://github.com/zmaster587/AdvancedRocketry/issues/954](https://github.com/zmaster587/LibVulpes/commit/f052c4110d22306)
+			 * [ disable curse builds temporarily](https://github.com/zmaster587/LibVulpes/commit/c237fc105fd7ad9)
+			 * [ update artefact location for git](https://github.com/zmaster587/LibVulpes/commit/b620c33dd67e3d6)
+			 * [ fix https://github.com/zmaster587/AdvancedRocketry/issues/939](https://github.com/zmaster587/LibVulpes/commit/2c59e0e8ea088e0)
+			 * [ add curseforge and changelog tasks.](https://github.com/zmaster587/LibVulpes/commit/38fcb72a4b0f478)
+
+	PlusTiC (went from plustic-7.0.6.1.jar to plustic-7.0.7.0.jar):
+		plustic-7.0.7.0.jar:
+			 * Add Peridot ConArm support
+			 * Several bugfixes
+
+	Quark (went from Quark-r1.5-150.jar to Quark-r1.5-152.jar):
+		Quark-r1.5-152.jar:
+			- Management: Fixed a crash when opening the player's inventory under certain circumstances.
+		Quark-r1.5-151.jar:
+			- General: Added a proper AutoRegLib dep so people know to use the proper version.
+			- General: Added proper subtitles to quark's sound effects.
+			- General: Fixed Chisel Compatibility not working properly.
+			- Client: The slot the player is hovering over is no longer highlighted for the invalid slots feature.
+			- Client: The Usage Ticker is now a bit smarter at figuring out which items to show.
+			- Client: Upgraded the abilities of Visual Stat Display, it can now display a ton more attributes.
+			- Experimental: Added a debug feature to dump the texture atlas.
+			- Management: Fixed a crash when opening the inventory.
+			- Oddities: Fixed fake client side Totems of Holding showing up.
+			- Oddities: Fixed pipes rendering incorrectly in some modpack setups.
+			- Oddities: Open ended pipe ends now have a new model to show they have special properties.
+			- Oddities: Upgraded pipes with the ability to succ in items that go onto them.
+			- Tweaks: Fixed ladders being used up if used on a ladder at the bottom of the world.
+			- Vanity: Fixed Chests in Boats vanishing on the client.
+			- Vanity: Fixed emote rows being flipped.
+			- Vanity: Witch hats now make witches ignore you.
+			- World: Added Monster Boxes to underground cave generation.
+			- World: Added the Stoneling mob, and its drop, the Heart of Diamond.
+			- World: Fixed the Archeologist Hat destroying items if you break some blocks.
+
+	RandomPatches (went from RandomPatches 1.12.2-1.15.0.2 to RandomPatches 1.12.2-1.15.1.0):
+		RandomPatches 1.12.2-1.15.1.0:
+			The potion glowing effect is now toggleable in-game.
+			Custom window icons are now loaded earlier.
+			Fixed 1.8 compatibility again.
+		RandomPatches 1.12.2-1.15.0.3:
+			Fixed the faster language switching patch.
+			Changed the End portal and End gateway break particle textures to obsidian to match Minecraft 1.13+.
+
+	Reborn Storage (went from RebornStorage-1.12.2-3.3.2.79.jar to RebornStorage-1.12.2-3.3.3.83.jar):
+		RebornStorage-1.12.2-3.3.3.83.jar:
+			(github) #releaseBuild
+			(modmuss50) Cache cpu speed and multiblock isValid until broken fixes 144 (#149)
+			(modmuss50) Add alternative disk recipe (#139)
+			(modmuss50) Create de_de.lang (#141)
+
+	Simply Jetpacks 2 (went from SimplyJetpacks2-1.12.2-2.2.11.64.jar to SimplyJetpacks2-1.12.2-2.2.12.65.jar):
+		SimplyJetpacks2-1.12.2-2.2.12.65.jar:
+			2.2.12
+
+			 * Fixed
+			 * Bug where jetpacks would not show up if TD integration was disabled - #126 #136
+			 * Recipes for thrusters, changed the dynamos required to fit the used materials to the jetpack tier - #134
+
+	Woot (went from woot-1.12.2-1.4.10.jar to woot-1.12.2-1.4.11.jar):
+		woot-1.12.2-1.4.11.jar:
+			# 1.12.2-1.4.11
+			### Fixes
+			- [----] Headhunter enchantability and overlevelling fixes by Lykrast
+			- [#413] Fix incorrect rune count displayed for Blood Magic LE tank - visual bug only
+
+			### Features
+			- [#406] Ender Dragon now 100% drops 1 Quark dragon scale
+			- [#415] Add entitygenerateonlylist to disable capture of a mob via an ender shard - default is empty
 
 * Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.13)

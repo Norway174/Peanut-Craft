@@ -3,7 +3,7 @@
     "version": "1.12.2",
     "modLoaders": [
       {
-        "id": "forge-14.23.5.2837",
+        "id": "forge-14.23.5.2838",
         "primary": true
       }
     ]
@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Peanut Craft",
-  "version": "3.1",
+  "version": "3.2",
   "author": "norway174",
   "files": [
     {
@@ -91,7 +91,7 @@
     },
     {
       "projectID": 260327,
-      "fileID": 2703537,
+      "fileID": 2712303,
       "required": true
     },
     {
@@ -186,12 +186,12 @@
     },
     {
       "projectID": 247007,
-      "fileID": 2705122,
+      "fileID": 2710151,
       "required": true
     },
     {
       "projectID": 250363,
-      "fileID": 2704893,
+      "fileID": 2711582,
       "required": true
     },
     {
@@ -206,12 +206,12 @@
     },
     {
       "projectID": 231382,
-      "fileID": 2697296,
+      "fileID": 2710581,
       "required": true
     },
     {
       "projectID": 223565,
-      "fileID": 2697295,
+      "fileID": 2710583,
       "required": true
     },
     {
@@ -331,7 +331,7 @@
     },
     {
       "projectID": 220318,
-      "fileID": 2707005,
+      "fileID": 2711162,
       "required": true
     },
     {
@@ -471,7 +471,7 @@
     },
     {
       "projectID": 232758,
-      "fileID": 2705118,
+      "fileID": 2710147,
       "required": true
     },
     {
@@ -506,7 +506,7 @@
     },
     {
       "projectID": 251792,
-      "fileID": 2690100,
+      "fileID": 2709952,
       "required": true
     },
     {
@@ -601,12 +601,12 @@
     },
     {
       "projectID": 244049,
-      "fileID": 2688432,
+      "fileID": 2712670,
       "required": true
     },
     {
       "projectID": 247401,
-      "fileID": 2708312,
+      "fileID": 2710204,
       "required": true
     },
     {
@@ -647,11 +647,6 @@
     {
       "projectID": 308851,
       "fileID": 2678841,
-      "required": true
-    },
-    {
-      "projectID": 260824,
-      "fileID": 2622045,
       "required": true
     },
     {
@@ -701,7 +696,7 @@
     },
     {
       "projectID": 236307,
-      "fileID": 2693691,
+      "fileID": 2710176,
       "required": true
     },
     {
@@ -826,7 +821,7 @@
     },
     {
       "projectID": 243121,
-      "fileID": 2708706,
+      "fileID": 2711580,
       "required": true
     },
     {
@@ -876,7 +871,7 @@
     },
     {
       "projectID": 285612,
-      "fileID": 2687902,
+      "fileID": 2707072,
       "required": true
     },
     {
@@ -951,7 +946,7 @@
     },
     {
       "projectID": 236541,
-      "fileID": 2703418,
+      "fileID": 2710591,
       "required": true
     },
     {
@@ -971,7 +966,7 @@
     },
     {
       "projectID": 256662,
-      "fileID": 2649914,
+      "fileID": 2710805,
       "required": true
     },
     {
@@ -1126,7 +1121,7 @@
     },
     {
       "projectID": 293602,
-      "fileID": 2702323,
+      "fileID": 2712270,
       "required": true
     },
     {

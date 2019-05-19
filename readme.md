@@ -293,7 +293,6 @@ v2.0 will focus on more hardcore experience. But still allowing you that total f
 1. [WanionLib (by WanionCane)](https://minecraft.curseforge.com/mc-mods/253043)
 1. [Waystones (by BlayTheNinth)](https://minecraft.curseforge.com/mc-mods/245755)
 1. [Wireless Crafting Terminal (by TheRealp455w0rd)](https://minecraft.curseforge.com/mc-mods/244559)
-1. [Wireless Redstone CBE (by covers1624)](https://minecraft.curseforge.com/mc-mods/260824)
 1. [Woot (by Ipsis)](https://minecraft.curseforge.com/mc-mods/244049)
 1. [XNet (by McJty)](https://minecraft.curseforge.com/mc-mods/260912)
 1. [YABBA (by LatvianModder)](https://minecraft.curseforge.com/mc-mods/255177)
