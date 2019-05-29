@@ -1,81 +1,236 @@
-Peanut Craft 3.1 to Peanut Craft 3.2
+Peanut Craft 3.2 to Peanut Craft 3.3
 
-Config changes:
-	- Changed the show invalid slot option in Quark to only show when holding Shift.
-
-Removed:
-	- Wireless Redstone CBE
+Added 5 files:
+	- Dynamic Surroundings
+	- Dynamic Trees
+	- Dynamic Trees - Biomes O' Plenty Compat
+	- Nature's Compass
+	- OreLib
 	
-Forge:
-	Updated from forge-14.23.5.2837 to forge-14.23.5.2838
+Removed 3 files:
+	- Nature Overhaul
+	- Quick Leaf Decay
+	- WaitingTime
 
-Updated:
-	Armory Expansion (went from Armory Expansion 1.1.10c to Armory Expansion 1.2.4):
-		Armory Expansion 1.2.4:
-			https://minecraft.curseforge.com/projects/armory-expansion/files/2712270
+Updated 36 files:
+	/dank/null (went from DankNull-1.12-1.4.43.jar to DankNull-1.12-1.4.46.jar):
+		DankNull-1.12-1.4.46.jar:
+			https://minecraft.curseforge.com/projects/dank-null/files/2659000
 
-	AutoRegLib (went from AutoRegLib-1.3-28.jar to AutoRegLib-1.3-29.jar):
-		AutoRegLib-1.3-29.jar:
-			https://minecraft.curseforge.com/projects/autoreglib/files/2711582
-
-	Biomes O' Plenty (went from BiomesOPlenty-1.12.2-7.0.1.2438-universal.jar to BiomesOPlenty-1.12.2-7.0.1.2439-universal.jar):
+	Actually Additions (went from ActuallyAdditions-1.12.2-r147.jar to ActuallyAdditions-1.12.2-r148.jar):
 		View changelog at:
-			https://minecraft.curseforge.com/projects/biomes-o-plenty/files/2711162
+			https://raw.githubusercontent.com/Ellpeck/ActuallyAdditions/master/update/changelog.md
 
-	Brandon's Core (went from BrandonsCore-1.12.2-2.4.10.198-universal to BrandonsCore-1.12.2-2.4.12.205-universal):
-		BrandonsCore-1.12.2-2.4.12.205-universal:
+	Armory Expansion (went from Armory Expansion 1.2.4 to Armory Expansion 1.3.0):
+		Armory Expansion 1.3.0:
+			https://minecraft.curseforge.com/projects/armory-expansion/files/2714057
+		Armory Expansion 1.2.5:
+			https://minecraft.curseforge.com/projects/armory-expansion/files/2713630
+		Armory Expansion WebClient Beta2:
+			https://minecraft.curseforge.com/projects/armory-expansion/files/2713623
+		Armory Expansion WebClient Beta1:
+			https://minecraft.curseforge.com/projects/armory-expansion/files/2713616
+
+	Astral Sorcery (went from AstralSorcery-1.12.2-1.10.18.jar to AstralSorcery-1.12.2-1.10.19.jar):
+		AstralSorcery-1.12.2-1.10.19.jar:
+			https://minecraft.curseforge.com/projects/astral-sorcery/files/2716590
+
+	AutoRegLib (went from AutoRegLib-1.3-29.jar to AutoRegLib-1.3-30.jar):
+		AutoRegLib-1.3-30.jar:
+			https://minecraft.curseforge.com/projects/autoreglib/files/2715657
+
+	Blood Magic (went from BloodMagic-1.12.2-2.4.0-102.jar to BloodMagic-1.12.2-2.4.1-103.jar):
+		BloodMagic-1.12.2-2.4.1-103.jar:
+			https://minecraft.curseforge.com/projects/blood-magic/files/2713291
+
+	CoFH Core (went from CoFHCore-1.12.2-4.6.2.25-universal.jar to CoFHCore-1.12.2-4.6.3.27-universal.jar):
+		View changelog at:
+			https://raw.githubusercontent.com/CoFH/Version/master/cofhcore_changelog.txt
+
+	CoFH World (went from CoFHWorld-1.12.2-1.3.0.6-universal.jar to CoFHWorld-1.12.2-1.3.1.7-universal.jar):
+		CoFHWorld-1.12.2-1.3.1.7-universal.jar:
 			No changelog provided.
 
-	Common Capabilities (went from CommonCapabilities-1.12.2-2.2.1.jar to CommonCapabilities-1.12.2-2.3.0.jar):
-		CommonCapabilities-1.12.2-2.3.0.jar:
-			https://minecraft.curseforge.com/projects/common-capabilities/files/2710151
+	Common Capabilities (went from CommonCapabilities-1.12.2-2.3.0.jar to CommonCapabilities-1.12.2-2.4.1.jar):
+		CommonCapabilities-1.12.2-2.4.1.jar:
+			https://minecraft.curseforge.com/projects/common-capabilities/files/2716477
+		CommonCapabilities-1.12.2-2.4.0.jar:
+			https://minecraft.curseforge.com/projects/common-capabilities/files/2714104
 
-	Cyclops Core (went from CyclopsCore-1.12.2-1.2.0.jar to CyclopsCore-1.12.2-1.2.1.jar):
-		CyclopsCore-1.12.2-1.2.1.jar:
-			https://minecraft.curseforge.com/projects/cyclops-core/files/2710147
+	CraftPresence (went from CraftPresence v1.5.3.1 (1.12.2) to CraftPresence v1.5.5 (1.12.2)):
+		CraftPresence v1.5.5 (1.12.2):
+			https://minecraft.curseforge.com/projects/craftpresence/files/2716967
 
-	Draconic Evolution (went from Draconic-Evolution-1.12.2-2.3.21.342-universal to Draconic-Evolution-1.12.2-2.3.22.343-universal):
-		Draconic-Evolution-1.12.2-2.3.22.343-universal:
-			https://minecraft.curseforge.com/projects/draconic-evolution/files/2710583
+	CraftTweaker (went from CraftTweaker2-1.12-4.1.17 to CraftTweaker2-1.12-4.1.18):
+		CraftTweaker2-1.12-4.1.18:
+			https://minecraft.curseforge.com/projects/crafttweaker/files/2713681
 
-	Hammer (Lib) Core (went from [1.12.2] Hammer Core - 2.0.4.6 to [1.12.2] Hammer Core - 2.0.4.7):
-		[1.12.2] Hammer Core - 2.0.4.7:
-			https://minecraft.curseforge.com/projects/hammer-lib/files/2710204
+	Cyclops Core (went from CyclopsCore-1.12.2-1.2.1.jar to CyclopsCore-1.12.2-1.3.0.jar):
+		CyclopsCore-1.12.2-1.3.0.jar:
+			https://minecraft.curseforge.com/projects/cyclops-core/files/2714091
 
-	Integrated Dynamics (went from IntegratedDynamics-1.12.2-1.0.11.jar to IntegratedDynamics-1.12.2-1.0.12.jar):
-		IntegratedDynamics-1.12.2-1.0.12.jar:
-			https://minecraft.curseforge.com/projects/integrated-dynamics/files/2710176
+	FTB Utilities: Backups (went from FTBUtilitiesBackups-1.0.0.3.jar to FTBUtilitiesBackups-1.0.0.4.jar):
+		FTBUtilitiesBackups-1.0.0.4.jar:
+			https://minecraft.curseforge.com/projects/ftb-utilities-backups/files/2716458
 
-	LibVulpes (went from LibVulpes 1.12.2-0.4.0-56-UNSTABLE build -56 for 1.12.2 to LibVulpes 1.12.2-0.4.0-57-UNSTABLE build -57 for 1.12.2):
-		LibVulpes 1.12.2-0.4.0-57-UNSTABLE build -57 for 1.12.2:
-			https://minecraft.curseforge.com/projects/libvulpes/files/2710591
+	Integrated Dynamics (went from IntegratedDynamics-1.12.2-1.0.12.jar to IntegratedDynamics-1.12.2-1.0.13.jar):
+		IntegratedDynamics-1.12.2-1.0.13.jar:
+			https://minecraft.curseforge.com/projects/integrated-dynamics/files/2714096
 
-	PlusTiC (went from plustic-7.0.6.1.jar to plustic-7.0.7.0.jar):
-		plustic-7.0.7.0.jar:
-			https://minecraft.curseforge.com/projects/plustic/files/2712303
+	Iron Chests (went from ironchest-1.12.2-7.0.59.842.jar to ironchest-1.12.2-7.0.64.843.jar):
+		ironchest-1.12.2-7.0.64.843.jar:
+			https://minecraft.curseforge.com/projects/iron-chests/files/2713441
 
-	Quark (went from Quark-r1.5-150.jar to Quark-r1.5-152.jar):
-		Quark-r1.5-152.jar:
-			https://minecraft.curseforge.com/projects/quark/files/2711580
-		Quark-r1.5-151.jar:
-			https://minecraft.curseforge.com/projects/quark/files/2711356
+	Mantle (went from Mantle-1.12-1.3.3.49.jar to Mantle-1.12-1.3.3.55.jar):
+		Mantle-1.12-1.3.3.55.jar:
+			https://minecraft.curseforge.com/projects/mantle/files/2713386
 
-	RandomPatches (went from RandomPatches 1.12.2-1.15.0.2 to RandomPatches 1.12.2-1.15.1.0):
-		RandomPatches 1.12.2-1.15.1.0:
-			https://minecraft.curseforge.com/projects/randompatches/files/2707072
-		RandomPatches 1.12.2-1.15.0.3:
-			https://minecraft.curseforge.com/projects/randompatches/files/2706959
+	McJtyLib (went from McJtyLib - 1.12-3.5.2 to McJtyLib - 1.12-3.5.3):
+		McJtyLib - 1.12-3.5.3:
+			https://minecraft.curseforge.com/projects/mcjtylib/files/2714365
 
-	Reborn Storage (went from RebornStorage-1.12.2-3.3.2.79.jar to RebornStorage-1.12.2-3.3.3.83.jar):
-		RebornStorage-1.12.2-3.3.3.83.jar:
-			https://minecraft.curseforge.com/projects/rebornstorage/files/2710805
+	Mekanism (went from Mekanism-1.12.2-9.7.4.375.jar to Mekanism-1.12.2-9.7.5.376.jar):
+		Mekanism-1.12.2-9.7.5.376.jar:
+			https://minecraft.curseforge.com/projects/mekanism/files/2713689
 
-	Simply Jetpacks 2 (went from SimplyJetpacks2-1.12.2-2.2.11.64.jar to SimplyJetpacks2-1.12.2-2.2.12.65.jar):
-		SimplyJetpacks2-1.12.2-2.2.12.65.jar:
-			https://minecraft.curseforge.com/projects/simply-jetpacks-2/files/2709952
+	Mekanism Generators (went from MekanismGenerators-1.12.2-9.7.4.375.jar to MekanismGenerators-1.12.2-9.7.5.376.jar):
+		MekanismGenerators-1.12.2-9.7.5.376.jar:
+			https://minecraft.curseforge.com/projects/mekanism-generators/files/2713691
 
-	Woot (went from woot-1.12.2-1.4.10.jar to woot-1.12.2-1.4.11.jar):
-		woot-1.12.2-1.4.11.jar:
-			https://minecraft.curseforge.com/projects/woot/files/2712670
+	Mekanism Tools (went from MekanismTools-1.12.2-9.7.4.375.jar to MekanismTools-1.12.2-9.7.5.376.jar):
+		MekanismTools-1.12.2-9.7.5.376.jar:
+			https://minecraft.curseforge.com/projects/mekanism-tools/files/2713692
 
-* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.13)
+	Modular Powersuits (went from ModularPowersuits-1.12.2-1.0.40 to ModularPowersuits-1.12.2-1.0.41):
+		ModularPowersuits-1.12.2-1.0.41:
+			https://minecraft.curseforge.com/projects/modular-powersuits/files/2715213
+
+	Numina (went from Numina-1.12.2-1.0.37 to Numina-1.12.2-1.0.38):
+		Numina-1.12.2-1.0.38:
+			https://minecraft.curseforge.com/projects/numina/files/2715198
+
+	OMLib (went from omlib-1.12.2-3.0.1-162.jar to omlib-1.12.2-3.1.0-233.jar):
+		omlib-1.12.2-3.1.0-233.jar:
+			https://minecraft.curseforge.com/projects/omlib/files/2715675
+		omlib-1.12.2-3.1.0-232.jar:
+			https://minecraft.curseforge.com/projects/omlib/files/2707530
+		omlib-1.12.2-3.1.0-229.jar:
+			https://minecraft.curseforge.com/projects/omlib/files/2703068
+		omlib-1.12.2-3.1.0-228.jar:
+			https://minecraft.curseforge.com/projects/omlib/files/2702765
+		omlib-1.12.2-3.1.0-227.jar:
+			https://minecraft.curseforge.com/projects/omlib/files/2702670
+		omlib-1.12.2-3.1.0-226.jar:
+			https://minecraft.curseforge.com/projects/omlib/files/2702623
+		omlib-1.12.2-3.1.0-224.jar:
+			https://minecraft.curseforge.com/projects/omlib/files/2702202
+		omlib-1.12.2-3.1.0-223.jar:
+			https://minecraft.curseforge.com/projects/omlib/files/2700961
+		omlib-1.12.2-3.1.0-221.jar:
+			https://minecraft.curseforge.com/projects/omlib/files/2700712
+		omlib-1.12.2-3.1.0-208.jar:
+			https://minecraft.curseforge.com/projects/omlib/files/2665763
+		omlib-1.12.2-3.1.0-206.jar:
+			https://minecraft.curseforge.com/projects/omlib/files/2663642
+		omlib-1.12.2-3.1.0-203.jar:
+			https://minecraft.curseforge.com/projects/omlib/files/2663596
+		omlib-1.12.2-3.1.0-202.jar:
+			https://minecraft.curseforge.com/projects/omlib/files/2663114
+		omlib-1.12.2-3.1.0-195.jar:
+			https://minecraft.curseforge.com/projects/omlib/files/2660499
+
+	OpenModularTurrets (went from openmodularturrets-1.12.2-3.0.1-264.jar to openmodularturrets-1.12.2-3.1.0-336.jar):
+		openmodularturrets-1.12.2-3.1.0-336.jar:
+			https://minecraft.curseforge.com/projects/openmodularturrets/files/2715678
+		openmodularturrets-1.12.2-3.1.0-335.jar:
+			https://minecraft.curseforge.com/projects/openmodularturrets/files/2707527
+		openmodularturrets-1.12.2-3.1.0-332.jar:
+			https://minecraft.curseforge.com/projects/openmodularturrets/files/2704053
+		openmodularturrets-1.12.2-3.1.0-331.jar:
+			https://minecraft.curseforge.com/projects/openmodularturrets/files/2703230
+		openmodularturrets-1.12.2-3.1.0-330.jar:
+			https://minecraft.curseforge.com/projects/openmodularturrets/files/2703072
+		openmodularturrets-1.12.2-3.1.0-329.jar:
+			https://minecraft.curseforge.com/projects/openmodularturrets/files/2702771
+		openmodularturrets-1.12.2-3.1.0-328.jar:
+			https://minecraft.curseforge.com/projects/openmodularturrets/files/2702677
+		openmodularturrets-1.12.2-3.1.0-327.jar:
+			https://minecraft.curseforge.com/projects/openmodularturrets/files/2702626
+		openmodularturrets-1.12.2-3.1.0-326.jar:
+			https://minecraft.curseforge.com/projects/openmodularturrets/files/2702206
+		openmodularturrets-1.12.2-3.1.0-325.jar:
+			https://minecraft.curseforge.com/projects/openmodularturrets/files/2700964
+		openmodularturrets-1.12.2-3.1.0-324.jar:
+			https://minecraft.curseforge.com/projects/openmodularturrets/files/2700709
+		openmodularturrets-1.12.2-3.1.0-306.jar:
+			https://minecraft.curseforge.com/projects/openmodularturrets/files/2665769
+		openmodularturrets-1.12.2-3.1.0-305.jar:
+			https://minecraft.curseforge.com/projects/openmodularturrets/files/2663599
+		openmodularturrets-1.12.2-3.1.0-304.jar:
+			https://minecraft.curseforge.com/projects/openmodularturrets/files/2663279
+		openmodularturrets-1.12.2-3.1.0-292.jar:
+			https://minecraft.curseforge.com/projects/openmodularturrets/files/2660503
+
+	Quark (went from Quark-r1.5-152.jar to Quark-r1.5-155.jar):
+		Quark-r1.5-155.jar:
+			https://minecraft.curseforge.com/projects/quark/files/2716918
+		Quark-r1.5-154.jar:
+			https://minecraft.curseforge.com/projects/quark/files/2715769
+		Quark-r1.5-153.jar:
+			https://minecraft.curseforge.com/projects/quark/files/2715659
+
+	RandomTweaks (went from RandomTweaks 1.12.2-2.5.0.5 to RandomTweaks 1.12.2-2.5.0.6):
+		RandomTweaks 1.12.2-2.5.0.6:
+			https://minecraft.curseforge.com/projects/randomtweaks/files/2715934
+
+	Reborn Storage (went from RebornStorage-1.12.2-3.3.3.83.jar to RebornStorage-1.12.2-3.3.4.85.jar):
+		RebornStorage-1.12.2-3.3.4.85.jar:
+			https://minecraft.curseforge.com/projects/rebornstorage/files/2715722
+
+	Redstone Arsenal (went from RedstoneArsenal-1.12.2-2.6.2.17-universal.jar to RedstoneArsenal-1.12.2-2.6.3.18-universal.jar):
+		View changelog at:
+			https://raw.githubusercontent.com/CoFH/Version/master/redstonearsenal_changelog.txt
+
+	Resizing Potion (went from Resizing Potion-r2.1.jar to resizingpotion-2.1.1.jar):
+		resizingpotion-2.1.1.jar:
+			https://minecraft.curseforge.com/projects/resizing-potion/files/2716875
+
+	Stargate Network (went from SGCraft-1.20.3 to SGCraft-2.0.0):
+		SGCraft-2.0.0:
+			https://minecraft.curseforge.com/projects/stargate-network/files/2714289
+		SGCraft-2.0.0-beta-6:
+			https://minecraft.curseforge.com/projects/stargate-network/files/2702533
+		SGCraft-2.0.0-beta-5:
+			https://minecraft.curseforge.com/projects/stargate-network/files/2700816
+		SGCraft-2.0.0-beta-4:
+			https://minecraft.curseforge.com/projects/stargate-network/files/2696645
+		SGCraft-2.0.0-beta-3:
+			https://minecraft.curseforge.com/projects/stargate-network/files/2694912
+		SGCraft-2.0.0-beta-2:
+			https://minecraft.curseforge.com/projects/stargate-network/files/2693730
+
+	The Lost Cities (went from LostCities - 1.12-2.0.19 to LostCities - 1.12-2.0.20):
+		LostCities - 1.12-2.0.20:
+			https://minecraft.curseforge.com/projects/the-lost-cities/files/2716534
+
+	Thermal Cultivation (went from ThermalCultivation-1.12.2-0.3.2.11-universal.jar to ThermalCultivation-1.12.2-0.3.3.12-universal.jar):
+		View changelog at:
+			https://raw.githubusercontent.com/CoFH/Version/master/thermalcultivation_changelog.txt
+
+	Thermal Dynamics (went from ThermalDynamics-1.12.2-2.5.4.18-universal.jar to ThermalDynamics-1.12.2-2.5.5.21-universal.jar):
+		View changelog at:
+			https://raw.githubusercontent.com/CoFH/Version/master/thermaldynamics_changelog.txt
+
+	Thermal Expansion (went from ThermalExpansion-1.12.2-5.5.3.41-universal.jar to ThermalExpansion-1.12.2-5.5.4.43-universal.jar):
+		View changelog at:
+			https://raw.githubusercontent.com/CoFH/Version/master/thermalexpansion_changelog.txt
+
+	Thermal Foundation (went from ThermalFoundation-1.12.2-2.6.2.26-universal.jar to ThermalFoundation-1.12.2-2.6.3.27-universal.jar):
+		View changelog at:
+			https://raw.githubusercontent.com/CoFH/Version/master/thermalfoundation_changelog.txt
+
+	Thermal Innovation (went from ThermalInnovation-1.12.2-0.3.2.11-universal.jar to ThermalInnovation-1.12.2-0.3.3.12-universal.jar):
+		View changelog at:
+			https://raw.githubusercontent.com/CoFH/Version/master/thermalinnovation_changelog.txt
+
+* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.14)

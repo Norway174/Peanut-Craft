@@ -1,251 +1,1125 @@
-Peanut Craft 3.1 to Peanut Craft 3.2
+Peanut Craft 3.2 to Peanut Craft 3.3
 
-Config changes:
-	- Changed the show invalid slot option in Quark to only show when holding Shift.
-
-Removed:
-	- Wireless Redstone CBE
+Added 5 files:
+	- Dynamic Surroundings
+	- Dynamic Trees
+	- Dynamic Trees - Biomes O' Plenty Compat
+	- Nature's Compass
+	- OreLib
 	
-Forge:
-	Updated from forge-14.23.5.2837 to forge-14.23.5.2838
+Removed 3 files:
+	- Nature Overhaul
+	- Quick Leaf Decay
+	- WaitingTime
 
-Updated:
-	Armory Expansion (went from Armory Expansion 1.1.10c to Armory Expansion 1.2.4):
-		Armory Expansion 1.2.4:
-			Full support for custom alloy registration through JSON
+Updated 36 files:
+	/dank/null (went from DankNull-1.12-1.4.43.jar to DankNull-1.12-1.4.46.jar):
+		DankNull-1.12-1.4.46.jar:
+			Fixed dupe bug
 
-	AutoRegLib (went from AutoRegLib-1.3-28.jar to AutoRegLib-1.3-29.jar):
-		AutoRegLib-1.3-29.jar:
-			- Fixed using right click to add items leaving client artifacts behind.
+			Added client config to disable block-edge detection when opening /dank/null gui
 
-	Biomes O' Plenty (went from BiomesOPlenty-1.12.2-7.0.1.2438-universal.jar to BiomesOPlenty-1.12.2-7.0.1.2439-universal.jar)
+			Added slot count and items-per-slot count to /dank/null tooltip
 
-	Brandon's Core (went from BrandonsCore-1.12.2-2.4.10.198-universal to BrandonsCore-1.12.2-2.4.12.205-universal):
-		BrandonsCore-1.12.2-2.4.12.205-universal:
+			Fixed a slight client->server desync
+
+	Actually Additions (went from ActuallyAdditions-1.12.2-r147.jar to ActuallyAdditions-1.12.2-r148.jar):
+		1.12.2-r148:
+			* Fixed atomic reconstructor not hitting items on pressure plates.
+
+	Armory Expansion (went from Armory Expansion 1.2.4 to Armory Expansion 1.3.0):
+		Armory Expansion 1.3.0:
+			Every single stat a material uses can now be configured through the JSON files
+		Armory Expansion 1.2.5:
+			Fixes issue #36
+		Armory Expansion WebClient Beta2:
+			Fixes issue #36
+		Armory Expansion WebClient Beta1:
+			Full switch from #.cfg to #.json files for all Integrations.
+			Integration data can now be loaded from a web server, although this is disabled by default.
+			Feel free to try it with the available URL in the config ([https://github.com/YaibaToKen/Armory-Expansion-WebJSON](https://github.com/YaibaToKen/Armory-Expansion-WebJSON)).
+
+			Connection timeout and maximum stream size can be set in armoryexpansion.cfg, defaulting to 60 seconds and 128KB respectively.
+
+			Most Ice and Fire materials now have a different look, due to finally getting sided code to work.
+
+	Astral Sorcery (went from AstralSorcery-1.12.2-1.10.18.jar to AstralSorcery-1.12.2-1.10.19.jar):
+		AstralSorcery-1.12.2-1.10.19.jar:
+			Changes:
+
+			- Make spectral tools not collide with the player
+
+			Fixes:
+
+			- Only create structure matchers for relevant relays
+
+			- Fix perk crashes with dynamism gems
+
+			- Fix visual glitch with translucent blocks
+
+			- Fix recipes being unable to be crafted if the item to be crafted on was manipulated by other means
+
+			- Fix cooldown not being applied for phoenix perk
+
+			- Check for chunks being loaded when running a block search
+
+	AutoRegLib (went from AutoRegLib-1.3-29.jar to AutoRegLib-1.3-30.jar):
+		AutoRegLib-1.3-30.jar:
+			- Added an unlisted blockstate property
+
+	Blood Magic (went from BloodMagic-1.12.2-2.4.0-102.jar to BloodMagic-1.12.2-2.4.1-103.jar):
+		BloodMagic-1.12.2-2.4.1-103.jar:
+			Version 2.4.1:
+
+			Nut was too lazy to create a changelog, it's AEon's turn now!
+			Changes made from Feb 02 - now (Fill end date in later)
+
+			Living Armor:
+			 - Fixed "Soft Fall" not preventing damage
+			 - "Nocturnal Prowess" should not flash anymore
+			 - "Trickshot" now ignores HurtResistanceTime
+			 - "Trickshot" now works properly with sentient arrows
+			 - "Step Assist" does not take effect while sneaking
+
+			Sentient Bow:
+			 - Fixed Destructive Will arrows exploding continuously
+			 - Fixed Tipped Arrows getting improved even if no Will can be used
+
+			Sigils:
+			 - Buffed "Sigil of the Fast Miner" to be in accordance to the "Sanguine Scientium"
+			 - Fixed a bug where "Sigil of the Fast Miner" would also cause the whirlwind effect
+			 - Added "Whirlwind" to the potion registry
+			 - Fixed broken Sigil tooltip formatting
+			 - Fixed Sigil of Holding not updating some Sigil data, allowing for exploits
+			 - Greatly improved "Sigil of Compression" performance
+			 - Fixed "Sigil of Compression" bug that would eat leftover items (usually everything between 55 and 64 items for a 3x3 compression)
+
+			Rituals:
+			 - Ported Veil of Evil & Ward of Sacrosanctity
+			 - Fixed "Serenade of the Nether" replacing lava source blocks with lava (fixed underlying function to detect flowing liquids)
+			 - Added configurability to Ritual of the High Jump by modifying a new ritual area with the Ritual Tinkerer
+
+			Misc:
+			 - Fixed routing node oredict filter (crashes)
+			 - Fixed mimic vanishing in some cases
+			 - Fixed "Blood Letter's Pack" and "Coat of Arms" always being used in the main hand slot (action bar/hotbar)
+			 - Stop insertions into Demon Crucible if the inventory is not empty
+			 - Fixed abnormal deaths at your own hands through the sacrificial dagger (hopefully) (Gravestone bugginess)
+			 - Fixed "Unmending" mod incompatibility
+			 - Fixed Teleposers crashing the game if someone force-fed it junk
+			 - added Nut being angery at contributors for messing stuff up
+			 - Added some Russian language strings for the guide book
+			 - Added repair recipes for Sentient Tools & Living Armor to JEI
+
+			Technical Stuff no player cares about:
+			 - Formatted Project code
+			 - Fixed BlockState parsing (mimic vanishing)
+			 - Fixed some and streamlined ritual block ranges
+			 - Mystery drain still mysterious
+			 - Use TextFormatting rather than color codes in block lang names
+			 - Fixed world unload crash (may happen if a world is loaded by world generators or JEI Resource graphing)
+			 - Fixed `/bloodmagic network get` command
+			 - Added translation keys for tickethistory command help strings
+
+	CoFH Core (went from CoFHCore-1.12.2-4.6.2.25-universal.jar to CoFHCore-1.12.2-4.6.3.27-universal.jar):
+		4.6.3:
+			GENERAL:
+				-Localization!
+
+	CoFH World (went from CoFHWorld-1.12.2-1.3.0.6-universal.jar to CoFHWorld-1.12.2-1.3.1.7-universal.jar):
+		CoFHWorld-1.12.2-1.3.1.7-universal.jar:
 			No changelog provided.
 
-	Common Capabilities (went from CommonCapabilities-1.12.2-2.2.1.jar to CommonCapabilities-1.12.2-2.3.0.jar):
-		CommonCapabilities-1.12.2-2.3.0.jar:
+	Common Capabilities (went from CommonCapabilities-1.12.2-2.3.0.jar to CommonCapabilities-1.12.2-2.4.1.jar):
+		CommonCapabilities-1.12.2-2.4.1.jar:
 			As always, don't forget to backup your world before updating!
-			Requires CyclopsCore version 1.2.0 or higher.
-
-			Changes:
-			* Add containsAll and isEmpty methods to IMixedIngredients
-			 Needed for CyclopsMC/IntegratedCrafting#30
-			* Make single recipe inputs more loose
-			 For recipes that only require a single input,
-			 they can now appear anywhere within the recipe,
-			 even if there are empty slots before them.
-			 Needed for CyclopsMC/IntegratedCrafting#30
-			* Remove CyclopsCore dependency in prototyped alternatives
-			* Make ItemMatch in API independent from main mod
+			Requires CyclopsCore version 1.3.0 or higher.
 
 			Fixes:
-			* Fix ingredients being equal even if their ingred length is non-equal
-			* Fix edge-case when comparing null ItemStack tags, Closes #6
-
-	Cyclops Core (went from CyclopsCore-1.12.2-1.2.0.jar to CyclopsCore-1.12.2-1.2.1.jar):
-		CyclopsCore-1.12.2-1.2.1.jar:
+			* Fix crash when comparing recipe definitions
+			 Closes CyclopsMC/IntegratedTerminals#36
+		CommonCapabilities-1.12.2-2.4.0.jar:
 			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.3.0 or higher.
+
+			Changes:
+			* Expand SlotlessItemHandlerWrapper with multiple slots
 
 			Fixes:
-			* Fix recipe handlers having invalid interfaces, Closes CyclopsMC/IntegratedDynamics#722
+			* Fix Blood Magic orbs not autocompleting in Integrated Terminals JEI
+			 Closes CyclopsMC/IntegratedTerminals#31
 
-	Draconic Evolution (went from Draconic-Evolution-1.12.2-2.3.21.342-universal to Draconic-Evolution-1.12.2-2.3.22.343-universal):
-		Draconic-Evolution-1.12.2-2.3.22.343-universal:
-			######## 2.3.22.343 ########
-			-Fixed crash when Baubles is not installed.
-			-Optimized retro gen a little.
-			-Fixed some compounding residual particle lag.
+	CraftPresence (went from CraftPresence v1.5.3.1 (1.12.2) to CraftPresence v1.5.5 (1.12.2)):
+		CraftPresence v1.5.5 (1.12.2):
+			CraftPresence Changes
 
-			######## 2.3.21.342 ########
-			-Fixed impossible null pointer exception in ExplosionFX
-			-Added compatibility between ICustomArmor and Baubles (Allows other mods to add baubles DE armor abilities)
-			-Fixed capacitor only charging baubles when in a baubles slot.
-			-Fixed capacitor always charging baubles when in a baubles slot. (even when disabled)
-			-Added optional key bindings to cycle tool AOE.
-			-Added fully upgraded versions of all tools and armor to creative menu (and JEI).
-			-Added item blacklist for draconium chest.
-			-Particle gen render distance now depends on particle sale.
-			-Fixed Particle gen tile not getting removed when the tile is destroyed.
-			-Fixed upgrading tools not copying enchantments.
-			-Shift clicking to add fuel to a Dislocator now adds 64 at a time.
-			-Fixed out of order rows in GuiToolConfig
-			-Fixed ore generating in chaos island rings when ore gen is disabled.
-			-Fixed fusion crafter comparator output not accounting for injector tier.
+			v1.5.5 (06/07/2019)
 
-			######## 2.3.20.333 ########
-			-Fixed crash crashing/broken dislocators.
-			-Re added ore dict for nether and end draconium.
-			-Made nether, end and overworld draconium ore equivalent. (they all have the same drop rate for dusts)
-			-Increased the cluster size for overworld and nether draconium ore.
-			-Pulled PR to add shield-related config values and fixed spelling/grammar in config file
-
-	Hammer (Lib) Core (went from [1.12.2] Hammer Core - 2.0.4.6 to [1.12.2] Hammer Core - 2.0.4.7):
-		[1.12.2] Hammer Core - 2.0.4.7:
 			Changes:
 
-			 * [ Fix GuiWTFMojang!](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252ffedc32f1ae50332)
-			 * [ Update README.MD](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252feb1d1ece903cef7)
-			 * [ 47th build. A little cleanup, added IWitherProofBlock.](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fc9475514a4ea8c7)
-			 * [ Because... Mojang.](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f25c34888dd40409)
-			 * [ Add scissors, image helper, more drawing methods. Removed unused code.](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fde1fbd1231ec57f)
-			 * [ Fixed #81...](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f5ef49841597510f)
-			 * [ Fixed #90 and #93](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f628fd78c6ccbf8f)
-			 * [ Changes to client methods, recipe registry fixes.](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252ff065e8ac61d50a6)
-			 * [ Shrunk symbols, ported configs, optimised and added few things here and there](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fc5e4b1c8e731c76)
-			 * [ Fixed #85](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fd726a8f10dd5153)
-			 * [ Shaded OKHTTP3, OKIO and IO.Socket libraries.](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fc86b7d701c05062)
-			 * [ Added part rendering](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f00b8bdf508bdd6d)
-			 * [ Added langs](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f0b91c2213a93c21)
-			 * [ Added item rendering on the fly, fixed transport session send to all.](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f2b60ee8708f1ca0)
-			 * [ Added ItemStack renderer](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f0de8eebfd8dda8f)
-			 * [ 2.0.3.2](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f13c9dd2e00c2894)
-			 * [ Buch 'o' tweaks and GIF image decoder.](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252feb9cd6cf2ad7fa1)
-			 * [ Improvements to manual, remove duplicate IndexedMap](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f817f8fc3245affe)
-			 * [ Removed quite a few unused features, removed caching and ASM file saving](https://minecraft.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fb2743ebbef8e9c2)
+			 *
+			Added 1.14.2 Fabric Support (1.14 and 1.14.1 Versions are now Deprecated)
 
-	Integrated Dynamics (went from IntegratedDynamics-1.12.2-1.0.11.jar to IntegratedDynamics-1.12.2-1.0.12.jar):
-		IntegratedDynamics-1.12.2-1.0.12.jar:
+			 *
+			Commands for viewing Assets, Servers, Dimensions, GUIs, and Biomes have been changed to open their Lists in a Selector GUI
+
+			 *
+			Added Options to Accessibility GUI:
+
+			 *
+			Option to Customize GUI Background to a Color or Texture
+
+			 *
+			Extended Previous Tooltip Color Options to also be able to use a Texture
+
+			 *
+			Added Options for Language ID and Setting KeyBindings for Universal Compatibility (Custom Rift Jar no longer Required for KeyBind Fix)
+
+			 *
+			Added Options to Advanced GUI:
+
+			 *
+			Option to Disable Rendering Tooltips
+
+			 *
+			Options to Edit or Re-Sync Character and Glyph Widths
+
+			 *
+			Added an Option to Reset your Config to Default Settings
+
+			 *
+			Fully Deprecated I18n, to put Newer Translation System in Full Control
+
+			 *
+			Added Boolean to TranslationHandler to control whether Color Codes are Included in Translated Text
+
+			 *
+			Added Additional Formatting Rules to Dimension Name Formatting
+
+			 *
+			Removed some Sections of Live Editing due to Issues caused with some Config Options requiring Saving
+
+			 *
+			Changing your Split Character will now transfer your other settings to the New Character on Verification
+
+			Fixes:
+
+			 *
+			Fixes Game Crashing from Null List in Selector (Will now bring you immediately back to original Screen)
+
+			 *
+			Fixes Issues with Config Verification failing to Re-Run if it needs a full update
+
+			 *
+			Fixed Double Logging in ConfigHandler (Now has a parameter to Skip Logging at the End)
+
+			 *
+			Initialization now takes place much earlier and no longer requires Main Menu Stuff
+
+			 *
+			Fixes Improper Centering of Buttons in Advanced Settings GUI
+
+			 *
+			Fixes Several Possible Cases of NPEs
+
+			 *
+			Fixes an NPE within GUIs if Config is null
+
+			 *
+			Fixes KeyBindings not functioning when not in a Game (Now work properly once on Main Menu)
+
+			 *
+			Fixes a Bug with Translation Resource Loading (Now tries to use Main Thread Loader, then local ClassLoader)
+
+			 *
+			Fixes an Exception with Missing Format Arguments in Translation Handler
+
+			 *
+			Fixes Some Selector Titles Not being Localized Properly
+
+			 *
+			Fixes an Extremely Rare Bug with Small Icon List coming up for /cp view assets large
+
+			 *
+			Fixes some Encoding Bugs causing Translations or JSON Retrievals to have garbled data
+
+			More Information:
+
+			Command Rewrite Info:
+
+			Starting In v1.5.0, Commands for CraftPresence are now within a new menu of the Config Gui.
+
+			Along with this rewrite, take note of the following:
+
+			 *
+			Tab Completion will only work for the most likely suggestion, and will only suggest for more then 2 characters in a word.
+
+			 *
+			Only CraftPresence Commands, started with /cp or /craftpresence are Supported!
+
+			 *
+			At this time, in 1.13.2 and 1.14, The Config GUI can only open in-game due to an unknown issue.
+
+			This GUI is subject to improve as future updates are released.
+
+			1.13.x Build Info:
+
+			The Rift Edition of this Mod Requires the [Rift ModLoader](https://minecraft.curseforge.com/projects/rift) and contains the following differences to take Note of:
+
+			 * KeyCodes have changed from an LWJGL Upgrade! Be Sure to Check and Edit your KeyBinds if Migrating from 1.12.2 and Below
+			Starting In v1.5.0, The 1.13 Rift Port of CraftPresence was deprecated in favor of the 1.13.2 Rift Port
+
+			1.14.x Build Info:
+
+			The 1.14.x Port of this Mod Requires the [FabricMC ModLoader](https://minecraft.curseforge.com/projects/fabric) and contains the same differences as the 1.13.x Port
+
+			This Version of the Build is based on Minecraft Snapshots, since 1.14 is not fully released, caution is advised.
+
+			A 1.14.x Snapshot Build will be marked as BETA to match it's Snapshot Status
+
+			Legacy Build Info (Minecraft Versions 1.5.2 and Below):
+
+			Ports of this Mod for Minecraft Versions 1.5.2 and Lower are on very limited support.
+
+			Please Keep in Mind the Following:
+
+			 *
+			There is NO Support for Server RPC Displays from MC 1.2.5 and Below, due to Modding Limitations.
+
+			 *
+			Bugs that Relate with or are caused by Issues in the Vanilla CodeBase, are unlikely able to be fixed due to MC's Limitations
+
+			Please See the Mod Description // README for More Info
+
+	CraftTweaker (went from CraftTweaker2-1.12-4.1.17 to CraftTweaker2-1.12-4.1.18):
+		CraftTweaker2-1.12-4.1.18:
+			Fixed timeouts when connecting to servers
+
+			added player tick event phases
+
+			Fixed output from /ctgui
+
+			Fixed NBT matching
+
+			Fixed StringIDataParser not accepting String inputs. (Thanks Kindlich!)
+
+	Cyclops Core (went from CyclopsCore-1.12.2-1.2.1.jar to CyclopsCore-1.12.2-1.3.0.jar):
+		CyclopsCore-1.12.2-1.3.0.jar:
+			As always, don't forget to backup your world before updating!
+
+			Changes:
+			* Allow insert/extract in indexed inventories over max stack size
+			 Required for CyclopsMC/IntegratedCrafting#27
+
+			Fixes:
+			* Catch ingredient transfer for out-of-bound slots
+			 Closes CyclopsMC/IntegratedDynamics#730
+
+	FTB Utilities: Backups (went from FTBUtilitiesBackups-1.0.0.3.jar to FTBUtilitiesBackups-1.0.0.4.jar):
+		FTBUtilitiesBackups-1.0.0.4.jar:
+			 * /backup size now prints available storage and can parse TB - LatvianModder
+
+	Integrated Dynamics (went from IntegratedDynamics-1.12.2-1.0.12.jar to IntegratedDynamics-1.12.2-1.0.13.jar):
+		IntegratedDynamics-1.12.2-1.0.13.jar:
 			As always, don't forget to backup your world before updating!
 			Requires CyclopsCore version 1.1.1 or higher.
 
-			Additions:
-
 			Changes:
-			* Improve first input determination in recipe handlers
-			 Related to CyclopsMC/IntegratedCrafting#30
-			* Clarify Reader dependency in Redstone Writer advancement
-			 Closes #713
-			* Add check for list proxies that have a missing default constructor, #721
+			* Make mod compat operator names more consistent
+			 Related to CyclopsMC/IntegratedDynamics#591
+			* Improve text alignment inside Logic Programmer, Closes #591
 
-			Fixes:
-			* Make JEI recipe wrapper type checking in categories stricter
-			 Closes CyclopsMC/IntegratedDynamics#717
-			* Fix broken texture when silk touching logic programmer, Closes #728
-			* Fix fluid-based recipes matching with all fluids
-			 Closes CyclopsMC/IntegratedCrafting#28
-			* Allow all items to be inserted into mechanical machines
-			 This fixes problems with insertion order of ingredients
-			 in Integrated Crafting causing crafting errors, Closes #29
-			* Fix all list value proxies that have no default constructor
-			 This could cause a lot of log spam when list were being used
-			 with partially applied operators.
-			 Closes #721
-			* Fix crash on operator pipes with invalid second operators
-			 Closes CyclopsMC/IntegratedTunnels#160
+	Iron Chests (went from ironchest-1.12.2-7.0.59.842.jar to ironchest-1.12.2-7.0.64.843.jar):
+		ironchest-1.12.2-7.0.64.843.jar:
+			Bugfixes:
 
-	LibVulpes (went from LibVulpes 1.12.2-0.4.0-56-UNSTABLE build -56 for 1.12.2 to LibVulpes 1.12.2-0.4.0-57-UNSTABLE build -57 for 1.12.2):
-		LibVulpes 1.12.2-0.4.0-57-UNSTABLE build -57 for 1.12.2:
-			 Highly untested and may break world
+			 * Marking the chest as dirty when inserting into a full slot.
+			 * Fix support for VanillaTweaks.
+			 * Language improvements.
 
-			Current release 1.12.2-0.4.0-57
+	Mantle (went from Mantle-1.12-1.3.3.49.jar to Mantle-1.12-1.3.3.55.jar):
+		Mantle-1.12-1.3.3.55.jar:
+			* Made PulseManager::isPulseLoaded case insensitive
 
-			 * [ Volcano processing stuff](https://github.com/zmaster587/LibVulpes/commit/73cc9cd44ca508b)
-			 * [ deprecation warning](https://github.com/zmaster587/LibVulpes/commit/c51b3d5d5500a59)
-			 * [ fix broken default machine recipies](https://github.com/zmaster587/LibVulpes/commit/9e638ca5005933e)
-			 * [ Add support for full screen centered interfaces](https://github.com/zmaster587/LibVulpes/commit/523b06c66681410)
-			 * [ Fix issues where a stack with a damage of 32767 was not being consumed](https://github.com/zmaster587/LibVulpes/commit/82b0dfbd3dbf608)
-			 * [ make sure we support data values on the input](https://github.com/zmaster587/LibVulpes/commit/c30e70037d61fb9)
-			 * [ Add tooltips to multiblock machines](https://github.com/zmaster587/LibVulpes/commit/4ec17772a0e4add)
-			 * [ fix motor recipe](https://github.com/zmaster587/LibVulpes/commit/e94307c210f3175)
-			 * [ Should probably simulate fluid insertion before committing, leads to dupe if the bottom slot is full. Resolves https://github.com/zmaster587/AdvancedRocketry/issues/1502](https://github.com/zmaster587/LibVulpes/commit/3c079e1fa798cb9)
-			 * [ possible fix for https://github.com/zmaster587/AdvancedRocketry/issues/1501](https://github.com/zmaster587/LibVulpes/commit/7dbc75ce439eebd)
-			 * [ Update ru_RU.lang MC 1.12.2. LibVulpes 0.4.0-48.](https://github.com/zmaster587/LibVulpes/commit/8eadbce9177acd6)
-			 * [ Switch recipes over to the 1.12+ JSON system](https://github.com/zmaster587/LibVulpes/commit/1ef1c6daca73805)
-			 * [ Update ru_RU.lang MC 1.12.2. LibVulpes 0.3.0-45.](https://github.com/zmaster587/LibVulpes/commit/f63521bb9de6f7e)
-			 * [ when item decrmented out of existance, retain NBT data long enough to assign to the dropped item, fixes #1451](https://github.com/zmaster587/LibVulpes/commit/b6f0ff4cf1f28bd)
-			 * [ finish adding GT support](https://github.com/zmaster587/LibVulpes/commit/5737145e805c6a5)
-			 * [ add minimal GT files needed for compile](https://github.com/zmaster587/LibVulpes/commit/d15119025c8f034)
-			 * [ Refactor power stuff, add GT support](https://github.com/zmaster587/LibVulpes/commit/4a4ca41b89eb66e)
-			 * [ fix some language issues (I hope), fix issues with chunk boundries and multiblock machines](https://github.com/zmaster587/LibVulpes/commit/6ca703fe1dd8711)
-			 * [ fixes #30](https://github.com/zmaster587/LibVulpes/commit/d49963cc8859ce0)
-			 * [ Update IC2 support for 1.12 https://github.com/zmaster587/AdvancedRocketry/issues/1197](https://github.com/zmaster587/LibVulpes/commit/ded8c6dae2e6d4a)
-			 * [ prevent machines from being too greedy, fixes #1359](https://github.com/zmaster587/LibVulpes/commit/2fa75ac9df07933)
-			 * [ Don't print 'air' as a required block in the holoprojector](https://github.com/zmaster587/LibVulpes/commit/490614f2d1bab1f)
-			 * [ fix https://github.com/zmaster587/AdvancedRocketry/issues/1331](https://github.com/zmaster587/LibVulpes/commit/bf354dfa6fe9966)
-			 * [ Fluid machines will start processing when a fluid is added by bucket instead of requiring manual restart, https://github.com/zmaster587/AdvancedRocketry/issues/1313](https://github.com/zmaster587/LibVulpes/commit/77950a4c6253519)
-			 * [ update dilithium texture](https://github.com/zmaster587/LibVulpes/commit/03cc9fd03231d9a)
-			 * [ fix textures with lootbags, etc](https://github.com/zmaster587/LibVulpes/commit/9ec4208a755a1b7)
-			 * [ fix items not dropping](https://github.com/zmaster587/LibVulpes/commit/d9918b1904b9854)
-			 * [ support for https://github.com/zmaster587/AdvancedRocketry/issues/1068](https://github.com/zmaster587/LibVulpes/commit/09cfdea529c9ff0)
-			 * [ fix for https://github.com/zmaster587/AdvancedRocketry/issues/1069](https://github.com/zmaster587/LibVulpes/commit/9af291ee939dd5a)
-			 * [ fix https://github.com/zmaster587/AdvancedRocketry/issues/1039](https://github.com/zmaster587/LibVulpes/commit/33632836dac0ef8)
-			 * [ Add locale overrides for #1012](https://github.com/zmaster587/LibVulpes/commit/182587bc99b89b2)
-			 * [ Fixes jetpack toggle key #26](https://github.com/zmaster587/LibVulpes/commit/fc7f6413f69e433)
-			 * [ fix https://github.com/zmaster587/AdvancedRocketry/issues/977](https://github.com/zmaster587/LibVulpes/commit/a47c9e24e25b1e5)
-			 * [ fixes https://github.com/zmaster587/AdvancedRocketry/issues/991](https://github.com/zmaster587/LibVulpes/commit/970f3ced89b8171)
-			 * [ fixes https://github.com/zmaster587/AdvancedRocketry/issues/938#issuecomment-351028819](https://github.com/zmaster587/LibVulpes/commit/baf62e827720d18)
-			 * [ add getters for outputs](https://github.com/zmaster587/LibVulpes/commit/f603dbb45bd2941)
-			 * [ add getters for outputs, update build num](https://github.com/zmaster587/LibVulpes/commit/5c39a00e823ef8d)
-			 * [ fix itemHandler, https://github.com/zmaster587/AdvancedRocketry/issues/954](https://github.com/zmaster587/LibVulpes/commit/f052c4110d22306)
-			 * [ disable curse builds temporarily](https://github.com/zmaster587/LibVulpes/commit/c237fc105fd7ad9)
-			 * [ update artefact location for git](https://github.com/zmaster587/LibVulpes/commit/b620c33dd67e3d6)
-			 * [ fix https://github.com/zmaster587/AdvancedRocketry/issues/939](https://github.com/zmaster587/LibVulpes/commit/2c59e0e8ea088e0)
-			 * [ add curseforge and changelog tasks.](https://github.com/zmaster587/LibVulpes/commit/38fcb72a4b0f478)
+			* Allow PulseManager::isPulseLoaded to check if pulses from other Mantle mods are loaded, instead of just the same mod
 
-	PlusTiC (went from plustic-7.0.6.1.jar to plustic-7.0.7.0.jar):
-		plustic-7.0.7.0.jar:
-			 * Add Peridot ConArm support
-			 * Several bugfixes
+			* Added static PulseManager::isPulseLoadedGlobal, checks if a pulse is loaded without a PulseManager instance. Can be used by ModuleFileRepository to instantiate without a pulse manager
 
-	Quark (went from Quark-r1.5-150.jar to Quark-r1.5-152.jar):
-		Quark-r1.5-152.jar:
-			- Management: Fixed a crash when opening the player's inventory under certain circumstances.
-		Quark-r1.5-151.jar:
-			- General: Added a proper AutoRegLib dep so people know to use the proper version.
-			- General: Added proper subtitles to quark's sound effects.
-			- General: Fixed Chisel Compatibility not working properly.
-			- Client: The slot the player is hovering over is no longer highlighted for the invalid slots feature.
-			- Client: The Usage Ticker is now a bit smarter at figuring out which items to show.
-			- Client: Upgraded the abilities of Visual Stat Display, it can now display a ton more attributes.
-			- Experimental: Added a debug feature to dump the texture atlas.
-			- Management: Fixed a crash when opening the inventory.
-			- Oddities: Fixed fake client side Totems of Holding showing up.
-			- Oddities: Fixed pipes rendering incorrectly in some modpack setups.
-			- Oddities: Open ended pipe ends now have a new model to show they have special properties.
-			- Oddities: Upgraded pipes with the ability to succ in items that go onto them.
-			- Tweaks: Fixed ladders being used up if used on a ladder at the bottom of the world.
-			- Vanity: Fixed Chests in Boats vanishing on the client.
-			- Vanity: Fixed emote rows being flipped.
-			- Vanity: Witch hats now make witches ignore you.
-			- World: Added Monster Boxes to underground cave generation.
-			- World: Added the Stoneling mob, and its drop, the Heart of Diamond.
-			- World: Fixed the Archeologist Hat destroying items if you break some blocks.
+			* ModuleFileRepository sections now support attaching a module dependency to pages instead of just sections
 
-	RandomPatches (went from RandomPatches 1.12.2-1.15.0.2 to RandomPatches 1.12.2-1.15.1.0):
-		RandomPatches 1.12.2-1.15.1.0:
-			The potion glowing effect is now toggleable in-game.
-			Custom window icons are now loaded earlier.
-			Fixed 1.8 compatibility again.
-		RandomPatches 1.12.2-1.15.0.3:
-			Fixed the faster language switching patch.
-			Changed the End portal and End gateway break particle textures to obsidian to match Minecraft 1.13+.
+	McJtyLib (went from McJtyLib - 1.12-3.5.2 to McJtyLib - 1.12-3.5.3):
+		McJtyLib - 1.12-3.5.3:
+			 - Added withRotation() to BaseBlock making all McJtyLib based blocks rotatable
+			 - Osmium0001 added a way to copy/paste selections in all McJtyLib textfields (use shift arrow keys to make selections)
+			 - Osmium0001 fixed logging for McJtyLib so it is tagged with the correct mod
 
-	Reborn Storage (went from RebornStorage-1.12.2-3.3.2.79.jar to RebornStorage-1.12.2-3.3.3.83.jar):
-		RebornStorage-1.12.2-3.3.3.83.jar:
+	Mekanism (went from Mekanism-1.12.2-9.7.4.375.jar to Mekanism-1.12.2-9.7.5.376.jar):
+		Mekanism-1.12.2-9.7.5.376.jar:
+			[0a9c253](https://github.com/mekanism-mod/Mekanism/commit/0a9c253f0fa8479491fcfdbf090fdae74db0d12d)- skip acceptor if it's TileEntity is null, because the tile has unloaded (reported on discord)[ad47302](https://github.com/mekanism-mod/Mekanism/commit/ad47302b26ad243e1f42e1e31ad4d922b04a0e67)- Cleanup DynamicNetwork API ([#5460](https://github.com/mekanism-mod/Mekanism/issues/5460))[352fddb](https://github.com/mekanism-mod/Mekanism/commit/352fddbf00f46cf787dd21053049cd0703af6979)- Logistical sorter - single item & muffling upgrade ([#5446](https://github.com/mekanism-mod/Mekanism/issues/5446))[b570ef7](https://github.com/mekanism-mod/Mekanism/commit/b570ef71106847b9b55d78aca4093d546444ffdb)- Codestyle ([#5463](https://github.com/mekanism-mod/Mekanism/issues/5463))[31b06c0](https://github.com/mekanism-mod/Mekanism/commit/31b06c0ab0c260a18554ad4989f62622781bc991)- Keybindings optimisations ([#5389](https://github.com/mekanism-mod/Mekanism/issues/5389))[91ef2a5](https://github.com/mekanism-mod/Mekanism/commit/91ef2a5c3de980b9328b3189e5c4851c2127ba37)- add energy storage settings category to config gui. closes[#5465](https://github.com/mekanism-mod/Mekanism/issues/5465)[0d4b509](https://github.com/mekanism-mod/Mekanism/commit/0d4b50908f1b8a5334b436d243f2cb97b014d687)- Formatting and code readability cleanup ([#5467](https://github.com/mekanism-mod/Mekanism/issues/5467))[40620ec](https://github.com/mekanism-mod/Mekanism/commit/40620ec23be3658e4fb2b149c5ee7229ba870e05)- Fix loading gas tank's with null gas stored. Fixes[#5470](https://github.com/mekanism-mod/Mekanism/issues/5470)[80b07bc](https://github.com/mekanism-mod/Mekanism/commit/80b07bc4b3f919d7a862e99bf7260d0a2ef09d2d)- Code cleanup ([#5468](https://github.com/mekanism-mod/Mekanism/issues/5468))[aa10503](https://github.com/mekanism-mod/Mekanism/commit/aa1050352b392e19dc51b46c482adf35c536e3d9)- Atomic Disassembler Grass Path Block Tweak ([#5471](https://github.com/mekanism-mod/Mekanism/issues/5471))[ef6e17e](https://github.com/mekanism-mod/Mekanism/commit/ef6e17e37712c6f5060e6717ae8d272551415727)- Don't auto clear configuration card after pasting. Closes[#5442](https://github.com/mekanism-mod/Mekanism/issues/5442)[52796ff](https://github.com/mekanism-mod/Mekanism/commit/52796ff18ff5af72ce6a5b916833238bab5ac53e)- Only mark the chargepad as active if it has energy. Fixes[#5472](https://github.com/mekanism-mod/Mekanism/issues/5472)[c8d2fbb](https://github.com/mekanism-mod/Mekanism/commit/c8d2fbbac8c2db3291e8eee7d7e6beddc0672d53)- Add comparator support for a large number of blocks ([#5474](https://github.com/mekanism-mod/Mekanism/issues/5474))[2809912](https://github.com/mekanism-mod/Mekanism/commit/28099120377ab90bcb08218abe0b9856f719a991)- Induction matrix optimization ([#5462](https://github.com/mekanism-mod/Mekanism/issues/5462))[d6bca94](https://github.com/mekanism-mod/Mekanism/commit/d6bca945fecad04ab0ecc9663f981ea3c7d0374d)- Make Refined Obsidian usable for Nether Portals ([#5479](https://github.com/mekanism-mod/Mekanism/issues/5479))[b4572a2](https://github.com/mekanism-mod/Mekanism/commit/b4572a2023d08d6b881dfa719e965ecb63012f8d)- Add support for adding/removing item to gas conversions via crafttweaker also run formatter to fix spacing/ensure import order is correct[959f7e9](https://github.com/mekanism-mod/Mekanism/commit/959f7e994f3124851b3c1be6da827f853ce88266)- Bump version to 9.7.5
+
+	Mekanism Generators (went from MekanismGenerators-1.12.2-9.7.4.375.jar to MekanismGenerators-1.12.2-9.7.5.376.jar):
+		MekanismGenerators-1.12.2-9.7.5.376.jar:
+			[0a9c253](https://github.com/mekanism-mod/Mekanism/commit/0a9c253f0fa8479491fcfdbf090fdae74db0d12d)- skip acceptor if it's TileEntity is null, because the tile has unloaded (reported on discord)[ad47302](https://github.com/mekanism-mod/Mekanism/commit/ad47302b26ad243e1f42e1e31ad4d922b04a0e67)- Cleanup DynamicNetwork API ([#5460](https://github.com/mekanism-mod/Mekanism/issues/5460))[352fddb](https://github.com/mekanism-mod/Mekanism/commit/352fddbf00f46cf787dd21053049cd0703af6979)- Logistical sorter - single item & muffling upgrade ([#5446](https://github.com/mekanism-mod/Mekanism/issues/5446))[b570ef7](https://github.com/mekanism-mod/Mekanism/commit/b570ef71106847b9b55d78aca4093d546444ffdb)- Codestyle ([#5463](https://github.com/mekanism-mod/Mekanism/issues/5463))[31b06c0](https://github.com/mekanism-mod/Mekanism/commit/31b06c0ab0c260a18554ad4989f62622781bc991)- Keybindings optimisations ([#5389](https://github.com/mekanism-mod/Mekanism/issues/5389))[91ef2a5](https://github.com/mekanism-mod/Mekanism/commit/91ef2a5c3de980b9328b3189e5c4851c2127ba37)- add energy storage settings category to config gui. closes[#5465](https://github.com/mekanism-mod/Mekanism/issues/5465)[0d4b509](https://github.com/mekanism-mod/Mekanism/commit/0d4b50908f1b8a5334b436d243f2cb97b014d687)- Formatting and code readability cleanup ([#5467](https://github.com/mekanism-mod/Mekanism/issues/5467))[40620ec](https://github.com/mekanism-mod/Mekanism/commit/40620ec23be3658e4fb2b149c5ee7229ba870e05)- Fix loading gas tank's with null gas stored. Fixes[#5470](https://github.com/mekanism-mod/Mekanism/issues/5470)[80b07bc](https://github.com/mekanism-mod/Mekanism/commit/80b07bc4b3f919d7a862e99bf7260d0a2ef09d2d)- Code cleanup ([#5468](https://github.com/mekanism-mod/Mekanism/issues/5468))[aa10503](https://github.com/mekanism-mod/Mekanism/commit/aa1050352b392e19dc51b46c482adf35c536e3d9)- Atomic Disassembler Grass Path Block Tweak ([#5471](https://github.com/mekanism-mod/Mekanism/issues/5471))[ef6e17e](https://github.com/mekanism-mod/Mekanism/commit/ef6e17e37712c6f5060e6717ae8d272551415727)- Don't auto clear configuration card after pasting. Closes[#5442](https://github.com/mekanism-mod/Mekanism/issues/5442)[52796ff](https://github.com/mekanism-mod/Mekanism/commit/52796ff18ff5af72ce6a5b916833238bab5ac53e)- Only mark the chargepad as active if it has energy. Fixes[#5472](https://github.com/mekanism-mod/Mekanism/issues/5472)[c8d2fbb](https://github.com/mekanism-mod/Mekanism/commit/c8d2fbbac8c2db3291e8eee7d7e6beddc0672d53)- Add comparator support for a large number of blocks ([#5474](https://github.com/mekanism-mod/Mekanism/issues/5474))[2809912](https://github.com/mekanism-mod/Mekanism/commit/28099120377ab90bcb08218abe0b9856f719a991)- Induction matrix optimization ([#5462](https://github.com/mekanism-mod/Mekanism/issues/5462))[d6bca94](https://github.com/mekanism-mod/Mekanism/commit/d6bca945fecad04ab0ecc9663f981ea3c7d0374d)- Make Refined Obsidian usable for Nether Portals ([#5479](https://github.com/mekanism-mod/Mekanism/issues/5479))[b4572a2](https://github.com/mekanism-mod/Mekanism/commit/b4572a2023d08d6b881dfa719e965ecb63012f8d)- Add support for adding/removing item to gas conversions via crafttweaker also run formatter to fix spacing/ensure import order is correct[959f7e9](https://github.com/mekanism-mod/Mekanism/commit/959f7e994f3124851b3c1be6da827f853ce88266)- Bump version to 9.7.5
+
+	Mekanism Tools (went from MekanismTools-1.12.2-9.7.4.375.jar to MekanismTools-1.12.2-9.7.5.376.jar):
+		MekanismTools-1.12.2-9.7.5.376.jar:
+			[0a9c253](https://github.com/mekanism-mod/Mekanism/commit/0a9c253f0fa8479491fcfdbf090fdae74db0d12d)- skip acceptor if it's TileEntity is null, because the tile has unloaded (reported on discord)[ad47302](https://github.com/mekanism-mod/Mekanism/commit/ad47302b26ad243e1f42e1e31ad4d922b04a0e67)- Cleanup DynamicNetwork API ([#5460](https://github.com/mekanism-mod/Mekanism/issues/5460))[352fddb](https://github.com/mekanism-mod/Mekanism/commit/352fddbf00f46cf787dd21053049cd0703af6979)- Logistical sorter - single item & muffling upgrade ([#5446](https://github.com/mekanism-mod/Mekanism/issues/5446))[b570ef7](https://github.com/mekanism-mod/Mekanism/commit/b570ef71106847b9b55d78aca4093d546444ffdb)- Codestyle ([#5463](https://github.com/mekanism-mod/Mekanism/issues/5463))[31b06c0](https://github.com/mekanism-mod/Mekanism/commit/31b06c0ab0c260a18554ad4989f62622781bc991)- Keybindings optimisations ([#5389](https://github.com/mekanism-mod/Mekanism/issues/5389))[91ef2a5](https://github.com/mekanism-mod/Mekanism/commit/91ef2a5c3de980b9328b3189e5c4851c2127ba37)- add energy storage settings category to config gui. closes[#5465](https://github.com/mekanism-mod/Mekanism/issues/5465)[0d4b509](https://github.com/mekanism-mod/Mekanism/commit/0d4b50908f1b8a5334b436d243f2cb97b014d687)- Formatting and code readability cleanup ([#5467](https://github.com/mekanism-mod/Mekanism/issues/5467))[40620ec](https://github.com/mekanism-mod/Mekanism/commit/40620ec23be3658e4fb2b149c5ee7229ba870e05)- Fix loading gas tank's with null gas stored. Fixes[#5470](https://github.com/mekanism-mod/Mekanism/issues/5470)[80b07bc](https://github.com/mekanism-mod/Mekanism/commit/80b07bc4b3f919d7a862e99bf7260d0a2ef09d2d)- Code cleanup ([#5468](https://github.com/mekanism-mod/Mekanism/issues/5468))[aa10503](https://github.com/mekanism-mod/Mekanism/commit/aa1050352b392e19dc51b46c482adf35c536e3d9)- Atomic Disassembler Grass Path Block Tweak ([#5471](https://github.com/mekanism-mod/Mekanism/issues/5471))[ef6e17e](https://github.com/mekanism-mod/Mekanism/commit/ef6e17e37712c6f5060e6717ae8d272551415727)- Don't auto clear configuration card after pasting. Closes[#5442](https://github.com/mekanism-mod/Mekanism/issues/5442)[52796ff](https://github.com/mekanism-mod/Mekanism/commit/52796ff18ff5af72ce6a5b916833238bab5ac53e)- Only mark the chargepad as active if it has energy. Fixes[#5472](https://github.com/mekanism-mod/Mekanism/issues/5472)[c8d2fbb](https://github.com/mekanism-mod/Mekanism/commit/c8d2fbbac8c2db3291e8eee7d7e6beddc0672d53)- Add comparator support for a large number of blocks ([#5474](https://github.com/mekanism-mod/Mekanism/issues/5474))[2809912](https://github.com/mekanism-mod/Mekanism/commit/28099120377ab90bcb08218abe0b9856f719a991)- Induction matrix optimization ([#5462](https://github.com/mekanism-mod/Mekanism/issues/5462))[d6bca94](https://github.com/mekanism-mod/Mekanism/commit/d6bca945fecad04ab0ecc9663f981ea3c7d0374d)- Make Refined Obsidian usable for Nether Portals ([#5479](https://github.com/mekanism-mod/Mekanism/issues/5479))[b4572a2](https://github.com/mekanism-mod/Mekanism/commit/b4572a2023d08d6b881dfa719e965ecb63012f8d)- Add support for adding/removing item to gas conversions via crafttweaker also run formatter to fix spacing/ensure import order is correct[959f7e9](https://github.com/mekanism-mod/Mekanism/commit/959f7e994f3124851b3c1be6da827f853ce88266)- Bump version to 9.7.5
+
+	Modular Powersuits (went from ModularPowersuits-1.12.2-1.0.40 to ModularPowersuits-1.12.2-1.0.41):
+		ModularPowersuits-1.12.2-1.0.41:
+			note: requires [Numina-1.12.2-1.0.38 or later. ](https://minecraft.curseforge.com/projects/numina/files/2715198)
+
+			 * Updated OmniProbe module to actually do "something"
+			 * added support for server side custom install cost settings.
+			 * probably other stuff I forgot about :P
+
+	Numina (went from Numina-1.12.2-1.0.37 to Numina-1.12.2-1.0.38):
+		Numina-1.12.2-1.0.38:
+			support custom install costs by server settings synced to client.
+
+	OMLib (went from omlib-1.12.2-3.0.1-162.jar to omlib-1.12.2-3.1.0-233.jar):
+		omlib-1.12.2-3.1.0-233.jar:
+			Additions
+
+			 * added network code
+			 * enabled better camo support
+			 * tile entity register proxy method
+			 * global trusted player system
+			 * new trusted player GUI
+			 * new GUI framework basics
+			 * new localization strings
+			Changes
+
+			 * changeowner command refactoring
+			 * a lot of new utility code
+			Fixes
+
+			 * easier float conversion
+		omlib-1.12.2-3.1.0-232.jar:
+			Additions
+
+			 * added network code
+			 * enabled better camo support
+			 * tile entity register proxy method
+			 * global trusted player system
+			 * new trusted player GUI
+			 * new localization strings
+			Changes
+
+			 * changeowner command refactoring
+			 * a lot of new utility code
+			Fixes
+
+			 * easier float conversion
+		omlib-1.12.2-3.1.0-229.jar:
+			Additions
+
+			 * added network code
+			 * enabled better camo support
+			 * tile entity register proxy method
+			 * global trusted player system
+			 * new trusted player GUI
+			 * new localization strings
+			Changes
+
+			 * changeowner command refactoring
+			Fixes
+
+			 * easier float conversion
+		omlib-1.12.2-3.1.0-228.jar:
+			Additions
+
+			 * added network code
+			 * enabled better camo support
+			 * tile entity register proxy method
+			 * global trusted player system
+			 * new trusted player GUI
+			 * new localization strings
+			Changes
+
+			 * changeowner command refactoring
+			Fixes
+
+			 * easier float conversion
+		omlib-1.12.2-3.1.0-227.jar:
+			Additions
+
+			 * added network code
+			 * enabled better camo support
+			 * tile entity register proxy method
+			 * global trusted player system
+			 * new trusted player GUI
+			 * new localization strings
+			Changes
+
+			 * changeowner command refactoring
+			Fixes
+
+			 * easier float conversion
+		omlib-1.12.2-3.1.0-226.jar:
+			Additions
+
+			 * added network code
+			 * enabled better camo support
+			 * tile entity register proxy method
+			 * global trusted player system
+			 * new trusted player GUI
+			 * new localization strings
+			Changes
+
+			 * changeowner command refactoring
+			Fixes
+
+			 * easier float conversion
+		omlib-1.12.2-3.1.0-224.jar:
+			Additions
+
+			 * added network code
+			 * enabled better camo support
+			 * tile entity register proxy method
+			 * global trusted player system
+			 * new trusted player GUI
+			 * new localization strings
+			Changes
+
+			 * changeowner command refactoring
+			Fixes
+
+			 * easier float conversion
+		omlib-1.12.2-3.1.0-223.jar:
+			Additions
+
+			 * added network code
+			 * enabled better camo support
+			 * tile entity register proxy method
+			 * global trusted player system
+			 * new trusted player GUI
+			 * new localization strings
+			Changes
+
+			 * changeowner command refactoring
+			Fixes
+
+			 * easier float conversion
+		omlib-1.12.2-3.1.0-221.jar:
+			Additions
+
+			 * added network code
+			 * enabled better camo support
+			 * tile entity register proxy method
+			 * global trusted player system
+			 * new trusted player GUI
+			Changes
+
+			 * changeowner command refactoring
+			Fixes
+
+			 * easier float conversion
+		omlib-1.12.2-3.1.0-208.jar:
+			Additions
+
+			 * added network code
+			 * enabled better camo support
+			 * tile entity register proxy method
+			Changes
+
+			 * changeowner command refactoring
+			Fixes
+
+			 * easier float conversion
+		omlib-1.12.2-3.1.0-206.jar:
+			Additions
+
+			 * added network code
+			 * enabled better camo support
+			 * tile entity register proxy method
+			Changes
+
+			 * changeowner command refactoring
+			Fixes
+
+			 * easier float conversion
+		omlib-1.12.2-3.1.0-203.jar:
+			Additions
+
+			 * added network code
+			 * enabled better camo support
+			 * tile entity register proxy method
+			Changes
+
+			 * changeowner command refactoring
+			Fixes
+
+			 * easier float conversion
+		omlib-1.12.2-3.1.0-202.jar:
+			Additions
+
+			 * added network code
+			 * enabled better camo support
+			 * tile entity register proxy method
+			Changes
+
+			 * changeowner command refactoring
+			Fixes
+
+			 * easier float conversion
+		omlib-1.12.2-3.1.0-195.jar:
+			Additions
+
+			 * added network code
+			 * enabled better camo support
+			Changes
+
+			 * changeowner command refactoring
+			Fixes
+
+			 * easier float conversion
+
+	OpenModularTurrets (went from openmodularturrets-1.12.2-3.0.1-264.jar to openmodularturrets-1.12.2-3.1.0-336.jar):
+		openmodularturrets-1.12.2-3.1.0-336.jar:
+			Additions
+
+			 * customize addons/upgrades per turret
+			 * light value and transparent blocks for camo mode
+			 * turret limits for bases
+			 * config option to always conceal turrets
+			 * team members no longer get damaged
+			 * Tier 5 base now has a built-in serial port
+			 * base addon that removes loot from hit targets
+			Changes
+
+			 * moved network code to OMLib
+			 * improved the trusted player system
+			 * new trusted player GUI (in OMLib)
+			 * reworked GUIs
+			 * changed the laser to be more real life accurate
+			 * laser now deals bonus damage to unarmored targets (0.6x-1.6x damage)
+			 * railgun deals increased damage against armored targets (0.6x-1.6x damage)
+			 * railgun rendering update
+			 * new expander textures (by Austin5003)
+			Fixes
+
+			 * range upgrades work properly now
+			 * EU Buffer code
+			 * base breakability
+			 * camo with chisel blocks
+			 * Disposable turret now ignores other turrets ammo
+			 * Projectile fixes (WIP)
+		openmodularturrets-1.12.2-3.1.0-335.jar:
+			Additions
+
+			 * customize addons/upgrades per turret
+			 * light value and transparent blocks for camo mode
+			 * turret limits for bases
+			 * config option to always conceal turrets
+			 * team members no longer get damaged
+			 * Tier 5 base now has a built-in serial port
+			 * base addon that removes loot from hit targets
+			Changes
+
+			 * moved network code to OMLib
+			 * improved the trusted player system
+			 * new trusted player GUI (in OMLib)
+			 * reworked GUIs
+			 * changed the laser to be more real life accurate
+			 * laser now deals bonus damage to unarmored targets (0.6x-1.6x damage)
+			 * railgun deals increased damage against armored targets (0.6x-1.6x damage)
+			 * railgun rendering update
+			 * new expander textures (by Austin5003)
+			Fixes
+
+			 * range upgrades work properly now
+			 * EU Buffer code
+			 * base breakability
+			 * camo with chisel blocks
+			 * Disposable turret now ignores other turrets ammo
+			 * Projectile fixes (WIP)
+		openmodularturrets-1.12.2-3.1.0-332.jar:
+			Additions
+
+			 * customize addons/upgrades per turret
+			 * light value and transparent blocks for camo mode
+			 * turret limits for bases
+			 * config option to always conceal turrets
+			 * team members no longer get damaged
+			 * Tier 5 base now has a built-in serial port
+			 * base addon that removes loot from hit targets
+			Changes
+
+			 * moved network code to OMLib
+			 * improved the trusted player system
+			 * new trusted player GUI (in OMLib)
+			 * reworked GUIs
+			 * changed the laser to be more real life accurate
+			 * laser now deals bonus damage to unarmored targets (0.6x-1.6x damage)
+			 * railgun deals increased damage against armored targets (0.6x-1.6x damage)
+			 * railgun rendering update
+			 * new expander textures (by Austin5003)
+			Fixes
+
+			 * range upgrades work properly now
+			 * EU Buffer code
+			 * base breakability
+			 * camo with chisel blocks
+			 * Disposable turret now ignores other turrets ammo
+			 * Projectile fixes (WIP)
+		openmodularturrets-1.12.2-3.1.0-331.jar:
+			Additions
+
+			 * customize addons/upgrades per turret
+			 * light value and transparent blocks for camo mode
+			 * turret limits for bases
+			 * config option to always conceal turrets
+			 * team members no longer get damaged
+			 * Tier 5 base now has a built-in serial port
+			 * base addon that removes loot from hit targets
+			Changes
+
+			 * moved network code to OMLib
+			 * improved the trusted player system
+			 * new trusted player GUI (in OMLib)
+			 * reworked GUIs
+			 * changed the laser to be more real life accurate
+			 * laser now deals bonus damage to unarmored targets (0.6x-1.6x damage)
+			 * railgun deals increased damage against armored targets (0.6x-1.6x damage)
+			 * railgun rendering update
+			 * new expander textures (by Austin5003)
+			Fixes
+
+			 * range upgrades work properly now
+			 * EU Buffer code
+			 * base breakability
+			 * camo with chisel blocks
+			 * Disposable turret now ignores other turrets ammo
+			 * Projectile fixes (WIP)
+		openmodularturrets-1.12.2-3.1.0-330.jar:
+			Additions
+
+			 * customize addons/upgrades per turret
+			 * light value and transparent blocks for camo mode
+			 * turret limits for bases
+			 * config option to always conceal turrets
+			 * team members no longer get damaged
+			 * Tier 5 base now has a built-in serial port
+			 * base addon that removes loot from hit targets
+			Changes
+
+			 * moved network code to OMLib
+			 * improved the trusted player system
+			 * new trusted player GUI (in OMLib)
+			 * reworked GUIs
+			 * changed the laser to be more real life accurate
+			 * laser now deals bonus damage to unarmored targets (0.6x-1.6x damage)
+			 * railgun deals increased damage against armored targets (0.6x-1.6x damage)
+			 * railgun rendering update
+			 * new expander textures (by Austin5003)
+			Fixes
+
+			 * range upgrades work properly now
+			 * EU Buffer code
+			 * base breakability
+			 * camo with chisel blocks
+			 * Disposable turret now ignores other turrets ammo
+			 * Projectile fixes (WIP)
+		openmodularturrets-1.12.2-3.1.0-329.jar:
+			Additions
+
+			 * customize addons/upgrades per turret
+			 * light value and transparent blocks for camo mode
+			 * turret limits for bases
+			 * config option to always conceal turrets
+			 * team members no longer get damaged
+			 * Tier 5 base now has a built-in serial port
+			 * base addon that removes loot from hit targets
+			Changes
+
+			 * moved network code to OMLib
+			 * improved the trusted player system
+			 * new trusted player GUI (in OMLib)
+			 * reworked GUIs
+			 * changed the laser to be more real life accurate
+			 * laser now deals bonus damage to unarmored targets (0.6x-1.6x damage)
+			 * railgun deals increased damage against armored targets (0.6x-1.6x damage)
+			 * railgun rendering update
+			 * new expander textures (by Austin5003)
+			Fixes
+
+			 * range upgrades work properly now
+			 * EU Buffer code
+			 * base breakability
+			 * camo with chisel blocks
+			 * Disposable turret now ignores other turrets ammo
+			 * Projectile fixes (WIP)
+		openmodularturrets-1.12.2-3.1.0-328.jar:
+			Additions
+
+			 * customize addons/upgrades per turret
+			 * light value and transparent blocks for camo mode
+			 * turret limits for bases
+			 * config option to always conceal turrets
+			 * team members no longer get damaged
+			 * Tier 5 base now has a built-in serial port
+			 * base addon that removes loot from hit targets
+			Changes
+
+			 * moved network code to OMLib
+			 * improved the trusted player system
+			 * new trusted player GUI (in OMLib)
+			 * reworked GUIs
+			 * changed the laser to be more real life accurate
+			 * laser now deals bonus damage to unarmored targets (0.6x-1.6x damage)
+			 * railgun deals increased damage against armored targets (0.6x-1.6x damage)
+			 * railgun rendering update
+			 * new expander textures (by Austin5003)
+			Fixes
+
+			 * range upgrades work properly now
+			 * EU Buffer code
+			 * base breakability
+			 * camo with chisel blocks
+			 * Disposable turret now ignores other turrets ammo
+			 * Projectile fixes (WIP)
+		openmodularturrets-1.12.2-3.1.0-327.jar:
+			Additions
+
+			 * customize addons/upgrades per turret
+			 * light value and transparent blocks for camo mode
+			 * turret limits for bases
+			 * config option to always conceal turrets
+			 * team members no longer get damaged
+			 * Tier 5 base now has a built-in serial port
+			 * base addon that removes loot from hit targets
+			Changes
+
+			 * moved network code to OMLib
+			 * improved the trusted player system
+			 * new trusted player GUI (in OMLib)
+			 * reworked GUIs
+			 * changed the laser to be more real life accurate
+			 * laser now deals bonus damage to unarmored targets (0.6x-1.6x damage)
+			 * railgun deals increased damage against armored targets (0.6x-1.6x damage)
+			 * railgun rendering update
+			 * new expander textures (by Austin5003)
+			Fixes
+
+			 * range upgrades work properly now
+			 * EU Buffer code
+			 * base breakability
+			 * camo with chisel blocks
+			 * Disposable turret now ignores other turrets ammo
+			 * Projectile fixes (WIP)
+		openmodularturrets-1.12.2-3.1.0-326.jar:
+			Additions
+
+			 * customize addons/upgrades per turret
+			 * light value and transparent blocks for camo mode
+			 * turret limits for bases
+			 * config option to always conceal turrets
+			 * team members no longer get damaged
+			 * Tier 5 base now has a built-in serial port
+			 * base addon that removes loot from hit targets
+			Changes
+
+			 * moved network code to OMLib
+			 * improved the trusted player system
+			 * new trusted player GUI (in OMLib)
+			 * reworked GUIs
+			 * changed the laser to be more real life accurate
+			 * laser now deals bonus damage to unarmored targets (0.6x-1.6x damage)
+			 * railgun deals increased damage against armored targets (0.6x-1.6x damage)
+			 * railgun rendering update
+			 * new expander textures (by Austin5003)
+			Fixes
+
+			 * range upgrades work properly now
+			 * EU Buffer code
+			 * base breakability
+			 * camo with chisel blocks
+			 * Disposable turret now ignores other turrets ammo
+			 * Projectile fixes (WIP)
+		openmodularturrets-1.12.2-3.1.0-325.jar:
+			Additions
+
+			 * customize addons/upgrades per turret
+			 * light value and transparent blocks for camo mode
+			 * turret limits for bases
+			 * config option to always conceal turrets
+			 * team members no longer get damaged
+			 * Tier 5 base now has a built-in serial port
+			 * base addon that removes loot from hit targets
+			Changes
+
+			 * moved network code to OMLib
+			 * improved the trusted player system
+			 * new trusted player GUI (in OMLib)
+			 * reworked GUIs
+			 * changed the laser to be more real life accurate
+			 * laser now deals bonus damage to unarmored targets (0.6x-1.6x damage)
+			 * railgun deals increased damage against armored targets (0.6x-1.6x damage)
+			 * railgun rendering update
+			 * new expander textures (by Austin5003)
+			Fixes
+
+			 * range upgrades work properly now
+			 * EU Buffer code
+			 * base breakability
+			 * camo with chisel blocks
+			 * Disposable turret now ignores other turrets ammo
+			 * Projectile fixes (WIP)
+		openmodularturrets-1.12.2-3.1.0-324.jar:
+			Additions
+
+			 * customize addons/upgrades per turret
+			 * light value and transparent blocks for camo mode
+			 * turret limits for bases
+			 * config option to always conceal turrets
+			 * team members no longer get damaged
+			 * Tier 5 base now has a built-in serial port
+			 * base addon that removes loot from hit targets
+			Changes
+
+			 * moved network code to OMLib
+			 * improved the trusted player system
+			 * new trusted player GUI (in OMLib)
+			 * reworked GUIs
+			 * changed the laser to be more real life accurate
+			 * laser now deals bonus damage to unarmored targets (0.6x-1.6x damage)
+			 * railgun deals increased damage against armored targets (0.6x-1.6x damage)
+			 * railgun rendering update
+			 * new expander textures (by Austin5003)
+			Fixes
+
+			 * range upgrades work properly now
+			 * EU Buffer code
+			 * base breakability
+			 * camo with chisel blocks
+			 * Disposable turret now ignores other turrets ammo
+		openmodularturrets-1.12.2-3.1.0-306.jar:
+			Additions
+
+			 * customize addons/upgrades per turret
+			 * light value and transparent blocks for camo mode
+			 * turret limits for bases
+			 * config option to always conceal turrets
+			 * team members no longer get damaged
+			 * Tier 5 base now has a built-in serial port
+			 * base addon that removes loot from hit targets
+			Changes
+
+			 * moved network code to OMLib
+			 * improved the trusted player system
+			 * reworked GUIs
+			 * changed the laser to be more real life accurate
+			 * laser now deals bonus damage to unarmored targets (0.6x-1.6x damage)
+			 * railgun deals increased damage against armored targets (0.6x-1.6x damage)
+			 * railgun rendering update
+			 * new expander textures (by Austin5003)
+			Fixes
+
+			 * range upgrades work properly now
+			 * EU Buffer code
+			 * base breakability
+			 * camo with chisel blocks
+			 * Disposable turret now ignores other turrets ammo
+		openmodularturrets-1.12.2-3.1.0-305.jar:
+			Additions
+
+			 * customize addons/upgrades per turret
+			 * light value and transparent blocks for camo mode
+			 * turret limits for bases
+			 * config option to always conceal turrets
+			 * team members no longer get damaged
+			 * Tier 5 base now has a built-in serial port
+			 * base addon that removes loot from hit targets
+			Changes
+
+			 * moved network code to OMLib
+			 * improved the trusted player system
+			 * reworked GUIs
+			 * changed the laser to be more real life accurate
+			 * laser now deals bonus damage to unarmored targets (0.6x-1.6x damage)
+			 * railgun deals increased damage against armored targets (0.6x-1.6x damage)
+			 * railgun rendering update
+			 * new expander textures (by Austin5003)
+			Fixes
+
+			 * range upgrades work properly now
+			 * EU Buffer code
+			 * base breakability
+			 * camo with chisel blocks
+			 * Disposable turret now ignores other turrets ammo
+		openmodularturrets-1.12.2-3.1.0-304.jar:
+			Additions
+
+			 * customize addons/upgrades per turret
+			 * light value and transparent blocks for camo mode
+			 * turret limits for bases
+			 * config option to always conceal turrets
+			 * team members no longer get damaged
+			 * Tier 5 base now has a built-in serial port
+			 * base addon that removes loot from hit targets
+			Changes
+
+			 * moved network code to OMLib
+			 * improved the trusted player system
+			 * reworked GUIs
+			 * changed the laser to be more real life accurate
+			 * laser now deals bonus damage to unarmored targets (0.6x-1.6x damage)
+			 * railgun deals increased damage against armored targets (0.6x-1.6x damage)
+			 * railgun rendering update
+			 * new expander textures (by Austin5003)
+			Fixes
+
+			 * range upgrades work properly now
+			 * EU Buffer code
+			 * base breakability
+			 * camo with chisel blocks
+			 * Disposable turret now ignores other turrets ammo
+		openmodularturrets-1.12.2-3.1.0-292.jar:
+			Additions
+
+			 * fluid support for bases
+			 * laser turret now supports disco disco
+			 * light value and transparent blocks for camo mode
+			 * turret limits for bases
+			Changes
+
+			 * moved network code to OMLib
+			 * improved the trusted player system
+			 * reworked GUIs
+			 * changed the laser to be more real life accurate
+			 * railgun now increases damage based on targets armor
+			Fixes
+
+			 * camo with chisel blocks
+
+	Quark (went from Quark-r1.5-152.jar to Quark-r1.5-155.jar):
+		Quark-r1.5-155.jar:
+			- Client: Fixed the item expiry feature causing Botania mana tablets to not render.
+			- Experimental: Improved wednesday.
+			- Management: Fixed the favorite icon being wrong.
+			- Oddities: Fixed a dupe with backpacks.
+			- Oddities: Fixed backpacks eating up items.
+			- Oddities: Tweaked pipe hitboxes a bit.
+			- World: Fixed Basalt not working with chisel.
+			- World: Stonelings no longer use the monster spawn table.
+		Quark-r1.5-154.jar:
+			- General: Fixed bad ASM leading to a startup crash.
+		Quark-r1.5-153.jar:
+			- General: Fixed a server crash.
+			- General: Tried to fix Chisel compatibility again.
+			- Building: Added carved variants for world stone bricks.
+			- Client: Fixed the Highlight Invalid Slots feature highlighting the wrong position in the Tinkers Construct Crafting Station.
+			- Decoration: Added the ability to tie leads to fences.
+			- Decoration: Fixed Flat Item Frames not extending their model when non vanilla maps are placed in them.
+			- Experimental: Added Framed Blocks.
+			- Experimental: Added wednesday.
+			- Management: Fixed right click to add to shulkers not working.
+			- Misc: Added the Pickarang.
+			- Oddities: Fixed a dupe with backpacks.
+			- Oddities: Fixed pipes accepting items if they're disabled.
+			- Oddities: Fixed some model weirdness with pipes.
+			- Tweaks: Added Springy Slime.
+			- Tweaks: Fixed Improved Sleeping not sending the list of sleeping players to chat.
+			- World: Added a config option to make stonelings run away if the player moves quickly even if sneaking.
+			- World: Added brick variants for Permafrost and Brimstone.
+			- World: Fixed a tiling issue with Limestone Bricks.
+			- World: Fixed cave roots spawning in dimensions other than the overworld.
+			- World: Fixed Stonelings crashing the game when put in an EnderIO Powered Spawner.
+			- World: Fixed tamed Stonelings being able to despawn.
+			- World: Fixed underground features spawning in superflat worlds.
+			- World: Stonelings are now immune to cactus, arrows, drowning, and fall damage.
+			- World: Stonelings can now be fed stone types to change their look.
+			- World: Stonelings can now be tamed with Diamonds.
+			- World: Stonelings now have a sound effect on damage.
+			- World: Stonelings now have Basalt and Marble variants.
+
+	RandomTweaks (went from RandomTweaks 1.12.2-2.5.0.5 to RandomTweaks 1.12.2-2.5.0.6):
+		RandomTweaks 1.12.2-2.5.0.6:
+			Fixed spawn points for the Void and Void Islands world types.
+
+	Reborn Storage (went from RebornStorage-1.12.2-3.3.3.83.jar to RebornStorage-1.12.2-3.3.4.85.jar):
+		RebornStorage-1.12.2-3.3.4.85.jar:
 			(github) #releaseBuild
-			(modmuss50) Cache cpu speed and multiblock isValid until broken fixes 144 (#149)
-			(modmuss50) Add alternative disk recipe (#139)
-			(modmuss50) Create de_de.lang (#141)
+			(modmuss50) fix crash when breaking connected multiblock (#151)
 
-	Simply Jetpacks 2 (went from SimplyJetpacks2-1.12.2-2.2.11.64.jar to SimplyJetpacks2-1.12.2-2.2.12.65.jar):
-		SimplyJetpacks2-1.12.2-2.2.12.65.jar:
-			2.2.12
+	Redstone Arsenal (went from RedstoneArsenal-1.12.2-2.6.2.17-universal.jar to RedstoneArsenal-1.12.2-2.6.3.18-universal.jar):
+		2.6.3:
+			GENERAL:
+				-Reduced damage of Flux-Infused Bow a bit. Multiplier was unintentionally high.
 
-			 * Fixed
-			 * Bug where jetpacks would not show up if TD integration was disabled - #126 #136
-			 * Recipes for thrusters, changed the dynamos required to fit the used materials to the jetpack tier - #134
+	Resizing Potion (went from Resizing Potion-r2.1.jar to resizingpotion-2.1.1.jar):
+		resizingpotion-2.1.1.jar:
+			- Huge performance improvements
 
-	Woot (went from woot-1.12.2-1.4.10.jar to woot-1.12.2-1.4.11.jar):
-		woot-1.12.2-1.4.11.jar:
-			# 1.12.2-1.4.11
-			### Fixes
-			- [----] Headhunter enchantability and overlevelling fixes by Lykrast
-			- [#413] Fix incorrect rune count displayed for Blood Magic LE tank - visual bug only
+			- Only 1 trinket at a time can be worn (effects didn't stack anyways)
 
-			### Features
-			- [#406] Ender Dragon now 100% drops 1 Quark dragon scale
-			- [#415] Add entitygenerateonlylist to disable capture of a mob via an ender shard - default is empty
+			- minecraft:shrink -> resizingpotion:shrink
 
-* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.13)
+			- minecraft:growth -> resizingpotion:growth
+
+			- Fixed particles not spawning when wearing the trinkets
+
+			- The mod now has a fingerprint
+
+	Stargate Network (went from SGCraft-1.20.3 to SGCraft-2.0.0):
+		SGCraft-2.0.0:
+			Fixed:
+			- SGPower RF unit power value failures....
+			 - Added Pegasus Upgrade Item (Thx[Schmille)](https://github.com/AlmuraDev/SGCraft/commits?author=Schmille)- Removed some annoying debug
+		SGCraft-2.0.0-beta-6:
+			Fixed:
+			- ZPMInterfaceCartTE conversion rates
+			 - GateAddressAccessScreen bugs (x3)
+			 - Added some debug to ZPM Console power usage
+			 - Added Buffer Size to DHD Fuel Screen
+		SGCraft-2.0.0-beta-5:
+			Fixed:
+
+			- ZPM Addon check being weird with no IC2 loaded
+
+			- Fixed feature augmentation
+		SGCraft-2.0.0-beta-4:
+			Fix issue with IC2 not loaded and attempting to use cross-dimensional gate.
+		SGCraft-2.0.0-beta-3:
+			Fixed:
+
+			 * crash related to malfunction();
+		SGCraft-2.0.0-beta-2:
+			2.0.0-beta-2 changes:
+
+			- Fixed an inventory de-sync issue with dedicated server & client with ZPM Interface Carts and ZPM Console
+
+	The Lost Cities (went from LostCities - 1.12-2.0.19 to LostCities - 1.12-2.0.20):
+		LostCities - 1.12-2.0.20:
+			 - Fixed water level issue when combining biosphere with drowned cities, thanks to @3TUSK
+			 - New parkChance profile option that allows you to control the chance that a non-building section will be a park section. If you set this to 0 you will only get streets
+			 - wormzjl fixed explosion leaving a crater on water surface in submerged city style
+			 - wormzjl reports: currently when combining sphere with submerged cities, all outside ground appears to be a mixture of grass + sand, creating a lot of block update lag. This temporarily fixes this issue by replacing underwater toppings with gravel
+
+	Thermal Cultivation (went from ThermalCultivation-1.12.2-0.3.2.11-universal.jar to ThermalCultivation-1.12.2-0.3.3.12-universal.jar):
+		0.3.3:
+			GENERAL:
+				-Backend adjustments for CoFH Core compat.
+
+	Thermal Dynamics (went from ThermalDynamics-1.12.2-2.5.4.18-universal.jar to ThermalDynamics-1.12.2-2.5.5.21-universal.jar):
+		2.5.5:
+			GENERAL:
+				-Some mods are really stupid. This hopefully makes them less stupid.
+
+	Thermal Expansion (went from ThermalExpansion-1.12.2-5.5.3.41-universal.jar to ThermalExpansion-1.12.2-5.5.4.43-universal.jar):
+		5.5.4:
+			GENERAL:
+				-Localization! Also fixes a couple of minor issues such as tank rendering.
+
+	Thermal Foundation (went from ThermalFoundation-1.12.2-2.6.2.26-universal.jar to ThermalFoundation-1.12.2-2.6.3.27-universal.jar):
+		2.6.3:
+			GENERAL:
+				-Localization update!
+
+	Thermal Innovation (went from ThermalInnovation-1.12.2-0.3.2.11-universal.jar to ThermalInnovation-1.12.2-0.3.3.12-universal.jar):
+		0.3.3:
+			GENERAL:
+				-Backend adjustments for CoFH Core compat.
+
+* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.14)
