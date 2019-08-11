@@ -1,5 +1,3 @@
-// DOESN'T DO ANYTHING YET!!!!
-
 import crafttweaker.item.IItemDefinition;
 
 // Define the tome with all the essential starting books.
