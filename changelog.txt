@@ -1,9 +1,12 @@
 =========================================
-Peanut Craft 5.0.0 --> Peanut Craft 5.0.1
+Peanut Craft 5.0.1 --> Peanut Craft 5.0.2
 =========================================
 
 Config changes:
 
 	- Ice & Fire
-		Made dragon spawns more rare.
-		Dragons are assholes. And we didn't want them to ruin everything.
+		Even with spawn rate WAAY down... Dragons spawned somewhat often.
+		And this time, they were out for revenge, and lagged the server to death.
+		
+		So we disabled those assholes completetly. If you wanna see dragons,
+		go see the one in The End. :)
