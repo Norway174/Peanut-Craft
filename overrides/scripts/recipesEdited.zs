@@ -1,3 +1,8 @@
+// SLIMEY GENERATOR FIX 
+recipes.remove(<extrautils2:machine>);
+recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_slime"}), [[<minecraft:slime_ball>, <minecraft:slime_ball>, <minecraft:slime_ball>],[<minecraft:slime_ball>, null, <minecraft:slime_ball>], [<minecraft:redstone>, <extrautils2:machine>, <minecraft:redstone>]]);
+
+
 // ANGEL RING TWEAK HAS BEEN DISABLED. NORMAL CRAFTING RECEPIE IS ENABLED.
 
 // Angel Ring
