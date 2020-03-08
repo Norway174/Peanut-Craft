@@ -1,6 +1,6 @@
 <p align="center">
-<!--<img src="https://i.imgur.com/Ln34X6F.png" height="200" width="800" align="center" />-->
-<img src="https://i.imgur.com/KUaAFf9.png" width="1000" align="center" />
+<img src="https://i.imgur.com/Ln34X6F.png" height="200" width="800" align="center" />
+<!--<img src="https://i.imgur.com/KUaAFf9.png" width="1000" align="center" />-->
 </p>
 
 # Peanut Craft
