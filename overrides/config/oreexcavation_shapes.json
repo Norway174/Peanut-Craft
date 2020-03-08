@@ -35,6 +35,42 @@
         "XXXXX",
         "XXXXX"
       ]
+    },
+    {
+      "name": "3x4x1",
+      "depth": 1,
+      "reticle": 12,
+      "mask": [
+        "OOOOO",
+        "XXXXX",
+        "XXXXX",
+        "XXXXX",
+        "OOOOO"
+      ]
+    },
+    {
+      "name": "1x2x1",
+      "depth": 1,
+      "reticle": 12,
+      "mask": [
+        "OOOOO",
+        "OOOOO",
+        "OOXOO",
+        "OOXOO",
+        "OOOOO"
+      ]
+    },
+    {
+      "name": "3x3x1",
+      "depth": 1,
+      "reticle": 12,
+      "mask": [
+        "OOOOO",
+        "OXXXO",
+        "OXXXO",
+        "OXXXO",
+        "OOOOO"
+      ]
     }
   ]
 }
