@@ -1,12 +1,2424 @@
 =========================================
-Peanut Craft 5.0.1 --> Peanut Craft 5.0.2
+Peanut Craft 5.0.2 --> Peanut Craft 5.1.0
 =========================================
 
-Config changes:
+Added:
+- Buildcraft
+- CreativeCore
+- DarknessLib
+- Davincis Vessels
+- Default Options
+- Dungeons2
+- Dynamic Surroundings
+- GottschCore
+- GraveStone Mod
+- Grue
+- Hardcore Darkness
+- LittleTiles
+- MovingWorld
+- Rats
+- Stupid Things
+- The Beneath
+- Treasure2!
 
-	- Ice & Fire
-		Even with spawn rate WAAY down... Dragons spawned somewhat often.
-		And this time, they were out for revenge, and lagged the server to death.
-		
-		So we disabled those assholes completetly. If you wanna see dragons,
-		go see the one in The End. :)
+Removed:
+- Corail Tombstone
+
+Updated:
+	Blood Arsenal (BloodArsenal-1.12.2-2.2.1-29.jar --> BloodArsenal-1.12.2-2.2.0-30.jar):
+		BloodArsenal-1.12.2-2.2.0-30.jar:
+			-Fixed all of the bugs
+			-Infusion de Sanguine ritual now works properly
+			 -Also gives you useful information when you try to activate it wrongly
+			-Purification Ritual and the Blood Burner rites also fixed
+			-Stasis Tools now work properly
+			-Blood Infused Wooden Stairs and Slabs now work
+			-Tinker's Construct compatibility fixed
+			-Added the Crit Striker and Vampiric Fangs modifiers
+
+	Industrial Craft (industrialcraft-2-2.8.189-ex112.jar --> industrialcraft-2-2.8.194-ex112.jar):
+		industrialcraft-2-2.8.194-ex112.jar:
+			jenkins-IC2_112-194
+
+			 * Small change. (estebes) jenkins-IC2_112-193
+
+			 * Improve IInventorySlotHolder. Improve ItemToolIC2. (estebes) jenkins-IC2_112-192
+
+			 * Improvments to ToolClass and ItemToolIC2 (estebes) 
+			 * Minor fix. (estebes) 
+			 * Improve IInventorySlotHolder compatibility. (estebes) jenkins-IC2_112-191
+
+			 * Improve IInventorySlotHolder. (estebes) jenkins-IC2_112-190
+
+			 * Allow non TileEntityInventory tiles to makes use of dynamic GUI slots. (estebes) jenkins-IC2_112-189
+
+			 * Add a new custom gauge. (estebes) jenkins-IC2_112-188
+
+			 * Fix wrenching fluid pipes passing null to neighbouring blocks (Chocohead) jenkins-IC2_112-187
+
+			 * New pipe textures. (estebes) jenkins-IC2_112-186
+
+			 * Fixing annoying drill sound when breaking hard blocks. (estebes) jenkins-IC2_112-185
+
+			 * Try to fix the build. (estebes) jenkins-IC2_112-184
+
+			 * Change how pipe connectivity works. (estebes) jenkins-IC2_112-183
+
+			 * Become slightly distracted from the task at hand Heat sinks still need implementing, but why not start redesigning the Steam Boiler instead? With heat no longer so clear cut the experience needs to be improved somewhat to account for it Currently doesn't do anything other than heat up and look pretty (Chocohead) 
+			 * Fix pump battery slot ignoring upgrades Fixes #2594 (Chocohead) 
+			 * Add a mechanism to average heat over time Allows summarising an analogue process a little easier Allows compacting a SolidHeat instance down to a relative float value, which is also the string representation Moves networking additions to a single place (Chocohead) 
+			 * Add a toggle group GUI element Makes for slightly easier radio buttons (Chocohead) jenkins-IC2_112-182
+
+			 * Fix Coke Kiln. (estebes) jenkins-IC2_112-181
+
+			 * Allow creating SolidHeat instances on demand Reduces object churn for large surfaces which change heat frequently (Chocohead) 
+			 * Implement a notion of conductivity Allows heat aware tiles to change the heat conductivity alongside temperature differences Also fixes a bug with heat balancing designed to avoid over sharing which still over shared (Chocohead) 
+			 * Mount specific heat capacity to SolidHeat Realistically the cases where SolidHeat is important the specific heat capacity is too Also makes SolidHeat final to encourage the JVM to be more magic (Chocohead) 
+			 * Fix heat tinting around solid blocks Will now use the surrounding block lights for each face which should stop it going completely black (Chocohead) jenkins-IC2_112-180
+
+			 * Avoid shading crop sticks Fixes #2543 (Chocohead) 
+			 * Add pair of heat (unaware) sinks Column will need some more appropriate colours (Chocohead) 
+			 * Copy less, loop more Probably actually much more expensive to what was before it, but cleaner Still feel like there's a proper/sensible way to do with too (Chocohead) 
+			 * Fix the rubber tree item model Turns out what broke in 1.9 was parent item transforms stacked instead of being ignored Thus dropping Forge's inappropriate ones makes it work again Fixes #2409 and #2558 (Chocohead) jenkins-IC2_112-179
+
+			 * Fix Crop providedQuality. (estebes) jenkins-IC2_112-178
+
+			 * Use OreDictionary for iridium related recipes. Adjust values for the Cropmatron and CropHarvester. (estebes) jenkins-IC2_112-177
+
+			 * Fix treetapping non-resin logs still consuming durability Fixes #2584 (Chocohead) 
+			 * More work on specific heat capacity (Chocohead) 
+			 * Minor cleanup (Chocohead) 
+			 * Switch to interfaces for heat awareness Begins splitting the concept of apparent temperature and true heat for modelling specific heat capacity (Chocohead) 
+			 * Avoid pushing every build as a release We've had 170 now, back to betas (Chocohead) jenkins-IC2_112-176
+
+			 * Fix Crop Harvester recipe. (estebes) jenkins-IC2_112-175
+
+			 * Fix dynamite recipes being stingy Fixes #2573 (Chocohead) 
+			 * Fix acacia and dark oak crops dropping invalid logs Fixes #2581 (Chocohead) 
+			 * Fix EU-Reader crashing when the block being read changes Fixes #2583 (Chocohead) 
+			 * Fix new crops missing localisation (Chocohead) 
+			 * Allow CropCards to customise the name of the produced seeds (Chocohead) 
+			 * Fix bronze rotor missing a translation Fixes #2570 (Chocohead) 
+			 * Avoid creating lists just to be streamed (Chocohead) 
+			 * Avoid ticking on the client without a reason (Chocohead) jenkins-IC2_112-174
+
+			 * Small fix. (estebes) jenkins-IC2_112-173
+
+			 * Small buff to crop availability to crossbreed (~20%). (estebes) jenkins-IC2_112-172
+
+			 * Rebalanced the Crop Harvester. Cropmatron now supports upgrades. Added new Crops - Oak, Spruce, Birch, Jungle, Acacia, Flax. (estebes) jenkins-IC2_112-171
+
+			 * New sulfur recipe. Fix bug with worktable container syncing. Improved recipes related to dust, crushed ores and plates. (estebes) jenkins-IC2_112-170
+
+			 * Create new release (estebes) jenkins-IC2_112-169
+
+			 * Fix a few things regarding the Classic profile. (estebes) jenkins-IC2_112-168
+
+			 * Create OreDictionary entry for the iridium ore (ingotIridium) (estebes) jenkins-IC2_112-167
+
+			 * Fix some entries (estebes) jenkins-IC2_112-166
+
+			 * Fix missing ; (estebes) jenkins-IC2_112-165
+
+			 * Added a lot more oredictionary entries (estebes) jenkins-IC2_112-164
+
+			 * Fix machines not dropping anything when broken with anything but a wrench (Chocohead) 
+			 * Fix removals failing to notify neighbours (Chocohead) jenkins-IC2_112-163
+
+			 * Implement surface removal Appears to all work at least (Chocohead) jenkins-IC2_112-162
+
+			 * Fix hot cube item model (Chocohead) 
+			 * Implement multi-surface merging Also makes some more optimisations (Chocohead) 
+			 * Fix broken lang file (Chocohead) jenkins-IC2_112-161
+
+			 * Ensure the client is kept aware of cube heat Little bit more work as it can (and does) change off thread (Chocohead) 
+			 * Log surface with temperature Super spammy but makes it clear which a cube is in (Chocohead) 
+			 * Rough colour changes for temperature Good enough for the time being (Chocohead) jenkins-IC2_112-160
+
+			 * Avoid memory churning collections so much (Chocohead) 
+			 * Temporarily work around temperature-colouring scaling not being implemented (Chocohead) 
+			 * Fix a collection of bugs Actually lets heat flow now (without deadlocking too) (Chocohead) 
+			 * Drop event notification system It's massively memory heavy for high surface areas for little gain Trades the memory savings so nodes know their neighbours (Chocohead) 
+			 * Nothing to see here Unless you're in dev, in which case there's a "hot" "cube" Also the beginnings of a semi-analogue heat transfering mechanism (Chocohead) 
+			 * Update Russian translation, thanks QuantumStatement (Chocohead) 
+			 * Update German translation, thanks rumspringa (Chocohead) 
+			 * Tape the Coke Kiln back up (Chocohead) jenkins-IC2_112-159
+
+			 * Fix API (estebes) jenkins-IC2_112-158
+
+			 * Fix generator facings (estebes) jenkins-IC2_112-157
+
+			 * Fix locale (estebes) jenkins-IC2_112-156
+
+			 * Actually fix build (estebes) jenkins-IC2_112-155
+
+			 * Fix build (estebes) jenkins-IC2_112-154
+
+			 * Refactor (estebes) 
+			 * Temporarily disable the coke kiln (estebes) 
+			 * Cleanup some code (estebes) 
+			 * Added the bronze rotor (estebes) 
+			 * Fix the coke kiln hatch recipe. Now uses an iron trapdoor (estebes) 
+			 * Improve the dynamic recipe manager (estebes) jenkins-IC2_112-153
+
+			 * Fix 2541 (estebes) jenkins-IC2_112-152
+
+			 * Turn off debugging to prevent log spam (estebes) jenkins-IC2_112-151
+
+			 * Fluid pipes internal logic improved. New Storage Box textures. (estebes) 
+			 * Improves pipes (estebes) jenkins-IC2_112-150
+
+			 * Fix pipe bounding boxes for good Could alternatively flip a static boolean to change the return of getOutlineBoundingBox() when rendering Saves cloning vanilla code but also looks clunkier (Chocohead) jenkins-IC2_112-149
+
+			 * Improve tooltips for tank and storage box. Fix storages boxes and tanks not stacking properly. (estebes) jenkins-IC2_112-148
+
+			 * Fix crash testing the internal side of pipes (Chocohead) jenkins-IC2_112-147
+
+			 * Small changes (estebes) jenkins-IC2_112-146
+
+			 * Play about with pipe hitboxes some more Sort of an attempt at compromise between a fitting and helpful hitbox (Chocohead) 
+			 * Explicitly mention how to connect pipes (Chocohead) jenkins-IC2_112-145
+
+			 * better pipe textures (estebes) jenkins-IC2_112-144
+
+			 * Fluid pipes are live (estebes) jenkins-IC2_112-143
+
+			 * Show the side about to be rotated to when wrenching (Chocohead) 
+			 * Add a utility to get the rotation based on ray trace (Chocohead) 
+			 * Move the GL repositioning into EnhancedOverlay (Chocohead) jenkins-IC2_112-142
+
+			 * Fix overlay's alpha (estebes) jenkins-IC2_112-141
+
+			 * Fix overlay interaction with pipes (estebes) jenkins-IC2_112-140
+
+			 * Only show wrench overlay on blocks that can be rotated from that side (Chocohead) 
+			 * Allow IWrenchables to suggest whether a rotation is possible Defaults to true as previously it was presumed everything was worth a try (Chocohead) 
+			 * Add more context to IEnhancedOverlayProvider (Chocohead) 
+			 * Avoid churning WrenchOverlays (Chocohead) jenkins-IC2_112-139
+
+			 * Plaster docs everywhere Just because I can (Chocohead) 
+			 * Highlight the segment being hovered (Chocohead) 
+			 * Drop the tessellator argument Realistically it's never going to be in doubt (Chocohead) 
+			 * Avoid using GameProfile#equals It checks both ID and name, which is no good if people change their names (Chocohead) 
+			 * Break overlay rendering out into a dedicated handler (Chocohead) 
+			 * Allow drawing overlays with colour directly (Chocohead) 
+			 * Use a more appropriate functional type Given we don't want exceptions but do want boolean values, BooleanSupplier is the way to go (Chocohead) jenkins-IC2_112-138
+
+			 * Fix connectivity (estebes) jenkins-IC2_112-137
+
+			 * More work on pipes (estebes) jenkins-IC2_112-136
+
+			 * More work on pipes (estebes) jenkins-IC2_112-135
+
+			 * Improve the enhanced overlay (estebes) jenkins-IC2_112-134
+
+			 * Crowbar recipe and locale (estebes) 
+			 * Fix wrench durability (estebes) 
+			 * Improve the crowbar (estebes) 
+			 * Improve wrench sounds. More work on pipes. Added the crowbar. (estebes) 
+			 * Update the simplified chinese translation (estebes) jenkins-IC2_112-133
+
+			 * New tanks and tank funcionality (estebes) 
+			 * Add the Iridium Storage Box (estebes) jenkins-IC2_112-132
+
+			 * Fix not adjusting the multipliers for the new wind equation... (Player) jenkins-IC2_112-131
+
+			 * Add translation for Creosote (estebes) 
+			 * Add recipes for the storage boxes (estebes) 
+			 * Fix refractory_bricks texture (estebes) 
+			 * Added the storage box. Fix a few thigns here an there. (estebes) 
+			 * Fix the Coke Kiln Hatch gui (estebes) jenkins-IC2_112-130
+
+			 * Fix #2531 (estebes) jenkins-IC2_112-129
+
+			 * Fix the Coke Kiln harvest tool (estebes) 
+			 * Improve the DynamicRecipeManager (estebes) jenkins-IC2_112-128
+
+			 * Make wind simulation more resistant against dodgy world height or sea level values. (Player) jenkins-IC2_112-127
+
+			 * Improve the DynamicRecipeManager (estebes) 
+			 * Small Coke Kiln fixes (estebes) jenkins-IC2_112-126
+
+			 * New multiblock - Coke Kiln (estebes) jenkins-IC2_112-125
+
+			 * Tint pipe item models rather than manually creating them (Chocohead) 
+			 * Enhance pipe models Fixes particle textures being wrong (Chocohead) 
+			 * Allow ISpecialParticleModels to completely customise particles (Chocohead) jenkins-IC2_112-124
+
+			 * Custom IFluidHandler (estebes) jenkins-IC2_112-123
+
+			 * Fix logic (estebes) jenkins-IC2_112-122
+
+			 * Small wrench fix (estebes) jenkins-IC2_112-121
+
+			 * Small wrench improvements. (estebes) jenkins-IC2_112-120
+
+			 * Add wrench tooltip with instruction. Make the wrench non-enchantable. (estebes) jenkins-IC2_112-119
+
+			 * Allow the new wrench to be used in recipes that use the old wrench. (estebes) 
+			 * Some texture and models. Improved wrenching overlay. New wrenching implementation now affects most of the ic2 teblocks. (estebes) jenkins-IC2_112-118
+
+			 * Allow disabling items from having jetpacks attached in the config (Chocohead) 
+			 * Close enough (Chocohead) jenkins-IC2_112-117
+
+			 * Remove unnecessary casts They're implict already from float/double addition/multiplication (Chocohead) 
+			 * Fix the classic Empty Cell recipe producing 15 too few (Chocohead) 
+			 * Add support for custom mining drills (Chocohead) 
+			 * Fix some items showing in classic that don't need to (Chocohead) 
+			 * Fix filling classic empty cells not consuming them in the process (Chocohead) 
+			 * Hide the lappack when using experimental (Chocohead) 
+			 * Add support for custom hazmat armour (Chocohead) 
+			 * Fix iron scaffolding appearing to be wooden Fixes #2504 (Chocohead) jenkins-IC2_112-116
+
+			 * Fix: Depleted MOX quad rod doesn't produce enough iron (estebes) jenkins-IC2_112-115
+
+			 * Fix imports (estebes) jenkins-IC2_112-114
+
+			 * Fix imports (estebes) jenkins-IC2_112-113
+
+			 * New wrench and wrench functionality (estebes) jenkins-IC2_112-112
+
+			 * Fix reactor GUI texture Fixes #2489 (Chocohead) 
+			 * Fix Block Cutting Machine GUI texture (Chocohead) 
+			 * Fix using the wrong foam sprayer in both style profiles (Chocohead) 
+			 * Allow classic MFE to charge and drain tier 3 items (Chocohead) 
+			 * Ensure foam setting takes random tick speed into account Fixes #2521 (Chocohead) 
+			 * Fix weighted item distributors failing to try lower priorities (Chocohead) 
+			 * Hopefully fix encoding enums for the last time It's a less certain outcome for single item arrays, but it avoids crashing outright (Chocohead) jenkins-IC2_112-111
+
+			 * Allow classic MFSU to charge and drain tier 4 items (Chocohead) jenkins-IC2_112-110
+
+			 * Add comparator support to the tank Fixes #2471 (Chocohead) 
+			 * Fix an IllegalAccessException using uu-world-scan Fixes #2481 (Chocohead) 
+			 * Fix GUI name with Advanced Upgrades Fixes #2473 (Chocohead) 
+			 * Notify observers when crops on crop sticks grow Fixes #2477 (Chocohead) 
+			 * Fix UU scan missing air like blocks Adds a missing Watchdog reflection exception message too (Chocohead) 
+			 * Fix machine recipe removal for multi-item outputs (Chocohead) 
+			 * Fix the armour dyeing recipe matching too readily (Chocohead) jenkins-IC2_112-109
+
+			 * Allow the tier of the Mass Fabricator and Matter Fabricator to be changed Handles #2465 (Chocohead) 
+			 * Move all profile related things into a package (Chocohead) 
+			 * Add events for profile loading and switching (Chocohead) 
+			 * Make profile names non-case sensitive (Chocohead) 
+			 * Switch profile selection to the config No more -DIC2.lotsOfFun needed (Chocohead) jenkins-IC2_112-108
+
+			 * Ensure the condenser always updates its tier too (Chocohead) 
+			 * Fix the advanced miner having an indecisive tier Fixes #2463 better (Chocohead) jenkins-IC2_112-107
+
+			 * Improve laser events a little Actually exposes the laser ItemStack within LaserShootEvent Now allows lasers to go straight through cancelled entities (Chocohead) 
+			 * Scale the Advanced Miner's tier with the Miner's (Chocohead) 
+			 * Allow putting transformer upgrades in the Condenser (Chocohead) jenkins-IC2_112-106
+
+			 * Use Forge FakePlayer instead of our ancient one. (Aroma1997) jenkins-IC2_112-105
+
+			 * Ensure IInventory actions always save Should fix #2437 (Chocohead) 
+			 * Add additional checking to HandHeldInventory crashes Should make #2453 easy to debug (Chocohead) 
+			 * Fix compressing lapis Fixes #2451 (Chocohead) jenkins-IC2_112-104
+
+			 * Fix sending enum collections over the network Fixes #2448 (Chocohead) 
+			 * Add a lapis to lapis block compression recipe Implements #2445 (Chocohead) 
+			 * Fix leg and chestplate armour values being reversed (Chocohead) jenkins-IC2_112-103
+
+			 * Remove recipe cache until it can work properly. (Player) jenkins-IC2_112-102
+
+			 * Optimize machine recipe lookup performance. (Player) jenkins-IC2_112-101
+
+			 * Fix wind + water turbines not automatically updating rotors Fixes #2422 (Chocohead) 
+			 * Potentially fix the Watchdog killing drop scans Will fix #2412 (Chocohead) 
+			 * Implement IShapedRecipe on AdvRecipe Should allow output recipe removal in Craft Tweaker again (Chocohead) 
+			 * Fix crash with classic empty cells (Chocohead) jenkins-IC2_112-100
+
+			 * Expose EnergyTiles already when they aren't fully added to the enet. (Aroma1997) jenkins-IC2_112-99
+
+			 * Fix Iron Furnace sounds (Chocohead) 
+			 * Fix adding gauges server side Fixes #2419 (Chocohead) jenkins-IC2_112-98
+
+			 * Add variety to explosion sounds depending on type (Chocohead) 
+			 * Improve networking over enums (Chocohead) 
+			 * Fix pump not switching on whilst working (Chocohead) 
+			 * Add missing audio unload in the classic Canner (Chocohead) 
+			 * Add sound to the Iron Furnace (Chocohead) 
+			 * Fix the classic Canner and Cropmatron's GUIs (Chocohead) 
+			 * Prepare canning machine for sounds (Chocohead) 
+			 * Add proper sounds to the Electric and Induction Furnaces Fixes #2413 (Chocohead) 
+			 * Allow more flexibility with AudioManager (Chocohead) 
+			 * Switch AudioManager#playOnce to be a more logical default (Chocohead) jenkins-IC2_112-97
+
+			 * Fix placing cables whilst holding an unpainted painter Fixes #2403 (Chocohead) 
+			 * Add separate volume control for IC2 audio Add ability to control volume and attenuation distance Move pre-existing audio configs into new audio section (Chocohead) jenkins-IC2_112-96
+
+			 * Protect against 0-sized inventories just in case. (Player) jenkins-IC2_112-95
+
+			 * Implement TileEntityInventory.calcRedstoneFromInvSlots without streams for better performance. (Player) jenkins-IC2_112-94
+
+			 * Add slag to OreDict. (Aroma1997) 
+			 * Made Uranium processing a bit more Factorio-like. (Aroma1997) jenkins-IC2_112-93
+
+			 * Fixed some recipes only accepting vanilla planks Fixes #2399 (Chocohead) 
+			 * Added Ukrainian translation, thanks olexn (Chocohead) 
+			 * Late load generic Block Cutting recipes to allow specific ones earlier (Chocohead) 
+			 * Explicitly log non-overriden conflicting recipes (Chocohead) 
+			 * Fix the Liquid Heat Exchanger output slots overwriting each other (Chocohead) 
+			 * Fix recipe files running into each other without final line breaks (Chocohead) 
+			 * Fix profile loading crash if additional mods aren't present (Chocohead) 
+			 * Add #equals to ProfileTarget (Chocohead) 
+			 * Add support for multiple profile texture overrides (Chocohead) 
+			 * Add support for classic compact solars (Chocohead) 
+			 * Improve loading of profiles from zips (Chocohead) 
+			 * Add folder support for profile recipes (Chocohead) 
+			 * Improve ability to cleanly switch between profiles Without restarting of course, that never fails (Chocohead) 
+			 * Move smelting recipes to ini file (Chocohead) 
+			 * Implement recipe extension, add central profile collection (Chocohead) 
+			 * Removed trailing empty column in hoe recipe (Chocohead) 
+			 * Allow profiles to change smelting recipes (Chocohead) 
+			 * Add defensive xp check to furnace recipe manager (Chocohead) 
+			 * Fix some items being hidden that shouldn't have been (Chocohead) 
+			 * Improve ease of parsing profiles (Chocohead) 
+			 * Switch out SuddenlyTextures in favour of proper profile loading Supports texture packs rather than completely hijacking the textures (Chocohead) 
+			 * Fix logged errors when reloading resource packs (Chocohead) 
+			 * Ditch SuddenlyTextures Profile loading now offers everything it did, just without hacks (Chocohead) 
+			 * Refactor utility XML methods out of GuiParser Statically imported to try minimise unnecessary changes (and keep line length down) (Chocohead) 
+			 * Fixed CF Foam recipe outputting 1/3 of the intended (original) amount (Chocohead) 
+			 * More work on recipe processing Now properly reads recipe replacement and addition files (Chocohead) 
+			 * Add profile XML parsing, begin recipe processing Removes the alt zip containing classicy things Adds in some better string representations of profile related objects Allows TextureStyle to go in hash sets/maps (Chocohead) 
+			 * Provide a better solution for the furnace recipe manager being more special Special relative to most of the other machine's generic types at least (Chocohead) 
+			 * Fix spelling mistake in the config (Chocohead) 
+			 * Rename Classic to Version (Chocohead) 
+			 * Push out version handling to ProfileManager (Chocohead) 
+			 * Add texture porting to SuddenlyTextures Only does items and blocks (excluding the new obscurator format) (Chocohead) jenkins-IC2_112-92
+
+			 * Fix the Kinetic Stirling Generator output slots overwriting each other (Chocohead) 
+			 * Fix the Stirling Kinetic Generator limiting output oddly Fixes #2397 (Chocohead) 
+			 * Fix fluid handler resolving crashes during preinit (Chocohead) jenkins-IC2_112-91
+
+			 * Register recipes earlier to try ensure IC2 loads before addons (Chocohead) 
+			 * Ensure containers aren't accidentally duplicated (Chocohead) jenkins-IC2_112-90
+
+			 * Updated JEIHandler. (Aroma1997) jenkins-IC2_112-89
+
+			 * Fix recipe loading crash (Chocohead) jenkins-IC2_112-88
+
+			 * Fix the air compressing recipe taking precedence over others (Chocohead) 
+			 * Add IRecipeInput for exact NBT tag matching (Chocohead) 
+			 * Removed unnecessary @Deprecated annotations (Chocohead) jenkins-IC2_112-87
+
+			 * Add recipe removing back Properly splits disable to IC2 recipes and purge for everything else (Chocohead) jenkins-IC2_112-86
+
+			 * Add a noise to gas vapourisation (Chocohead) 
+			 * Temporary fix for painter cleaning in JEI Fixes #2384 (Chocohead) 
+			 * Fix the old compressed air cell emptying recipe Fixes #2274 (Chocohead) 
+			 * Ensure foam and colour changes always save Fixes #2268 (Chocohead) 
+			 * Fix machine recipes with inputs that have containers Fixes #2385 (Chocohead) jenkins-IC2_112-85
+
+			 * Fix the painter cleaning recipe not working Fixes #2338 (Chocohead) 
+			 * Nerf obsidian in the block cutting machine Handles #2189 (Chocohead) 
+			 * Fix foamed cables not rendering the block behind them Fixes #2337 (Chocohead) 
+			 * Handle invalid meta values for classic cells Fixes #2383 (Chocohead) 
+			 * Pause IC2 sounds whilst the game is also paused Fixes #2343 (Chocohead) 
+			 * Add ItemHandler capability to reactor access hatches Fixes #2349 (Chocohead) jenkins-IC2_112-84
+
+			 * Fix EventReceivers not working. (Aroma1997) jenkins-IC2_112-83
+
+			 * Hopefully fix sparadic crashes from packet releasing It was experimental after all (Chocohead) 
+			 * Stop using a private field as a local variable (Chocohead) jenkins-IC2_112-82
+
+			 * Add additional information for bad fluid containers Should help with diagnosing #2375 further (Chocohead) 
+			 * Fix the nano sabre breaking blocks in creative Now matches how other swords in vanilla work Fixes #2350 (Chocohead) 
+			 * Experimental packet payload releasing Should fix #2352 without side effects (Chocohead) 
+			 * Fix hand held container item switching (Chocohead) jenkins-IC2_112-81
+
+			 * Add Item#isEnchantable override to electric armour (Chocohead) 
+			 * Fixed rotor stacks being flagged as empty if over damaged Fixes #2190, #2326, #2373 (Chocohead) 
+			 * Fixed generic warning (Chocohead) jenkins-IC2_112-80
+
+			 * Updated some translations. (Aroma1997) jenkins-IC2_112-79
+
+			 * Fix charging cropnalyzers with non-single use items (Chocohead) jenkins-IC2_112-78
+
+			 * Add/Correct solid UU recipes (Chocohead) 
+			 * Improve the windmeter to actually help with wind mills and turbines A right click shall reveal useful information why (or why not) it is working (Chocohead) 
+			 * Avoid wrapping conflicting recipe exceptions (Chocohead) jenkins-IC2_112-77
+
+			 * Improve JEI Item transfer in Industrial Workbench. (Aroma1997) jenkins-IC2_112-76
+
+			 * Fix block breaking crashing without a tile entity Fixes #2367 (Chocohead) 
+			 * Update Russian translation, thanks safron03 and QuantumStatement (Chocohead) 
+			 * Defensively assume whether a connected server IC2 has or not Fixes #2363, among others previously (Chocohead) jenkins-IC2_112-75
+
+			 * Fix crash when a BlockTileEntities is passed the wrong location Fixes #2360 (Chocohead) jenkins-IC2_112-74
+
+			 * Default out ITeBlock place handlers (Chocohead) 
+			 * Block#getSubBlocks isn't client side only anymore (Chocohead) jenkins-IC2_112-73
+
+			 * Hopefully fix loading errors once and for all (Chocohead) jenkins-IC2_112-72
+
+			 * Fix SMP (Chocohead) jenkins-IC2_112-71
+
+			 * Hopefully fix edge URISyntaxException cases (Chocohead) 
+			 * Fix torch placement on fences (Chocohead) jenkins-IC2_112-70
+
+			 * Fix splitter cable inconsistency (Chocohead) 
+			 * Improve finding the recipe owner of invalid recipes (Chocohead) 
+			 * Fix torches being placeable on cables (Chocohead) jenkins-IC2_112-69
+
+			 * This'll help (Chocohead) jenkins-IC2_112-68
+
+			 * Move recycler blacklist patch somewhere more sensible (Chocohead) 
+			 * Better handling of the Industrial Credit config (Chocohead) 
+			 * Allow the fun to never stop (Chocohead) 
+			 * Final fork for now (Chocohead) 
+			 * Hide some more extra items (Chocohead) 
+			 * Midly fork the cropmatron at the expense of a little bit of sanity elsewhere (Chocohead) 
+			 * Fork that canning machine Not those two, the third one (Chocohead) 
+			 * Provide alternative recipe set Doesn't cover all blocks/items Adds warning for when a shaped recipe overwrites its own character definition (Chocohead) 
+			 * Provide an alternative CF sprayer (Chocohead) 
+			 * Add back 2 old reactor components (Chocohead) 
+			 * Annotate remaining tile entities (Chocohead) 
+			 * Fork cables (Chocohead) 
+			 * Allow electrolyzer picking (Chocohead) 
+			 * Fork MFE and MFSUs (Chocohead) 
+			 * Play about with texture substitution (Chocohead) 
+			 * Initial concept for TeBlock filtering (Chocohead) 
+			 * Concept for picking tile entities based on the config Persists between loads with different settings The config really just changes what an item will place (Chocohead) 
+			 * Add back the old weed-ex can (Chocohead) 
+			 * Add back extra ingots to acheive ingot parity (Chocohead) 
+			 * Make old cells work similar to buckets (Chocohead) 
+			 * Begin joint existance process (Chocohead) 
+			 * Add compressed plants and fuel cans back (Chocohead) 
+			 * Add near-depleted and re-enriched uranium back (Chocohead) 
+			 * Annotate other multi-items (Chocohead) 
+			 * Add back old cells (Chocohead) jenkins-IC2_112-67
+
+			 * Try patch old pre-1.8 configs rather than crashing loading them (Chocohead) 
+			 * Item#addInformation is client side only (Chocohead) 
+			 * Switch reactor GUI to use proper output method (Chocohead) jenkins-IC2_112-66
+
+			 * Rework redstone and comparator handling. (Aroma1997) jenkins-IC2_112-65
+
+			 * Fix personal chests not opening when looking inside (Chocohead) 
+			 * Allow the nano saber to cut cobwebs (Chocohead) jenkins-IC2_112-64
+
+			 * Reverse test stuff (Aroma1997) 
+			 * Test changelog autogeneration (Aroma1997) 
+
+		industrialcraft-2-2.8.193-ex112.jar:
+			jenkins-IC2_112-193
+
+			 * Improve IInventorySlotHolder. Improve ItemToolIC2. (estebes) jenkins-IC2_112-192
+
+			 * Improvments to ToolClass and ItemToolIC2 (estebes) 
+			 * Minor fix. (estebes) 
+			 * Improve IInventorySlotHolder compatibility. (estebes) jenkins-IC2_112-191
+
+			 * Improve IInventorySlotHolder. (estebes) jenkins-IC2_112-190
+
+			 * Allow non TileEntityInventory tiles to makes use of dynamic GUI slots. (estebes) jenkins-IC2_112-189
+
+			 * Add a new custom gauge. (estebes) jenkins-IC2_112-188
+
+			 * Fix wrenching fluid pipes passing null to neighbouring blocks (Chocohead) jenkins-IC2_112-187
+
+			 * New pipe textures. (estebes) jenkins-IC2_112-186
+
+			 * Fixing annoying drill sound when breaking hard blocks. (estebes) jenkins-IC2_112-185
+
+			 * Try to fix the build. (estebes) jenkins-IC2_112-184
+
+			 * Change how pipe connectivity works. (estebes) jenkins-IC2_112-183
+
+			 * Become slightly distracted from the task at hand Heat sinks still need implementing, but why not start redesigning the Steam Boiler instead? With heat no longer so clear cut the experience needs to be improved somewhat to account for it Currently doesn't do anything other than heat up and look pretty (Chocohead) 
+			 * Fix pump battery slot ignoring upgrades Fixes #2594 (Chocohead) 
+			 * Add a mechanism to average heat over time Allows summarising an analogue process a little easier Allows compacting a SolidHeat instance down to a relative float value, which is also the string representation Moves networking additions to a single place (Chocohead) 
+			 * Add a toggle group GUI element Makes for slightly easier radio buttons (Chocohead) jenkins-IC2_112-182
+
+			 * Fix Coke Kiln. (estebes) jenkins-IC2_112-181
+
+			 * Allow creating SolidHeat instances on demand Reduces object churn for large surfaces which change heat frequently (Chocohead) 
+			 * Implement a notion of conductivity Allows heat aware tiles to change the heat conductivity alongside temperature differences Also fixes a bug with heat balancing designed to avoid over sharing which still over shared (Chocohead) 
+			 * Mount specific heat capacity to SolidHeat Realistically the cases where SolidHeat is important the specific heat capacity is too Also makes SolidHeat final to encourage the JVM to be more magic (Chocohead) 
+			 * Fix heat tinting around solid blocks Will now use the surrounding block lights for each face which should stop it going completely black (Chocohead) jenkins-IC2_112-180
+
+			 * Avoid shading crop sticks Fixes #2543 (Chocohead) 
+			 * Add pair of heat (unaware) sinks Column will need some more appropriate colours (Chocohead) 
+			 * Copy less, loop more Probably actually much more expensive to what was before it, but cleaner Still feel like there's a proper/sensible way to do with too (Chocohead) 
+			 * Fix the rubber tree item model Turns out what broke in 1.9 was parent item transforms stacked instead of being ignored Thus dropping Forge's inappropriate ones makes it work again Fixes #2409 and #2558 (Chocohead) jenkins-IC2_112-179
+
+			 * Fix Crop providedQuality. (estebes) jenkins-IC2_112-178
+
+			 * Use OreDictionary for iridium related recipes. Adjust values for the Cropmatron and CropHarvester. (estebes) jenkins-IC2_112-177
+
+			 * Fix treetapping non-resin logs still consuming durability Fixes #2584 (Chocohead) 
+			 * More work on specific heat capacity (Chocohead) 
+			 * Minor cleanup (Chocohead) 
+			 * Switch to interfaces for heat awareness Begins splitting the concept of apparent temperature and true heat for modelling specific heat capacity (Chocohead) 
+			 * Avoid pushing every build as a release We've had 170 now, back to betas (Chocohead) jenkins-IC2_112-176
+
+			 * Fix Crop Harvester recipe. (estebes) jenkins-IC2_112-175
+
+			 * Fix dynamite recipes being stingy Fixes #2573 (Chocohead) 
+			 * Fix acacia and dark oak crops dropping invalid logs Fixes #2581 (Chocohead) 
+			 * Fix EU-Reader crashing when the block being read changes Fixes #2583 (Chocohead) 
+			 * Fix new crops missing localisation (Chocohead) 
+			 * Allow CropCards to customise the name of the produced seeds (Chocohead) 
+			 * Fix bronze rotor missing a translation Fixes #2570 (Chocohead) 
+			 * Avoid creating lists just to be streamed (Chocohead) 
+			 * Avoid ticking on the client without a reason (Chocohead) jenkins-IC2_112-174
+
+			 * Small fix. (estebes) jenkins-IC2_112-173
+
+			 * Small buff to crop availability to crossbreed (~20%). (estebes) jenkins-IC2_112-172
+
+			 * Rebalanced the Crop Harvester. Cropmatron now supports upgrades. Added new Crops - Oak, Spruce, Birch, Jungle, Acacia, Flax. (estebes) jenkins-IC2_112-171
+
+			 * New sulfur recipe. Fix bug with worktable container syncing. Improved recipes related to dust, crushed ores and plates. (estebes) jenkins-IC2_112-170
+
+			 * Create new release (estebes) jenkins-IC2_112-169
+
+			 * Fix a few things regarding the Classic profile. (estebes) jenkins-IC2_112-168
+
+			 * Create OreDictionary entry for the iridium ore (ingotIridium) (estebes) jenkins-IC2_112-167
+
+			 * Fix some entries (estebes) jenkins-IC2_112-166
+
+			 * Fix missing ; (estebes) jenkins-IC2_112-165
+
+			 * Added a lot more oredictionary entries (estebes) jenkins-IC2_112-164
+
+			 * Fix machines not dropping anything when broken with anything but a wrench (Chocohead) 
+			 * Fix removals failing to notify neighbours (Chocohead) jenkins-IC2_112-163
+
+			 * Implement surface removal Appears to all work at least (Chocohead) jenkins-IC2_112-162
+
+			 * Fix hot cube item model (Chocohead) 
+			 * Implement multi-surface merging Also makes some more optimisations (Chocohead) 
+			 * Fix broken lang file (Chocohead) jenkins-IC2_112-161
+
+			 * Ensure the client is kept aware of cube heat Little bit more work as it can (and does) change off thread (Chocohead) 
+			 * Log surface with temperature Super spammy but makes it clear which a cube is in (Chocohead) 
+			 * Rough colour changes for temperature Good enough for the time being (Chocohead) jenkins-IC2_112-160
+
+			 * Avoid memory churning collections so much (Chocohead) 
+			 * Temporarily work around temperature-colouring scaling not being implemented (Chocohead) 
+			 * Fix a collection of bugs Actually lets heat flow now (without deadlocking too) (Chocohead) 
+			 * Drop event notification system It's massively memory heavy for high surface areas for little gain Trades the memory savings so nodes know their neighbours (Chocohead) 
+			 * Nothing to see here Unless you're in dev, in which case there's a "hot" "cube" Also the beginnings of a semi-analogue heat transfering mechanism (Chocohead) 
+			 * Update Russian translation, thanks QuantumStatement (Chocohead) 
+			 * Update German translation, thanks rumspringa (Chocohead) 
+			 * Tape the Coke Kiln back up (Chocohead) jenkins-IC2_112-159
+
+			 * Fix API (estebes) jenkins-IC2_112-158
+
+			 * Fix generator facings (estebes) jenkins-IC2_112-157
+
+			 * Fix locale (estebes) jenkins-IC2_112-156
+
+			 * Actually fix build (estebes) jenkins-IC2_112-155
+
+			 * Fix build (estebes) jenkins-IC2_112-154
+
+			 * Refactor (estebes) 
+			 * Temporarily disable the coke kiln (estebes) 
+			 * Cleanup some code (estebes) 
+			 * Added the bronze rotor (estebes) 
+			 * Fix the coke kiln hatch recipe. Now uses an iron trapdoor (estebes) 
+			 * Improve the dynamic recipe manager (estebes) jenkins-IC2_112-153
+
+			 * Fix 2541 (estebes) jenkins-IC2_112-152
+
+			 * Turn off debugging to prevent log spam (estebes) jenkins-IC2_112-151
+
+			 * Fluid pipes internal logic improved. New Storage Box textures. (estebes) 
+			 * Improves pipes (estebes) jenkins-IC2_112-150
+
+			 * Fix pipe bounding boxes for good Could alternatively flip a static boolean to change the return of getOutlineBoundingBox() when rendering Saves cloning vanilla code but also looks clunkier (Chocohead) jenkins-IC2_112-149
+
+			 * Improve tooltips for tank and storage box. Fix storages boxes and tanks not stacking properly. (estebes) jenkins-IC2_112-148
+
+			 * Fix crash testing the internal side of pipes (Chocohead) jenkins-IC2_112-147
+
+			 * Small changes (estebes) jenkins-IC2_112-146
+
+			 * Play about with pipe hitboxes some more Sort of an attempt at compromise between a fitting and helpful hitbox (Chocohead) 
+			 * Explicitly mention how to connect pipes (Chocohead) jenkins-IC2_112-145
+
+			 * better pipe textures (estebes) jenkins-IC2_112-144
+
+			 * Fluid pipes are live (estebes) jenkins-IC2_112-143
+
+			 * Show the side about to be rotated to when wrenching (Chocohead) 
+			 * Add a utility to get the rotation based on ray trace (Chocohead) 
+			 * Move the GL repositioning into EnhancedOverlay (Chocohead) jenkins-IC2_112-142
+
+			 * Fix overlay's alpha (estebes) jenkins-IC2_112-141
+
+			 * Fix overlay interaction with pipes (estebes) jenkins-IC2_112-140
+
+			 * Only show wrench overlay on blocks that can be rotated from that side (Chocohead) 
+			 * Allow IWrenchables to suggest whether a rotation is possible Defaults to true as previously it was presumed everything was worth a try (Chocohead) 
+			 * Add more context to IEnhancedOverlayProvider (Chocohead) 
+			 * Avoid churning WrenchOverlays (Chocohead) jenkins-IC2_112-139
+
+			 * Plaster docs everywhere Just because I can (Chocohead) 
+			 * Highlight the segment being hovered (Chocohead) 
+			 * Drop the tessellator argument Realistically it's never going to be in doubt (Chocohead) 
+			 * Avoid using GameProfile#equals It checks both ID and name, which is no good if people change their names (Chocohead) 
+			 * Break overlay rendering out into a dedicated handler (Chocohead) 
+			 * Allow drawing overlays with colour directly (Chocohead) 
+			 * Use a more appropriate functional type Given we don't want exceptions but do want boolean values, BooleanSupplier is the way to go (Chocohead) jenkins-IC2_112-138
+
+			 * Fix connectivity (estebes) jenkins-IC2_112-137
+
+			 * More work on pipes (estebes) jenkins-IC2_112-136
+
+			 * More work on pipes (estebes) jenkins-IC2_112-135
+
+			 * Improve the enhanced overlay (estebes) jenkins-IC2_112-134
+
+			 * Crowbar recipe and locale (estebes) 
+			 * Fix wrench durability (estebes) 
+			 * Improve the crowbar (estebes) 
+			 * Improve wrench sounds. More work on pipes. Added the crowbar. (estebes) 
+			 * Update the simplified chinese translation (estebes) jenkins-IC2_112-133
+
+			 * New tanks and tank funcionality (estebes) 
+			 * Add the Iridium Storage Box (estebes) jenkins-IC2_112-132
+
+			 * Fix not adjusting the multipliers for the new wind equation... (Player) jenkins-IC2_112-131
+
+			 * Add translation for Creosote (estebes) 
+			 * Add recipes for the storage boxes (estebes) 
+			 * Fix refractory_bricks texture (estebes) 
+			 * Added the storage box. Fix a few thigns here an there. (estebes) 
+			 * Fix the Coke Kiln Hatch gui (estebes) jenkins-IC2_112-130
+
+			 * Fix #2531 (estebes) jenkins-IC2_112-129
+
+			 * Fix the Coke Kiln harvest tool (estebes) 
+			 * Improve the DynamicRecipeManager (estebes) jenkins-IC2_112-128
+
+			 * Make wind simulation more resistant against dodgy world height or sea level values. (Player) jenkins-IC2_112-127
+
+			 * Improve the DynamicRecipeManager (estebes) 
+			 * Small Coke Kiln fixes (estebes) jenkins-IC2_112-126
+
+			 * New multiblock - Coke Kiln (estebes) jenkins-IC2_112-125
+
+			 * Tint pipe item models rather than manually creating them (Chocohead) 
+			 * Enhance pipe models Fixes particle textures being wrong (Chocohead) 
+			 * Allow ISpecialParticleModels to completely customise particles (Chocohead) jenkins-IC2_112-124
+
+			 * Custom IFluidHandler (estebes) jenkins-IC2_112-123
+
+			 * Fix logic (estebes) jenkins-IC2_112-122
+
+			 * Small wrench fix (estebes) jenkins-IC2_112-121
+
+			 * Small wrench improvements. (estebes) jenkins-IC2_112-120
+
+			 * Add wrench tooltip with instruction. Make the wrench non-enchantable. (estebes) jenkins-IC2_112-119
+
+			 * Allow the new wrench to be used in recipes that use the old wrench. (estebes) 
+			 * Some texture and models. Improved wrenching overlay. New wrenching implementation now affects most of the ic2 teblocks. (estebes) jenkins-IC2_112-118
+
+			 * Allow disabling items from having jetpacks attached in the config (Chocohead) 
+			 * Close enough (Chocohead) jenkins-IC2_112-117
+
+			 * Remove unnecessary casts They're implict already from float/double addition/multiplication (Chocohead) 
+			 * Fix the classic Empty Cell recipe producing 15 too few (Chocohead) 
+			 * Add support for custom mining drills (Chocohead) 
+			 * Fix some items showing in classic that don't need to (Chocohead) 
+			 * Fix filling classic empty cells not consuming them in the process (Chocohead) 
+			 * Hide the lappack when using experimental (Chocohead) 
+			 * Add support for custom hazmat armour (Chocohead) 
+			 * Fix iron scaffolding appearing to be wooden Fixes #2504 (Chocohead) jenkins-IC2_112-116
+
+			 * Fix: Depleted MOX quad rod doesn't produce enough iron (estebes) jenkins-IC2_112-115
+
+			 * Fix imports (estebes) jenkins-IC2_112-114
+
+			 * Fix imports (estebes) jenkins-IC2_112-113
+
+			 * New wrench and wrench functionality (estebes) jenkins-IC2_112-112
+
+			 * Fix reactor GUI texture Fixes #2489 (Chocohead) 
+			 * Fix Block Cutting Machine GUI texture (Chocohead) 
+			 * Fix using the wrong foam sprayer in both style profiles (Chocohead) 
+			 * Allow classic MFE to charge and drain tier 3 items (Chocohead) 
+			 * Ensure foam setting takes random tick speed into account Fixes #2521 (Chocohead) 
+			 * Fix weighted item distributors failing to try lower priorities (Chocohead) 
+			 * Hopefully fix encoding enums for the last time It's a less certain outcome for single item arrays, but it avoids crashing outright (Chocohead) jenkins-IC2_112-111
+
+			 * Allow classic MFSU to charge and drain tier 4 items (Chocohead) jenkins-IC2_112-110
+
+			 * Add comparator support to the tank Fixes #2471 (Chocohead) 
+			 * Fix an IllegalAccessException using uu-world-scan Fixes #2481 (Chocohead) 
+			 * Fix GUI name with Advanced Upgrades Fixes #2473 (Chocohead) 
+			 * Notify observers when crops on crop sticks grow Fixes #2477 (Chocohead) 
+			 * Fix UU scan missing air like blocks Adds a missing Watchdog reflection exception message too (Chocohead) 
+			 * Fix machine recipe removal for multi-item outputs (Chocohead) 
+			 * Fix the armour dyeing recipe matching too readily (Chocohead) jenkins-IC2_112-109
+
+			 * Allow the tier of the Mass Fabricator and Matter Fabricator to be changed Handles #2465 (Chocohead) 
+			 * Move all profile related things into a package (Chocohead) 
+			 * Add events for profile loading and switching (Chocohead) 
+			 * Make profile names non-case sensitive (Chocohead) 
+			 * Switch profile selection to the config No more -DIC2.lotsOfFun needed (Chocohead) jenkins-IC2_112-108
+
+			 * Ensure the condenser always updates its tier too (Chocohead) 
+			 * Fix the advanced miner having an indecisive tier Fixes #2463 better (Chocohead) jenkins-IC2_112-107
+
+			 * Improve laser events a little Actually exposes the laser ItemStack within LaserShootEvent Now allows lasers to go straight through cancelled entities (Chocohead) 
+			 * Scale the Advanced Miner's tier with the Miner's (Chocohead) 
+			 * Allow putting transformer upgrades in the Condenser (Chocohead) jenkins-IC2_112-106
+
+			 * Use Forge FakePlayer instead of our ancient one. (Aroma1997) jenkins-IC2_112-105
+
+			 * Ensure IInventory actions always save Should fix #2437 (Chocohead) 
+			 * Add additional checking to HandHeldInventory crashes Should make #2453 easy to debug (Chocohead) 
+			 * Fix compressing lapis Fixes #2451 (Chocohead) jenkins-IC2_112-104
+
+			 * Fix sending enum collections over the network Fixes #2448 (Chocohead) 
+			 * Add a lapis to lapis block compression recipe Implements #2445 (Chocohead) 
+			 * Fix leg and chestplate armour values being reversed (Chocohead) jenkins-IC2_112-103
+
+			 * Remove recipe cache until it can work properly. (Player) jenkins-IC2_112-102
+
+			 * Optimize machine recipe lookup performance. (Player) jenkins-IC2_112-101
+
+			 * Fix wind + water turbines not automatically updating rotors Fixes #2422 (Chocohead) 
+			 * Potentially fix the Watchdog killing drop scans Will fix #2412 (Chocohead) 
+			 * Implement IShapedRecipe on AdvRecipe Should allow output recipe removal in Craft Tweaker again (Chocohead) 
+			 * Fix crash with classic empty cells (Chocohead) jenkins-IC2_112-100
+
+			 * Expose EnergyTiles already when they aren't fully added to the enet. (Aroma1997) jenkins-IC2_112-99
+
+			 * Fix Iron Furnace sounds (Chocohead) 
+			 * Fix adding gauges server side Fixes #2419 (Chocohead) jenkins-IC2_112-98
+
+			 * Add variety to explosion sounds depending on type (Chocohead) 
+			 * Improve networking over enums (Chocohead) 
+			 * Fix pump not switching on whilst working (Chocohead) 
+			 * Add missing audio unload in the classic Canner (Chocohead) 
+			 * Add sound to the Iron Furnace (Chocohead) 
+			 * Fix the classic Canner and Cropmatron's GUIs (Chocohead) 
+			 * Prepare canning machine for sounds (Chocohead) 
+			 * Add proper sounds to the Electric and Induction Furnaces Fixes #2413 (Chocohead) 
+			 * Allow more flexibility with AudioManager (Chocohead) 
+			 * Switch AudioManager#playOnce to be a more logical default (Chocohead) jenkins-IC2_112-97
+
+			 * Fix placing cables whilst holding an unpainted painter Fixes #2403 (Chocohead) 
+			 * Add separate volume control for IC2 audio Add ability to control volume and attenuation distance Move pre-existing audio configs into new audio section (Chocohead) jenkins-IC2_112-96
+
+			 * Protect against 0-sized inventories just in case. (Player) jenkins-IC2_112-95
+
+			 * Implement TileEntityInventory.calcRedstoneFromInvSlots without streams for better performance. (Player) jenkins-IC2_112-94
+
+			 * Add slag to OreDict. (Aroma1997) 
+			 * Made Uranium processing a bit more Factorio-like. (Aroma1997) jenkins-IC2_112-93
+
+			 * Fixed some recipes only accepting vanilla planks Fixes #2399 (Chocohead) 
+			 * Added Ukrainian translation, thanks olexn (Chocohead) 
+			 * Late load generic Block Cutting recipes to allow specific ones earlier (Chocohead) 
+			 * Explicitly log non-overriden conflicting recipes (Chocohead) 
+			 * Fix the Liquid Heat Exchanger output slots overwriting each other (Chocohead) 
+			 * Fix recipe files running into each other without final line breaks (Chocohead) 
+			 * Fix profile loading crash if additional mods aren't present (Chocohead) 
+			 * Add #equals to ProfileTarget (Chocohead) 
+			 * Add support for multiple profile texture overrides (Chocohead) 
+			 * Add support for classic compact solars (Chocohead) 
+			 * Improve loading of profiles from zips (Chocohead) 
+			 * Add folder support for profile recipes (Chocohead) 
+			 * Improve ability to cleanly switch between profiles Without restarting of course, that never fails (Chocohead) 
+			 * Move smelting recipes to ini file (Chocohead) 
+			 * Implement recipe extension, add central profile collection (Chocohead) 
+			 * Removed trailing empty column in hoe recipe (Chocohead) 
+			 * Allow profiles to change smelting recipes (Chocohead) 
+			 * Add defensive xp check to furnace recipe manager (Chocohead) 
+			 * Fix some items being hidden that shouldn't have been (Chocohead) 
+			 * Improve ease of parsing profiles (Chocohead) 
+			 * Switch out SuddenlyTextures in favour of proper profile loading Supports texture packs rather than completely hijacking the textures (Chocohead) 
+			 * Fix logged errors when reloading resource packs (Chocohead) 
+			 * Ditch SuddenlyTextures Profile loading now offers everything it did, just without hacks (Chocohead) 
+			 * Refactor utility XML methods out of GuiParser Statically imported to try minimise unnecessary changes (and keep line length down) (Chocohead) 
+			 * Fixed CF Foam recipe outputting 1/3 of the intended (original) amount (Chocohead) 
+			 * More work on recipe processing Now properly reads recipe replacement and addition files (Chocohead) 
+			 * Add profile XML parsing, begin recipe processing Removes the alt zip containing classicy things Adds in some better string representations of profile related objects Allows TextureStyle to go in hash sets/maps (Chocohead) 
+			 * Provide a better solution for the furnace recipe manager being more special Special relative to most of the other machine's generic types at least (Chocohead) 
+			 * Fix spelling mistake in the config (Chocohead) 
+			 * Rename Classic to Version (Chocohead) 
+			 * Push out version handling to ProfileManager (Chocohead) 
+			 * Add texture porting to SuddenlyTextures Only does items and blocks (excluding the new obscurator format) (Chocohead) jenkins-IC2_112-92
+
+			 * Fix the Kinetic Stirling Generator output slots overwriting each other (Chocohead) 
+			 * Fix the Stirling Kinetic Generator limiting output oddly Fixes #2397 (Chocohead) 
+			 * Fix fluid handler resolving crashes during preinit (Chocohead) jenkins-IC2_112-91
+
+			 * Register recipes earlier to try ensure IC2 loads before addons (Chocohead) 
+			 * Ensure containers aren't accidentally duplicated (Chocohead) jenkins-IC2_112-90
+
+			 * Updated JEIHandler. (Aroma1997) jenkins-IC2_112-89
+
+			 * Fix recipe loading crash (Chocohead) jenkins-IC2_112-88
+
+			 * Fix the air compressing recipe taking precedence over others (Chocohead) 
+			 * Add IRecipeInput for exact NBT tag matching (Chocohead) 
+			 * Removed unnecessary @Deprecated annotations (Chocohead) jenkins-IC2_112-87
+
+			 * Add recipe removing back Properly splits disable to IC2 recipes and purge for everything else (Chocohead) jenkins-IC2_112-86
+
+			 * Add a noise to gas vapourisation (Chocohead) 
+			 * Temporary fix for painter cleaning in JEI Fixes #2384 (Chocohead) 
+			 * Fix the old compressed air cell emptying recipe Fixes #2274 (Chocohead) 
+			 * Ensure foam and colour changes always save Fixes #2268 (Chocohead) 
+			 * Fix machine recipes with inputs that have containers Fixes #2385 (Chocohead) jenkins-IC2_112-85
+
+			 * Fix the painter cleaning recipe not working Fixes #2338 (Chocohead) 
+			 * Nerf obsidian in the block cutting machine Handles #2189 (Chocohead) 
+			 * Fix foamed cables not rendering the block behind them Fixes #2337 (Chocohead) 
+			 * Handle invalid meta values for classic cells Fixes #2383 (Chocohead) 
+			 * Pause IC2 sounds whilst the game is also paused Fixes #2343 (Chocohead) 
+			 * Add ItemHandler capability to reactor access hatches Fixes #2349 (Chocohead) jenkins-IC2_112-84
+
+			 * Fix EventReceivers not working. (Aroma1997) jenkins-IC2_112-83
+
+			 * Hopefully fix sparadic crashes from packet releasing It was experimental after all (Chocohead) 
+			 * Stop using a private field as a local variable (Chocohead) jenkins-IC2_112-82
+
+			 * Add additional information for bad fluid containers Should help with diagnosing #2375 further (Chocohead) 
+			 * Fix the nano sabre breaking blocks in creative Now matches how other swords in vanilla work Fixes #2350 (Chocohead) 
+			 * Experimental packet payload releasing Should fix #2352 without side effects (Chocohead) 
+			 * Fix hand held container item switching (Chocohead) jenkins-IC2_112-81
+
+			 * Add Item#isEnchantable override to electric armour (Chocohead) 
+			 * Fixed rotor stacks being flagged as empty if over damaged Fixes #2190, #2326, #2373 (Chocohead) 
+			 * Fixed generic warning (Chocohead) jenkins-IC2_112-80
+
+			 * Updated some translations. (Aroma1997) jenkins-IC2_112-79
+
+			 * Fix charging cropnalyzers with non-single use items (Chocohead) jenkins-IC2_112-78
+
+			 * Add/Correct solid UU recipes (Chocohead) 
+			 * Improve the windmeter to actually help with wind mills and turbines A right click shall reveal useful information why (or why not) it is working (Chocohead) 
+			 * Avoid wrapping conflicting recipe exceptions (Chocohead) jenkins-IC2_112-77
+
+			 * Improve JEI Item transfer in Industrial Workbench. (Aroma1997) jenkins-IC2_112-76
+
+			 * Fix block breaking crashing without a tile entity Fixes #2367 (Chocohead) 
+			 * Update Russian translation, thanks safron03 and QuantumStatement (Chocohead) 
+			 * Defensively assume whether a connected server IC2 has or not Fixes #2363, among others previously (Chocohead) jenkins-IC2_112-75
+
+			 * Fix crash when a BlockTileEntities is passed the wrong location Fixes #2360 (Chocohead) jenkins-IC2_112-74
+
+			 * Default out ITeBlock place handlers (Chocohead) 
+			 * Block#getSubBlocks isn't client side only anymore (Chocohead) jenkins-IC2_112-73
+
+			 * Hopefully fix loading errors once and for all (Chocohead) jenkins-IC2_112-72
+
+			 * Fix SMP (Chocohead) jenkins-IC2_112-71
+
+			 * Hopefully fix edge URISyntaxException cases (Chocohead) 
+			 * Fix torch placement on fences (Chocohead) jenkins-IC2_112-70
+
+			 * Fix splitter cable inconsistency (Chocohead) 
+			 * Improve finding the recipe owner of invalid recipes (Chocohead) 
+			 * Fix torches being placeable on cables (Chocohead) jenkins-IC2_112-69
+
+			 * This'll help (Chocohead) jenkins-IC2_112-68
+
+			 * Move recycler blacklist patch somewhere more sensible (Chocohead) 
+			 * Better handling of the Industrial Credit config (Chocohead) 
+			 * Allow the fun to never stop (Chocohead) 
+			 * Final fork for now (Chocohead) 
+			 * Hide some more extra items (Chocohead) 
+			 * Midly fork the cropmatron at the expense of a little bit of sanity elsewhere (Chocohead) 
+			 * Fork that canning machine Not those two, the third one (Chocohead) 
+			 * Provide alternative recipe set Doesn't cover all blocks/items Adds warning for when a shaped recipe overwrites its own character definition (Chocohead) 
+			 * Provide an alternative CF sprayer (Chocohead) 
+			 * Add back 2 old reactor components (Chocohead) 
+			 * Annotate remaining tile entities (Chocohead) 
+			 * Fork cables (Chocohead) 
+			 * Allow electrolyzer picking (Chocohead) 
+			 * Fork MFE and MFSUs (Chocohead) 
+			 * Play about with texture substitution (Chocohead) 
+			 * Initial concept for TeBlock filtering (Chocohead) 
+			 * Concept for picking tile entities based on the config Persists between loads with different settings The config really just changes what an item will place (Chocohead) 
+			 * Add back the old weed-ex can (Chocohead) 
+			 * Add back extra ingots to acheive ingot parity (Chocohead) 
+			 * Make old cells work similar to buckets (Chocohead) 
+			 * Begin joint existance process (Chocohead) 
+			 * Add compressed plants and fuel cans back (Chocohead) 
+			 * Add near-depleted and re-enriched uranium back (Chocohead) 
+			 * Annotate other multi-items (Chocohead) 
+			 * Add back old cells (Chocohead) jenkins-IC2_112-67
+
+			 * Try patch old pre-1.8 configs rather than crashing loading them (Chocohead) 
+			 * Item#addInformation is client side only (Chocohead) 
+			 * Switch reactor GUI to use proper output method (Chocohead) jenkins-IC2_112-66
+
+			 * Rework redstone and comparator handling. (Aroma1997) jenkins-IC2_112-65
+
+			 * Fix personal chests not opening when looking inside (Chocohead) 
+			 * Allow the nano saber to cut cobwebs (Chocohead) jenkins-IC2_112-64
+
+			 * Reverse test stuff (Aroma1997) 
+			 * Test changelog autogeneration (Aroma1997) 
+
+		industrialcraft-2-2.8.192-ex112.jar:
+			jenkins-IC2_112-192
+
+			 * Improvments to ToolClass and ItemToolIC2 (estebes) 
+			 * Minor fix. (estebes) 
+			 * Improve IInventorySlotHolder compatibility. (estebes) jenkins-IC2_112-191
+
+			 * Improve IInventorySlotHolder. (estebes) jenkins-IC2_112-190
+
+			 * Allow non TileEntityInventory tiles to makes use of dynamic GUI slots. (estebes) jenkins-IC2_112-189
+
+			 * Add a new custom gauge. (estebes) jenkins-IC2_112-188
+
+			 * Fix wrenching fluid pipes passing null to neighbouring blocks (Chocohead) jenkins-IC2_112-187
+
+			 * New pipe textures. (estebes) jenkins-IC2_112-186
+
+			 * Fixing annoying drill sound when breaking hard blocks. (estebes) jenkins-IC2_112-185
+
+			 * Try to fix the build. (estebes) jenkins-IC2_112-184
+
+			 * Change how pipe connectivity works. (estebes) jenkins-IC2_112-183
+
+			 * Become slightly distracted from the task at hand Heat sinks still need implementing, but why not start redesigning the Steam Boiler instead? With heat no longer so clear cut the experience needs to be improved somewhat to account for it Currently doesn't do anything other than heat up and look pretty (Chocohead) 
+			 * Fix pump battery slot ignoring upgrades Fixes #2594 (Chocohead) 
+			 * Add a mechanism to average heat over time Allows summarising an analogue process a little easier Allows compacting a SolidHeat instance down to a relative float value, which is also the string representation Moves networking additions to a single place (Chocohead) 
+			 * Add a toggle group GUI element Makes for slightly easier radio buttons (Chocohead) jenkins-IC2_112-182
+
+			 * Fix Coke Kiln. (estebes) jenkins-IC2_112-181
+
+			 * Allow creating SolidHeat instances on demand Reduces object churn for large surfaces which change heat frequently (Chocohead) 
+			 * Implement a notion of conductivity Allows heat aware tiles to change the heat conductivity alongside temperature differences Also fixes a bug with heat balancing designed to avoid over sharing which still over shared (Chocohead) 
+			 * Mount specific heat capacity to SolidHeat Realistically the cases where SolidHeat is important the specific heat capacity is too Also makes SolidHeat final to encourage the JVM to be more magic (Chocohead) 
+			 * Fix heat tinting around solid blocks Will now use the surrounding block lights for each face which should stop it going completely black (Chocohead) jenkins-IC2_112-180
+
+			 * Avoid shading crop sticks Fixes #2543 (Chocohead) 
+			 * Add pair of heat (unaware) sinks Column will need some more appropriate colours (Chocohead) 
+			 * Copy less, loop more Probably actually much more expensive to what was before it, but cleaner Still feel like there's a proper/sensible way to do with too (Chocohead) 
+			 * Fix the rubber tree item model Turns out what broke in 1.9 was parent item transforms stacked instead of being ignored Thus dropping Forge's inappropriate ones makes it work again Fixes #2409 and #2558 (Chocohead) jenkins-IC2_112-179
+
+			 * Fix Crop providedQuality. (estebes) jenkins-IC2_112-178
+
+			 * Use OreDictionary for iridium related recipes. Adjust values for the Cropmatron and CropHarvester. (estebes) jenkins-IC2_112-177
+
+			 * Fix treetapping non-resin logs still consuming durability Fixes #2584 (Chocohead) 
+			 * More work on specific heat capacity (Chocohead) 
+			 * Minor cleanup (Chocohead) 
+			 * Switch to interfaces for heat awareness Begins splitting the concept of apparent temperature and true heat for modelling specific heat capacity (Chocohead) 
+			 * Avoid pushing every build as a release We've had 170 now, back to betas (Chocohead) jenkins-IC2_112-176
+
+			 * Fix Crop Harvester recipe. (estebes) jenkins-IC2_112-175
+
+			 * Fix dynamite recipes being stingy Fixes #2573 (Chocohead) 
+			 * Fix acacia and dark oak crops dropping invalid logs Fixes #2581 (Chocohead) 
+			 * Fix EU-Reader crashing when the block being read changes Fixes #2583 (Chocohead) 
+			 * Fix new crops missing localisation (Chocohead) 
+			 * Allow CropCards to customise the name of the produced seeds (Chocohead) 
+			 * Fix bronze rotor missing a translation Fixes #2570 (Chocohead) 
+			 * Avoid creating lists just to be streamed (Chocohead) 
+			 * Avoid ticking on the client without a reason (Chocohead) jenkins-IC2_112-174
+
+			 * Small fix. (estebes) jenkins-IC2_112-173
+
+			 * Small buff to crop availability to crossbreed (~20%). (estebes) jenkins-IC2_112-172
+
+			 * Rebalanced the Crop Harvester. Cropmatron now supports upgrades. Added new Crops - Oak, Spruce, Birch, Jungle, Acacia, Flax. (estebes) jenkins-IC2_112-171
+
+			 * New sulfur recipe. Fix bug with worktable container syncing. Improved recipes related to dust, crushed ores and plates. (estebes) jenkins-IC2_112-170
+
+			 * Create new release (estebes) jenkins-IC2_112-169
+
+			 * Fix a few things regarding the Classic profile. (estebes) jenkins-IC2_112-168
+
+			 * Create OreDictionary entry for the iridium ore (ingotIridium) (estebes) jenkins-IC2_112-167
+
+			 * Fix some entries (estebes) jenkins-IC2_112-166
+
+			 * Fix missing ; (estebes) jenkins-IC2_112-165
+
+			 * Added a lot more oredictionary entries (estebes) jenkins-IC2_112-164
+
+			 * Fix machines not dropping anything when broken with anything but a wrench (Chocohead) 
+			 * Fix removals failing to notify neighbours (Chocohead) jenkins-IC2_112-163
+
+			 * Implement surface removal Appears to all work at least (Chocohead) jenkins-IC2_112-162
+
+			 * Fix hot cube item model (Chocohead) 
+			 * Implement multi-surface merging Also makes some more optimisations (Chocohead) 
+			 * Fix broken lang file (Chocohead) jenkins-IC2_112-161
+
+			 * Ensure the client is kept aware of cube heat Little bit more work as it can (and does) change off thread (Chocohead) 
+			 * Log surface with temperature Super spammy but makes it clear which a cube is in (Chocohead) 
+			 * Rough colour changes for temperature Good enough for the time being (Chocohead) jenkins-IC2_112-160
+
+			 * Avoid memory churning collections so much (Chocohead) 
+			 * Temporarily work around temperature-colouring scaling not being implemented (Chocohead) 
+			 * Fix a collection of bugs Actually lets heat flow now (without deadlocking too) (Chocohead) 
+			 * Drop event notification system It's massively memory heavy for high surface areas for little gain Trades the memory savings so nodes know their neighbours (Chocohead) 
+			 * Nothing to see here Unless you're in dev, in which case there's a "hot" "cube" Also the beginnings of a semi-analogue heat transfering mechanism (Chocohead) 
+			 * Update Russian translation, thanks QuantumStatement (Chocohead) 
+			 * Update German translation, thanks rumspringa (Chocohead) 
+			 * Tape the Coke Kiln back up (Chocohead) jenkins-IC2_112-159
+
+			 * Fix API (estebes) jenkins-IC2_112-158
+
+			 * Fix generator facings (estebes) jenkins-IC2_112-157
+
+			 * Fix locale (estebes) jenkins-IC2_112-156
+
+			 * Actually fix build (estebes) jenkins-IC2_112-155
+
+			 * Fix build (estebes) jenkins-IC2_112-154
+
+			 * Refactor (estebes) 
+			 * Temporarily disable the coke kiln (estebes) 
+			 * Cleanup some code (estebes) 
+			 * Added the bronze rotor (estebes) 
+			 * Fix the coke kiln hatch recipe. Now uses an iron trapdoor (estebes) 
+			 * Improve the dynamic recipe manager (estebes) jenkins-IC2_112-153
+
+			 * Fix 2541 (estebes) jenkins-IC2_112-152
+
+			 * Turn off debugging to prevent log spam (estebes) jenkins-IC2_112-151
+
+			 * Fluid pipes internal logic improved. New Storage Box textures. (estebes) 
+			 * Improves pipes (estebes) jenkins-IC2_112-150
+
+			 * Fix pipe bounding boxes for good Could alternatively flip a static boolean to change the return of getOutlineBoundingBox() when rendering Saves cloning vanilla code but also looks clunkier (Chocohead) jenkins-IC2_112-149
+
+			 * Improve tooltips for tank and storage box. Fix storages boxes and tanks not stacking properly. (estebes) jenkins-IC2_112-148
+
+			 * Fix crash testing the internal side of pipes (Chocohead) jenkins-IC2_112-147
+
+			 * Small changes (estebes) jenkins-IC2_112-146
+
+			 * Play about with pipe hitboxes some more Sort of an attempt at compromise between a fitting and helpful hitbox (Chocohead) 
+			 * Explicitly mention how to connect pipes (Chocohead) jenkins-IC2_112-145
+
+			 * better pipe textures (estebes) jenkins-IC2_112-144
+
+			 * Fluid pipes are live (estebes) jenkins-IC2_112-143
+
+			 * Show the side about to be rotated to when wrenching (Chocohead) 
+			 * Add a utility to get the rotation based on ray trace (Chocohead) 
+			 * Move the GL repositioning into EnhancedOverlay (Chocohead) jenkins-IC2_112-142
+
+			 * Fix overlay's alpha (estebes) jenkins-IC2_112-141
+
+			 * Fix overlay interaction with pipes (estebes) jenkins-IC2_112-140
+
+			 * Only show wrench overlay on blocks that can be rotated from that side (Chocohead) 
+			 * Allow IWrenchables to suggest whether a rotation is possible Defaults to true as previously it was presumed everything was worth a try (Chocohead) 
+			 * Add more context to IEnhancedOverlayProvider (Chocohead) 
+			 * Avoid churning WrenchOverlays (Chocohead) jenkins-IC2_112-139
+
+			 * Plaster docs everywhere Just because I can (Chocohead) 
+			 * Highlight the segment being hovered (Chocohead) 
+			 * Drop the tessellator argument Realistically it's never going to be in doubt (Chocohead) 
+			 * Avoid using GameProfile#equals It checks both ID and name, which is no good if people change their names (Chocohead) 
+			 * Break overlay rendering out into a dedicated handler (Chocohead) 
+			 * Allow drawing overlays with colour directly (Chocohead) 
+			 * Use a more appropriate functional type Given we don't want exceptions but do want boolean values, BooleanSupplier is the way to go (Chocohead) jenkins-IC2_112-138
+
+			 * Fix connectivity (estebes) jenkins-IC2_112-137
+
+			 * More work on pipes (estebes) jenkins-IC2_112-136
+
+			 * More work on pipes (estebes) jenkins-IC2_112-135
+
+			 * Improve the enhanced overlay (estebes) jenkins-IC2_112-134
+
+			 * Crowbar recipe and locale (estebes) 
+			 * Fix wrench durability (estebes) 
+			 * Improve the crowbar (estebes) 
+			 * Improve wrench sounds. More work on pipes. Added the crowbar. (estebes) 
+			 * Update the simplified chinese translation (estebes) jenkins-IC2_112-133
+
+			 * New tanks and tank funcionality (estebes) 
+			 * Add the Iridium Storage Box (estebes) jenkins-IC2_112-132
+
+			 * Fix not adjusting the multipliers for the new wind equation... (Player) jenkins-IC2_112-131
+
+			 * Add translation for Creosote (estebes) 
+			 * Add recipes for the storage boxes (estebes) 
+			 * Fix refractory_bricks texture (estebes) 
+			 * Added the storage box. Fix a few thigns here an there. (estebes) 
+			 * Fix the Coke Kiln Hatch gui (estebes) jenkins-IC2_112-130
+
+			 * Fix #2531 (estebes) jenkins-IC2_112-129
+
+			 * Fix the Coke Kiln harvest tool (estebes) 
+			 * Improve the DynamicRecipeManager (estebes) jenkins-IC2_112-128
+
+			 * Make wind simulation more resistant against dodgy world height or sea level values. (Player) jenkins-IC2_112-127
+
+			 * Improve the DynamicRecipeManager (estebes) 
+			 * Small Coke Kiln fixes (estebes) jenkins-IC2_112-126
+
+			 * New multiblock - Coke Kiln (estebes) jenkins-IC2_112-125
+
+			 * Tint pipe item models rather than manually creating them (Chocohead) 
+			 * Enhance pipe models Fixes particle textures being wrong (Chocohead) 
+			 * Allow ISpecialParticleModels to completely customise particles (Chocohead) jenkins-IC2_112-124
+
+			 * Custom IFluidHandler (estebes) jenkins-IC2_112-123
+
+			 * Fix logic (estebes) jenkins-IC2_112-122
+
+			 * Small wrench fix (estebes) jenkins-IC2_112-121
+
+			 * Small wrench improvements. (estebes) jenkins-IC2_112-120
+
+			 * Add wrench tooltip with instruction. Make the wrench non-enchantable. (estebes) jenkins-IC2_112-119
+
+			 * Allow the new wrench to be used in recipes that use the old wrench. (estebes) 
+			 * Some texture and models. Improved wrenching overlay. New wrenching implementation now affects most of the ic2 teblocks. (estebes) jenkins-IC2_112-118
+
+			 * Allow disabling items from having jetpacks attached in the config (Chocohead) 
+			 * Close enough (Chocohead) jenkins-IC2_112-117
+
+			 * Remove unnecessary casts They're implict already from float/double addition/multiplication (Chocohead) 
+			 * Fix the classic Empty Cell recipe producing 15 too few (Chocohead) 
+			 * Add support for custom mining drills (Chocohead) 
+			 * Fix some items showing in classic that don't need to (Chocohead) 
+			 * Fix filling classic empty cells not consuming them in the process (Chocohead) 
+			 * Hide the lappack when using experimental (Chocohead) 
+			 * Add support for custom hazmat armour (Chocohead) 
+			 * Fix iron scaffolding appearing to be wooden Fixes #2504 (Chocohead) jenkins-IC2_112-116
+
+			 * Fix: Depleted MOX quad rod doesn't produce enough iron (estebes) jenkins-IC2_112-115
+
+			 * Fix imports (estebes) jenkins-IC2_112-114
+
+			 * Fix imports (estebes) jenkins-IC2_112-113
+
+			 * New wrench and wrench functionality (estebes) jenkins-IC2_112-112
+
+			 * Fix reactor GUI texture Fixes #2489 (Chocohead) 
+			 * Fix Block Cutting Machine GUI texture (Chocohead) 
+			 * Fix using the wrong foam sprayer in both style profiles (Chocohead) 
+			 * Allow classic MFE to charge and drain tier 3 items (Chocohead) 
+			 * Ensure foam setting takes random tick speed into account Fixes #2521 (Chocohead) 
+			 * Fix weighted item distributors failing to try lower priorities (Chocohead) 
+			 * Hopefully fix encoding enums for the last time It's a less certain outcome for single item arrays, but it avoids crashing outright (Chocohead) jenkins-IC2_112-111
+
+			 * Allow classic MFSU to charge and drain tier 4 items (Chocohead) jenkins-IC2_112-110
+
+			 * Add comparator support to the tank Fixes #2471 (Chocohead) 
+			 * Fix an IllegalAccessException using uu-world-scan Fixes #2481 (Chocohead) 
+			 * Fix GUI name with Advanced Upgrades Fixes #2473 (Chocohead) 
+			 * Notify observers when crops on crop sticks grow Fixes #2477 (Chocohead) 
+			 * Fix UU scan missing air like blocks Adds a missing Watchdog reflection exception message too (Chocohead) 
+			 * Fix machine recipe removal for multi-item outputs (Chocohead) 
+			 * Fix the armour dyeing recipe matching too readily (Chocohead) jenkins-IC2_112-109
+
+			 * Allow the tier of the Mass Fabricator and Matter Fabricator to be changed Handles #2465 (Chocohead) 
+			 * Move all profile related things into a package (Chocohead) 
+			 * Add events for profile loading and switching (Chocohead) 
+			 * Make profile names non-case sensitive (Chocohead) 
+			 * Switch profile selection to the config No more -DIC2.lotsOfFun needed (Chocohead) jenkins-IC2_112-108
+
+			 * Ensure the condenser always updates its tier too (Chocohead) 
+			 * Fix the advanced miner having an indecisive tier Fixes #2463 better (Chocohead) jenkins-IC2_112-107
+
+			 * Improve laser events a little Actually exposes the laser ItemStack within LaserShootEvent Now allows lasers to go straight through cancelled entities (Chocohead) 
+			 * Scale the Advanced Miner's tier with the Miner's (Chocohead) 
+			 * Allow putting transformer upgrades in the Condenser (Chocohead) jenkins-IC2_112-106
+
+			 * Use Forge FakePlayer instead of our ancient one. (Aroma1997) jenkins-IC2_112-105
+
+			 * Ensure IInventory actions always save Should fix #2437 (Chocohead) 
+			 * Add additional checking to HandHeldInventory crashes Should make #2453 easy to debug (Chocohead) 
+			 * Fix compressing lapis Fixes #2451 (Chocohead) jenkins-IC2_112-104
+
+			 * Fix sending enum collections over the network Fixes #2448 (Chocohead) 
+			 * Add a lapis to lapis block compression recipe Implements #2445 (Chocohead) 
+			 * Fix leg and chestplate armour values being reversed (Chocohead) jenkins-IC2_112-103
+
+			 * Remove recipe cache until it can work properly. (Player) jenkins-IC2_112-102
+
+			 * Optimize machine recipe lookup performance. (Player) jenkins-IC2_112-101
+
+			 * Fix wind + water turbines not automatically updating rotors Fixes #2422 (Chocohead) 
+			 * Potentially fix the Watchdog killing drop scans Will fix #2412 (Chocohead) 
+			 * Implement IShapedRecipe on AdvRecipe Should allow output recipe removal in Craft Tweaker again (Chocohead) 
+			 * Fix crash with classic empty cells (Chocohead) jenkins-IC2_112-100
+
+			 * Expose EnergyTiles already when they aren't fully added to the enet. (Aroma1997) jenkins-IC2_112-99
+
+			 * Fix Iron Furnace sounds (Chocohead) 
+			 * Fix adding gauges server side Fixes #2419 (Chocohead) jenkins-IC2_112-98
+
+			 * Add variety to explosion sounds depending on type (Chocohead) 
+			 * Improve networking over enums (Chocohead) 
+			 * Fix pump not switching on whilst working (Chocohead) 
+			 * Add missing audio unload in the classic Canner (Chocohead) 
+			 * Add sound to the Iron Furnace (Chocohead) 
+			 * Fix the classic Canner and Cropmatron's GUIs (Chocohead) 
+			 * Prepare canning machine for sounds (Chocohead) 
+			 * Add proper sounds to the Electric and Induction Furnaces Fixes #2413 (Chocohead) 
+			 * Allow more flexibility with AudioManager (Chocohead) 
+			 * Switch AudioManager#playOnce to be a more logical default (Chocohead) jenkins-IC2_112-97
+
+			 * Fix placing cables whilst holding an unpainted painter Fixes #2403 (Chocohead) 
+			 * Add separate volume control for IC2 audio Add ability to control volume and attenuation distance Move pre-existing audio configs into new audio section (Chocohead) jenkins-IC2_112-96
+
+			 * Protect against 0-sized inventories just in case. (Player) jenkins-IC2_112-95
+
+			 * Implement TileEntityInventory.calcRedstoneFromInvSlots without streams for better performance. (Player) jenkins-IC2_112-94
+
+			 * Add slag to OreDict. (Aroma1997) 
+			 * Made Uranium processing a bit more Factorio-like. (Aroma1997) jenkins-IC2_112-93
+
+			 * Fixed some recipes only accepting vanilla planks Fixes #2399 (Chocohead) 
+			 * Added Ukrainian translation, thanks olexn (Chocohead) 
+			 * Late load generic Block Cutting recipes to allow specific ones earlier (Chocohead) 
+			 * Explicitly log non-overriden conflicting recipes (Chocohead) 
+			 * Fix the Liquid Heat Exchanger output slots overwriting each other (Chocohead) 
+			 * Fix recipe files running into each other without final line breaks (Chocohead) 
+			 * Fix profile loading crash if additional mods aren't present (Chocohead) 
+			 * Add #equals to ProfileTarget (Chocohead) 
+			 * Add support for multiple profile texture overrides (Chocohead) 
+			 * Add support for classic compact solars (Chocohead) 
+			 * Improve loading of profiles from zips (Chocohead) 
+			 * Add folder support for profile recipes (Chocohead) 
+			 * Improve ability to cleanly switch between profiles Without restarting of course, that never fails (Chocohead) 
+			 * Move smelting recipes to ini file (Chocohead) 
+			 * Implement recipe extension, add central profile collection (Chocohead) 
+			 * Removed trailing empty column in hoe recipe (Chocohead) 
+			 * Allow profiles to change smelting recipes (Chocohead) 
+			 * Add defensive xp check to furnace recipe manager (Chocohead) 
+			 * Fix some items being hidden that shouldn't have been (Chocohead) 
+			 * Improve ease of parsing profiles (Chocohead) 
+			 * Switch out SuddenlyTextures in favour of proper profile loading Supports texture packs rather than completely hijacking the textures (Chocohead) 
+			 * Fix logged errors when reloading resource packs (Chocohead) 
+			 * Ditch SuddenlyTextures Profile loading now offers everything it did, just without hacks (Chocohead) 
+			 * Refactor utility XML methods out of GuiParser Statically imported to try minimise unnecessary changes (and keep line length down) (Chocohead) 
+			 * Fixed CF Foam recipe outputting 1/3 of the intended (original) amount (Chocohead) 
+			 * More work on recipe processing Now properly reads recipe replacement and addition files (Chocohead) 
+			 * Add profile XML parsing, begin recipe processing Removes the alt zip containing classicy things Adds in some better string representations of profile related objects Allows TextureStyle to go in hash sets/maps (Chocohead) 
+			 * Provide a better solution for the furnace recipe manager being more special Special relative to most of the other machine's generic types at least (Chocohead) 
+			 * Fix spelling mistake in the config (Chocohead) 
+			 * Rename Classic to Version (Chocohead) 
+			 * Push out version handling to ProfileManager (Chocohead) 
+			 * Add texture porting to SuddenlyTextures Only does items and blocks (excluding the new obscurator format) (Chocohead) jenkins-IC2_112-92
+
+			 * Fix the Kinetic Stirling Generator output slots overwriting each other (Chocohead) 
+			 * Fix the Stirling Kinetic Generator limiting output oddly Fixes #2397 (Chocohead) 
+			 * Fix fluid handler resolving crashes during preinit (Chocohead) jenkins-IC2_112-91
+
+			 * Register recipes earlier to try ensure IC2 loads before addons (Chocohead) 
+			 * Ensure containers aren't accidentally duplicated (Chocohead) jenkins-IC2_112-90
+
+			 * Updated JEIHandler. (Aroma1997) jenkins-IC2_112-89
+
+			 * Fix recipe loading crash (Chocohead) jenkins-IC2_112-88
+
+			 * Fix the air compressing recipe taking precedence over others (Chocohead) 
+			 * Add IRecipeInput for exact NBT tag matching (Chocohead) 
+			 * Removed unnecessary @Deprecated annotations (Chocohead) jenkins-IC2_112-87
+
+			 * Add recipe removing back Properly splits disable to IC2 recipes and purge for everything else (Chocohead) jenkins-IC2_112-86
+
+			 * Add a noise to gas vapourisation (Chocohead) 
+			 * Temporary fix for painter cleaning in JEI Fixes #2384 (Chocohead) 
+			 * Fix the old compressed air cell emptying recipe Fixes #2274 (Chocohead) 
+			 * Ensure foam and colour changes always save Fixes #2268 (Chocohead) 
+			 * Fix machine recipes with inputs that have containers Fixes #2385 (Chocohead) jenkins-IC2_112-85
+
+			 * Fix the painter cleaning recipe not working Fixes #2338 (Chocohead) 
+			 * Nerf obsidian in the block cutting machine Handles #2189 (Chocohead) 
+			 * Fix foamed cables not rendering the block behind them Fixes #2337 (Chocohead) 
+			 * Handle invalid meta values for classic cells Fixes #2383 (Chocohead) 
+			 * Pause IC2 sounds whilst the game is also paused Fixes #2343 (Chocohead) 
+			 * Add ItemHandler capability to reactor access hatches Fixes #2349 (Chocohead) jenkins-IC2_112-84
+
+			 * Fix EventReceivers not working. (Aroma1997) jenkins-IC2_112-83
+
+			 * Hopefully fix sparadic crashes from packet releasing It was experimental after all (Chocohead) 
+			 * Stop using a private field as a local variable (Chocohead) jenkins-IC2_112-82
+
+			 * Add additional information for bad fluid containers Should help with diagnosing #2375 further (Chocohead) 
+			 * Fix the nano sabre breaking blocks in creative Now matches how other swords in vanilla work Fixes #2350 (Chocohead) 
+			 * Experimental packet payload releasing Should fix #2352 without side effects (Chocohead) 
+			 * Fix hand held container item switching (Chocohead) jenkins-IC2_112-81
+
+			 * Add Item#isEnchantable override to electric armour (Chocohead) 
+			 * Fixed rotor stacks being flagged as empty if over damaged Fixes #2190, #2326, #2373 (Chocohead) 
+			 * Fixed generic warning (Chocohead) jenkins-IC2_112-80
+
+			 * Updated some translations. (Aroma1997) jenkins-IC2_112-79
+
+			 * Fix charging cropnalyzers with non-single use items (Chocohead) jenkins-IC2_112-78
+
+			 * Add/Correct solid UU recipes (Chocohead) 
+			 * Improve the windmeter to actually help with wind mills and turbines A right click shall reveal useful information why (or why not) it is working (Chocohead) 
+			 * Avoid wrapping conflicting recipe exceptions (Chocohead) jenkins-IC2_112-77
+
+			 * Improve JEI Item transfer in Industrial Workbench. (Aroma1997) jenkins-IC2_112-76
+
+			 * Fix block breaking crashing without a tile entity Fixes #2367 (Chocohead) 
+			 * Update Russian translation, thanks safron03 and QuantumStatement (Chocohead) 
+			 * Defensively assume whether a connected server IC2 has or not Fixes #2363, among others previously (Chocohead) jenkins-IC2_112-75
+
+			 * Fix crash when a BlockTileEntities is passed the wrong location Fixes #2360 (Chocohead) jenkins-IC2_112-74
+
+			 * Default out ITeBlock place handlers (Chocohead) 
+			 * Block#getSubBlocks isn't client side only anymore (Chocohead) jenkins-IC2_112-73
+
+			 * Hopefully fix loading errors once and for all (Chocohead) jenkins-IC2_112-72
+
+			 * Fix SMP (Chocohead) jenkins-IC2_112-71
+
+			 * Hopefully fix edge URISyntaxException cases (Chocohead) 
+			 * Fix torch placement on fences (Chocohead) jenkins-IC2_112-70
+
+			 * Fix splitter cable inconsistency (Chocohead) 
+			 * Improve finding the recipe owner of invalid recipes (Chocohead) 
+			 * Fix torches being placeable on cables (Chocohead) jenkins-IC2_112-69
+
+			 * This'll help (Chocohead) jenkins-IC2_112-68
+
+			 * Move recycler blacklist patch somewhere more sensible (Chocohead) 
+			 * Better handling of the Industrial Credit config (Chocohead) 
+			 * Allow the fun to never stop (Chocohead) 
+			 * Final fork for now (Chocohead) 
+			 * Hide some more extra items (Chocohead) 
+			 * Midly fork the cropmatron at the expense of a little bit of sanity elsewhere (Chocohead) 
+			 * Fork that canning machine Not those two, the third one (Chocohead) 
+			 * Provide alternative recipe set Doesn't cover all blocks/items Adds warning for when a shaped recipe overwrites its own character definition (Chocohead) 
+			 * Provide an alternative CF sprayer (Chocohead) 
+			 * Add back 2 old reactor components (Chocohead) 
+			 * Annotate remaining tile entities (Chocohead) 
+			 * Fork cables (Chocohead) 
+			 * Allow electrolyzer picking (Chocohead) 
+			 * Fork MFE and MFSUs (Chocohead) 
+			 * Play about with texture substitution (Chocohead) 
+			 * Initial concept for TeBlock filtering (Chocohead) 
+			 * Concept for picking tile entities based on the config Persists between loads with different settings The config really just changes what an item will place (Chocohead) 
+			 * Add back the old weed-ex can (Chocohead) 
+			 * Add back extra ingots to acheive ingot parity (Chocohead) 
+			 * Make old cells work similar to buckets (Chocohead) 
+			 * Begin joint existance process (Chocohead) 
+			 * Add compressed plants and fuel cans back (Chocohead) 
+			 * Add near-depleted and re-enriched uranium back (Chocohead) 
+			 * Annotate other multi-items (Chocohead) 
+			 * Add back old cells (Chocohead) jenkins-IC2_112-67
+
+			 * Try patch old pre-1.8 configs rather than crashing loading them (Chocohead) 
+			 * Item#addInformation is client side only (Chocohead) 
+			 * Switch reactor GUI to use proper output method (Chocohead) jenkins-IC2_112-66
+
+			 * Rework redstone and comparator handling. (Aroma1997) jenkins-IC2_112-65
+
+			 * Fix personal chests not opening when looking inside (Chocohead) 
+			 * Allow the nano saber to cut cobwebs (Chocohead) jenkins-IC2_112-64
+
+			 * Reverse test stuff (Aroma1997) 
+			 * Test changelog autogeneration (Aroma1997) 
+
+		industrialcraft-2-2.8.191-ex112.jar:
+			jenkins-IC2_112-191
+
+			 * Improve IInventorySlotHolder. (estebes) jenkins-IC2_112-190
+
+			 * Allow non TileEntityInventory tiles to makes use of dynamic GUI slots. (estebes) jenkins-IC2_112-189
+
+			 * Add a new custom gauge. (estebes) jenkins-IC2_112-188
+
+			 * Fix wrenching fluid pipes passing null to neighbouring blocks (Chocohead) jenkins-IC2_112-187
+
+			 * New pipe textures. (estebes) jenkins-IC2_112-186
+
+			 * Fixing annoying drill sound when breaking hard blocks. (estebes) jenkins-IC2_112-185
+
+			 * Try to fix the build. (estebes) jenkins-IC2_112-184
+
+			 * Change how pipe connectivity works. (estebes) jenkins-IC2_112-183
+
+			 * Become slightly distracted from the task at hand Heat sinks still need implementing, but why not start redesigning the Steam Boiler instead? With heat no longer so clear cut the experience needs to be improved somewhat to account for it Currently doesn't do anything other than heat up and look pretty (Chocohead) 
+			 * Fix pump battery slot ignoring upgrades Fixes #2594 (Chocohead) 
+			 * Add a mechanism to average heat over time Allows summarising an analogue process a little easier Allows compacting a SolidHeat instance down to a relative float value, which is also the string representation Moves networking additions to a single place (Chocohead) 
+			 * Add a toggle group GUI element Makes for slightly easier radio buttons (Chocohead) jenkins-IC2_112-182
+
+			 * Fix Coke Kiln. (estebes) jenkins-IC2_112-181
+
+			 * Allow creating SolidHeat instances on demand Reduces object churn for large surfaces which change heat frequently (Chocohead) 
+			 * Implement a notion of conductivity Allows heat aware tiles to change the heat conductivity alongside temperature differences Also fixes a bug with heat balancing designed to avoid over sharing which still over shared (Chocohead) 
+			 * Mount specific heat capacity to SolidHeat Realistically the cases where SolidHeat is important the specific heat capacity is too Also makes SolidHeat final to encourage the JVM to be more magic (Chocohead) 
+			 * Fix heat tinting around solid blocks Will now use the surrounding block lights for each face which should stop it going completely black (Chocohead) jenkins-IC2_112-180
+
+			 * Avoid shading crop sticks Fixes #2543 (Chocohead) 
+			 * Add pair of heat (unaware) sinks Column will need some more appropriate colours (Chocohead) 
+			 * Copy less, loop more Probably actually much more expensive to what was before it, but cleaner Still feel like there's a proper/sensible way to do with too (Chocohead) 
+			 * Fix the rubber tree item model Turns out what broke in 1.9 was parent item transforms stacked instead of being ignored Thus dropping Forge's inappropriate ones makes it work again Fixes #2409 and #2558 (Chocohead) jenkins-IC2_112-179
+
+			 * Fix Crop providedQuality. (estebes) jenkins-IC2_112-178
+
+			 * Use OreDictionary for iridium related recipes. Adjust values for the Cropmatron and CropHarvester. (estebes) jenkins-IC2_112-177
+
+			 * Fix treetapping non-resin logs still consuming durability Fixes #2584 (Chocohead) 
+			 * More work on specific heat capacity (Chocohead) 
+			 * Minor cleanup (Chocohead) 
+			 * Switch to interfaces for heat awareness Begins splitting the concept of apparent temperature and true heat for modelling specific heat capacity (Chocohead) 
+			 * Avoid pushing every build as a release We've had 170 now, back to betas (Chocohead) jenkins-IC2_112-176
+
+			 * Fix Crop Harvester recipe. (estebes) jenkins-IC2_112-175
+
+			 * Fix dynamite recipes being stingy Fixes #2573 (Chocohead) 
+			 * Fix acacia and dark oak crops dropping invalid logs Fixes #2581 (Chocohead) 
+			 * Fix EU-Reader crashing when the block being read changes Fixes #2583 (Chocohead) 
+			 * Fix new crops missing localisation (Chocohead) 
+			 * Allow CropCards to customise the name of the produced seeds (Chocohead) 
+			 * Fix bronze rotor missing a translation Fixes #2570 (Chocohead) 
+			 * Avoid creating lists just to be streamed (Chocohead) 
+			 * Avoid ticking on the client without a reason (Chocohead) jenkins-IC2_112-174
+
+			 * Small fix. (estebes) jenkins-IC2_112-173
+
+			 * Small buff to crop availability to crossbreed (~20%). (estebes) jenkins-IC2_112-172
+
+			 * Rebalanced the Crop Harvester. Cropmatron now supports upgrades. Added new Crops - Oak, Spruce, Birch, Jungle, Acacia, Flax. (estebes) jenkins-IC2_112-171
+
+			 * New sulfur recipe. Fix bug with worktable container syncing. Improved recipes related to dust, crushed ores and plates. (estebes) jenkins-IC2_112-170
+
+			 * Create new release (estebes) jenkins-IC2_112-169
+
+			 * Fix a few things regarding the Classic profile. (estebes) jenkins-IC2_112-168
+
+			 * Create OreDictionary entry for the iridium ore (ingotIridium) (estebes) jenkins-IC2_112-167
+
+			 * Fix some entries (estebes) jenkins-IC2_112-166
+
+			 * Fix missing ; (estebes) jenkins-IC2_112-165
+
+			 * Added a lot more oredictionary entries (estebes) jenkins-IC2_112-164
+
+			 * Fix machines not dropping anything when broken with anything but a wrench (Chocohead) 
+			 * Fix removals failing to notify neighbours (Chocohead) jenkins-IC2_112-163
+
+			 * Implement surface removal Appears to all work at least (Chocohead) jenkins-IC2_112-162
+
+			 * Fix hot cube item model (Chocohead) 
+			 * Implement multi-surface merging Also makes some more optimisations (Chocohead) 
+			 * Fix broken lang file (Chocohead) jenkins-IC2_112-161
+
+			 * Ensure the client is kept aware of cube heat Little bit more work as it can (and does) change off thread (Chocohead) 
+			 * Log surface with temperature Super spammy but makes it clear which a cube is in (Chocohead) 
+			 * Rough colour changes for temperature Good enough for the time being (Chocohead) jenkins-IC2_112-160
+
+			 * Avoid memory churning collections so much (Chocohead) 
+			 * Temporarily work around temperature-colouring scaling not being implemented (Chocohead) 
+			 * Fix a collection of bugs Actually lets heat flow now (without deadlocking too) (Chocohead) 
+			 * Drop event notification system It's massively memory heavy for high surface areas for little gain Trades the memory savings so nodes know their neighbours (Chocohead) 
+			 * Nothing to see here Unless you're in dev, in which case there's a "hot" "cube" Also the beginnings of a semi-analogue heat transfering mechanism (Chocohead) 
+			 * Update Russian translation, thanks QuantumStatement (Chocohead) 
+			 * Update German translation, thanks rumspringa (Chocohead) 
+			 * Tape the Coke Kiln back up (Chocohead) jenkins-IC2_112-159
+
+			 * Fix API (estebes) jenkins-IC2_112-158
+
+			 * Fix generator facings (estebes) jenkins-IC2_112-157
+
+			 * Fix locale (estebes) jenkins-IC2_112-156
+
+			 * Actually fix build (estebes) jenkins-IC2_112-155
+
+			 * Fix build (estebes) jenkins-IC2_112-154
+
+			 * Refactor (estebes) 
+			 * Temporarily disable the coke kiln (estebes) 
+			 * Cleanup some code (estebes) 
+			 * Added the bronze rotor (estebes) 
+			 * Fix the coke kiln hatch recipe. Now uses an iron trapdoor (estebes) 
+			 * Improve the dynamic recipe manager (estebes) jenkins-IC2_112-153
+
+			 * Fix 2541 (estebes) jenkins-IC2_112-152
+
+			 * Turn off debugging to prevent log spam (estebes) jenkins-IC2_112-151
+
+			 * Fluid pipes internal logic improved. New Storage Box textures. (estebes) 
+			 * Improves pipes (estebes) jenkins-IC2_112-150
+
+			 * Fix pipe bounding boxes for good Could alternatively flip a static boolean to change the return of getOutlineBoundingBox() when rendering Saves cloning vanilla code but also looks clunkier (Chocohead) jenkins-IC2_112-149
+
+			 * Improve tooltips for tank and storage box. Fix storages boxes and tanks not stacking properly. (estebes) jenkins-IC2_112-148
+
+			 * Fix crash testing the internal side of pipes (Chocohead) jenkins-IC2_112-147
+
+			 * Small changes (estebes) jenkins-IC2_112-146
+
+			 * Play about with pipe hitboxes some more Sort of an attempt at compromise between a fitting and helpful hitbox (Chocohead) 
+			 * Explicitly mention how to connect pipes (Chocohead) jenkins-IC2_112-145
+
+			 * better pipe textures (estebes) jenkins-IC2_112-144
+
+			 * Fluid pipes are live (estebes) jenkins-IC2_112-143
+
+			 * Show the side about to be rotated to when wrenching (Chocohead) 
+			 * Add a utility to get the rotation based on ray trace (Chocohead) 
+			 * Move the GL repositioning into EnhancedOverlay (Chocohead) jenkins-IC2_112-142
+
+			 * Fix overlay's alpha (estebes) jenkins-IC2_112-141
+
+			 * Fix overlay interaction with pipes (estebes) jenkins-IC2_112-140
+
+			 * Only show wrench overlay on blocks that can be rotated from that side (Chocohead) 
+			 * Allow IWrenchables to suggest whether a rotation is possible Defaults to true as previously it was presumed everything was worth a try (Chocohead) 
+			 * Add more context to IEnhancedOverlayProvider (Chocohead) 
+			 * Avoid churning WrenchOverlays (Chocohead) jenkins-IC2_112-139
+
+			 * Plaster docs everywhere Just because I can (Chocohead) 
+			 * Highlight the segment being hovered (Chocohead) 
+			 * Drop the tessellator argument Realistically it's never going to be in doubt (Chocohead) 
+			 * Avoid using GameProfile#equals It checks both ID and name, which is no good if people change their names (Chocohead) 
+			 * Break overlay rendering out into a dedicated handler (Chocohead) 
+			 * Allow drawing overlays with colour directly (Chocohead) 
+			 * Use a more appropriate functional type Given we don't want exceptions but do want boolean values, BooleanSupplier is the way to go (Chocohead) jenkins-IC2_112-138
+
+			 * Fix connectivity (estebes) jenkins-IC2_112-137
+
+			 * More work on pipes (estebes) jenkins-IC2_112-136
+
+			 * More work on pipes (estebes) jenkins-IC2_112-135
+
+			 * Improve the enhanced overlay (estebes) jenkins-IC2_112-134
+
+			 * Crowbar recipe and locale (estebes) 
+			 * Fix wrench durability (estebes) 
+			 * Improve the crowbar (estebes) 
+			 * Improve wrench sounds. More work on pipes. Added the crowbar. (estebes) 
+			 * Update the simplified chinese translation (estebes) jenkins-IC2_112-133
+
+			 * New tanks and tank funcionality (estebes) 
+			 * Add the Iridium Storage Box (estebes) jenkins-IC2_112-132
+
+			 * Fix not adjusting the multipliers for the new wind equation... (Player) jenkins-IC2_112-131
+
+			 * Add translation for Creosote (estebes) 
+			 * Add recipes for the storage boxes (estebes) 
+			 * Fix refractory_bricks texture (estebes) 
+			 * Added the storage box. Fix a few thigns here an there. (estebes) 
+			 * Fix the Coke Kiln Hatch gui (estebes) jenkins-IC2_112-130
+
+			 * Fix #2531 (estebes) jenkins-IC2_112-129
+
+			 * Fix the Coke Kiln harvest tool (estebes) 
+			 * Improve the DynamicRecipeManager (estebes) jenkins-IC2_112-128
+
+			 * Make wind simulation more resistant against dodgy world height or sea level values. (Player) jenkins-IC2_112-127
+
+			 * Improve the DynamicRecipeManager (estebes) 
+			 * Small Coke Kiln fixes (estebes) jenkins-IC2_112-126
+
+			 * New multiblock - Coke Kiln (estebes) jenkins-IC2_112-125
+
+			 * Tint pipe item models rather than manually creating them (Chocohead) 
+			 * Enhance pipe models Fixes particle textures being wrong (Chocohead) 
+			 * Allow ISpecialParticleModels to completely customise particles (Chocohead) jenkins-IC2_112-124
+
+			 * Custom IFluidHandler (estebes) jenkins-IC2_112-123
+
+			 * Fix logic (estebes) jenkins-IC2_112-122
+
+			 * Small wrench fix (estebes) jenkins-IC2_112-121
+
+			 * Small wrench improvements. (estebes) jenkins-IC2_112-120
+
+			 * Add wrench tooltip with instruction. Make the wrench non-enchantable. (estebes) jenkins-IC2_112-119
+
+			 * Allow the new wrench to be used in recipes that use the old wrench. (estebes) 
+			 * Some texture and models. Improved wrenching overlay. New wrenching implementation now affects most of the ic2 teblocks. (estebes) jenkins-IC2_112-118
+
+			 * Allow disabling items from having jetpacks attached in the config (Chocohead) 
+			 * Close enough (Chocohead) jenkins-IC2_112-117
+
+			 * Remove unnecessary casts They're implict already from float/double addition/multiplication (Chocohead) 
+			 * Fix the classic Empty Cell recipe producing 15 too few (Chocohead) 
+			 * Add support for custom mining drills (Chocohead) 
+			 * Fix some items showing in classic that don't need to (Chocohead) 
+			 * Fix filling classic empty cells not consuming them in the process (Chocohead) 
+			 * Hide the lappack when using experimental (Chocohead) 
+			 * Add support for custom hazmat armour (Chocohead) 
+			 * Fix iron scaffolding appearing to be wooden Fixes #2504 (Chocohead) jenkins-IC2_112-116
+
+			 * Fix: Depleted MOX quad rod doesn't produce enough iron (estebes) jenkins-IC2_112-115
+
+			 * Fix imports (estebes) jenkins-IC2_112-114
+
+			 * Fix imports (estebes) jenkins-IC2_112-113
+
+			 * New wrench and wrench functionality (estebes) jenkins-IC2_112-112
+
+			 * Fix reactor GUI texture Fixes #2489 (Chocohead) 
+			 * Fix Block Cutting Machine GUI texture (Chocohead) 
+			 * Fix using the wrong foam sprayer in both style profiles (Chocohead) 
+			 * Allow classic MFE to charge and drain tier 3 items (Chocohead) 
+			 * Ensure foam setting takes random tick speed into account Fixes #2521 (Chocohead) 
+			 * Fix weighted item distributors failing to try lower priorities (Chocohead) 
+			 * Hopefully fix encoding enums for the last time It's a less certain outcome for single item arrays, but it avoids crashing outright (Chocohead) jenkins-IC2_112-111
+
+			 * Allow classic MFSU to charge and drain tier 4 items (Chocohead) jenkins-IC2_112-110
+
+			 * Add comparator support to the tank Fixes #2471 (Chocohead) 
+			 * Fix an IllegalAccessException using uu-world-scan Fixes #2481 (Chocohead) 
+			 * Fix GUI name with Advanced Upgrades Fixes #2473 (Chocohead) 
+			 * Notify observers when crops on crop sticks grow Fixes #2477 (Chocohead) 
+			 * Fix UU scan missing air like blocks Adds a missing Watchdog reflection exception message too (Chocohead) 
+			 * Fix machine recipe removal for multi-item outputs (Chocohead) 
+			 * Fix the armour dyeing recipe matching too readily (Chocohead) jenkins-IC2_112-109
+
+			 * Allow the tier of the Mass Fabricator and Matter Fabricator to be changed Handles #2465 (Chocohead) 
+			 * Move all profile related things into a package (Chocohead) 
+			 * Add events for profile loading and switching (Chocohead) 
+			 * Make profile names non-case sensitive (Chocohead) 
+			 * Switch profile selection to the config No more -DIC2.lotsOfFun needed (Chocohead) jenkins-IC2_112-108
+
+			 * Ensure the condenser always updates its tier too (Chocohead) 
+			 * Fix the advanced miner having an indecisive tier Fixes #2463 better (Chocohead) jenkins-IC2_112-107
+
+			 * Improve laser events a little Actually exposes the laser ItemStack within LaserShootEvent Now allows lasers to go straight through cancelled entities (Chocohead) 
+			 * Scale the Advanced Miner's tier with the Miner's (Chocohead) 
+			 * Allow putting transformer upgrades in the Condenser (Chocohead) jenkins-IC2_112-106
+
+			 * Use Forge FakePlayer instead of our ancient one. (Aroma1997) jenkins-IC2_112-105
+
+			 * Ensure IInventory actions always save Should fix #2437 (Chocohead) 
+			 * Add additional checking to HandHeldInventory crashes Should make #2453 easy to debug (Chocohead) 
+			 * Fix compressing lapis Fixes #2451 (Chocohead) jenkins-IC2_112-104
+
+			 * Fix sending enum collections over the network Fixes #2448 (Chocohead) 
+			 * Add a lapis to lapis block compression recipe Implements #2445 (Chocohead) 
+			 * Fix leg and chestplate armour values being reversed (Chocohead) jenkins-IC2_112-103
+
+			 * Remove recipe cache until it can work properly. (Player) jenkins-IC2_112-102
+
+			 * Optimize machine recipe lookup performance. (Player) jenkins-IC2_112-101
+
+			 * Fix wind + water turbines not automatically updating rotors Fixes #2422 (Chocohead) 
+			 * Potentially fix the Watchdog killing drop scans Will fix #2412 (Chocohead) 
+			 * Implement IShapedRecipe on AdvRecipe Should allow output recipe removal in Craft Tweaker again (Chocohead) 
+			 * Fix crash with classic empty cells (Chocohead) jenkins-IC2_112-100
+
+			 * Expose EnergyTiles already when they aren't fully added to the enet. (Aroma1997) jenkins-IC2_112-99
+
+			 * Fix Iron Furnace sounds (Chocohead) 
+			 * Fix adding gauges server side Fixes #2419 (Chocohead) jenkins-IC2_112-98
+
+			 * Add variety to explosion sounds depending on type (Chocohead) 
+			 * Improve networking over enums (Chocohead) 
+			 * Fix pump not switching on whilst working (Chocohead) 
+			 * Add missing audio unload in the classic Canner (Chocohead) 
+			 * Add sound to the Iron Furnace (Chocohead) 
+			 * Fix the classic Canner and Cropmatron's GUIs (Chocohead) 
+			 * Prepare canning machine for sounds (Chocohead) 
+			 * Add proper sounds to the Electric and Induction Furnaces Fixes #2413 (Chocohead) 
+			 * Allow more flexibility with AudioManager (Chocohead) 
+			 * Switch AudioManager#playOnce to be a more logical default (Chocohead) jenkins-IC2_112-97
+
+			 * Fix placing cables whilst holding an unpainted painter Fixes #2403 (Chocohead) 
+			 * Add separate volume control for IC2 audio Add ability to control volume and attenuation distance Move pre-existing audio configs into new audio section (Chocohead) jenkins-IC2_112-96
+
+			 * Protect against 0-sized inventories just in case. (Player) jenkins-IC2_112-95
+
+			 * Implement TileEntityInventory.calcRedstoneFromInvSlots without streams for better performance. (Player) jenkins-IC2_112-94
+
+			 * Add slag to OreDict. (Aroma1997) 
+			 * Made Uranium processing a bit more Factorio-like. (Aroma1997) jenkins-IC2_112-93
+
+			 * Fixed some recipes only accepting vanilla planks Fixes #2399 (Chocohead) 
+			 * Added Ukrainian translation, thanks olexn (Chocohead) 
+			 * Late load generic Block Cutting recipes to allow specific ones earlier (Chocohead) 
+			 * Explicitly log non-overriden conflicting recipes (Chocohead) 
+			 * Fix the Liquid Heat Exchanger output slots overwriting each other (Chocohead) 
+			 * Fix recipe files running into each other without final line breaks (Chocohead) 
+			 * Fix profile loading crash if additional mods aren't present (Chocohead) 
+			 * Add #equals to ProfileTarget (Chocohead) 
+			 * Add support for multiple profile texture overrides (Chocohead) 
+			 * Add support for classic compact solars (Chocohead) 
+			 * Improve loading of profiles from zips (Chocohead) 
+			 * Add folder support for profile recipes (Chocohead) 
+			 * Improve ability to cleanly switch between profiles Without restarting of course, that never fails (Chocohead) 
+			 * Move smelting recipes to ini file (Chocohead) 
+			 * Implement recipe extension, add central profile collection (Chocohead) 
+			 * Removed trailing empty column in hoe recipe (Chocohead) 
+			 * Allow profiles to change smelting recipes (Chocohead) 
+			 * Add defensive xp check to furnace recipe manager (Chocohead) 
+			 * Fix some items being hidden that shouldn't have been (Chocohead) 
+			 * Improve ease of parsing profiles (Chocohead) 
+			 * Switch out SuddenlyTextures in favour of proper profile loading Supports texture packs rather than completely hijacking the textures (Chocohead) 
+			 * Fix logged errors when reloading resource packs (Chocohead) 
+			 * Ditch SuddenlyTextures Profile loading now offers everything it did, just without hacks (Chocohead) 
+			 * Refactor utility XML methods out of GuiParser Statically imported to try minimise unnecessary changes (and keep line length down) (Chocohead) 
+			 * Fixed CF Foam recipe outputting 1/3 of the intended (original) amount (Chocohead) 
+			 * More work on recipe processing Now properly reads recipe replacement and addition files (Chocohead) 
+			 * Add profile XML parsing, begin recipe processing Removes the alt zip containing classicy things Adds in some better string representations of profile related objects Allows TextureStyle to go in hash sets/maps (Chocohead) 
+			 * Provide a better solution for the furnace recipe manager being more special Special relative to most of the other machine's generic types at least (Chocohead) 
+			 * Fix spelling mistake in the config (Chocohead) 
+			 * Rename Classic to Version (Chocohead) 
+			 * Push out version handling to ProfileManager (Chocohead) 
+			 * Add texture porting to SuddenlyTextures Only does items and blocks (excluding the new obscurator format) (Chocohead) jenkins-IC2_112-92
+
+			 * Fix the Kinetic Stirling Generator output slots overwriting each other (Chocohead) 
+			 * Fix the Stirling Kinetic Generator limiting output oddly Fixes #2397 (Chocohead) 
+			 * Fix fluid handler resolving crashes during preinit (Chocohead) jenkins-IC2_112-91
+
+			 * Register recipes earlier to try ensure IC2 loads before addons (Chocohead) 
+			 * Ensure containers aren't accidentally duplicated (Chocohead) jenkins-IC2_112-90
+
+			 * Updated JEIHandler. (Aroma1997) jenkins-IC2_112-89
+
+			 * Fix recipe loading crash (Chocohead) jenkins-IC2_112-88
+
+			 * Fix the air compressing recipe taking precedence over others (Chocohead) 
+			 * Add IRecipeInput for exact NBT tag matching (Chocohead) 
+			 * Removed unnecessary @Deprecated annotations (Chocohead) jenkins-IC2_112-87
+
+			 * Add recipe removing back Properly splits disable to IC2 recipes and purge for everything else (Chocohead) jenkins-IC2_112-86
+
+			 * Add a noise to gas vapourisation (Chocohead) 
+			 * Temporary fix for painter cleaning in JEI Fixes #2384 (Chocohead) 
+			 * Fix the old compressed air cell emptying recipe Fixes #2274 (Chocohead) 
+			 * Ensure foam and colour changes always save Fixes #2268 (Chocohead) 
+			 * Fix machine recipes with inputs that have containers Fixes #2385 (Chocohead) jenkins-IC2_112-85
+
+			 * Fix the painter cleaning recipe not working Fixes #2338 (Chocohead) 
+			 * Nerf obsidian in the block cutting machine Handles #2189 (Chocohead) 
+			 * Fix foamed cables not rendering the block behind them Fixes #2337 (Chocohead) 
+			 * Handle invalid meta values for classic cells Fixes #2383 (Chocohead) 
+			 * Pause IC2 sounds whilst the game is also paused Fixes #2343 (Chocohead) 
+			 * Add ItemHandler capability to reactor access hatches Fixes #2349 (Chocohead) jenkins-IC2_112-84
+
+			 * Fix EventReceivers not working. (Aroma1997) jenkins-IC2_112-83
+
+			 * Hopefully fix sparadic crashes from packet releasing It was experimental after all (Chocohead) 
+			 * Stop using a private field as a local variable (Chocohead) jenkins-IC2_112-82
+
+			 * Add additional information for bad fluid containers Should help with diagnosing #2375 further (Chocohead) 
+			 * Fix the nano sabre breaking blocks in creative Now matches how other swords in vanilla work Fixes #2350 (Chocohead) 
+			 * Experimental packet payload releasing Should fix #2352 without side effects (Chocohead) 
+			 * Fix hand held container item switching (Chocohead) jenkins-IC2_112-81
+
+			 * Add Item#isEnchantable override to electric armour (Chocohead) 
+			 * Fixed rotor stacks being flagged as empty if over damaged Fixes #2190, #2326, #2373 (Chocohead) 
+			 * Fixed generic warning (Chocohead) jenkins-IC2_112-80
+
+			 * Updated some translations. (Aroma1997) jenkins-IC2_112-79
+
+			 * Fix charging cropnalyzers with non-single use items (Chocohead) jenkins-IC2_112-78
+
+			 * Add/Correct solid UU recipes (Chocohead) 
+			 * Improve the windmeter to actually help with wind mills and turbines A right click shall reveal useful information why (or why not) it is working (Chocohead) 
+			 * Avoid wrapping conflicting recipe exceptions (Chocohead) jenkins-IC2_112-77
+
+			 * Improve JEI Item transfer in Industrial Workbench. (Aroma1997) jenkins-IC2_112-76
+
+			 * Fix block breaking crashing without a tile entity Fixes #2367 (Chocohead) 
+			 * Update Russian translation, thanks safron03 and QuantumStatement (Chocohead) 
+			 * Defensively assume whether a connected server IC2 has or not Fixes #2363, among others previously (Chocohead) jenkins-IC2_112-75
+
+			 * Fix crash when a BlockTileEntities is passed the wrong location Fixes #2360 (Chocohead) jenkins-IC2_112-74
+
+			 * Default out ITeBlock place handlers (Chocohead) 
+			 * Block#getSubBlocks isn't client side only anymore (Chocohead) jenkins-IC2_112-73
+
+			 * Hopefully fix loading errors once and for all (Chocohead) jenkins-IC2_112-72
+
+			 * Fix SMP (Chocohead) jenkins-IC2_112-71
+
+			 * Hopefully fix edge URISyntaxException cases (Chocohead) 
+			 * Fix torch placement on fences (Chocohead) jenkins-IC2_112-70
+
+			 * Fix splitter cable inconsistency (Chocohead) 
+			 * Improve finding the recipe owner of invalid recipes (Chocohead) 
+			 * Fix torches being placeable on cables (Chocohead) jenkins-IC2_112-69
+
+			 * This'll help (Chocohead) jenkins-IC2_112-68
+
+			 * Move recycler blacklist patch somewhere more sensible (Chocohead) 
+			 * Better handling of the Industrial Credit config (Chocohead) 
+			 * Allow the fun to never stop (Chocohead) 
+			 * Final fork for now (Chocohead) 
+			 * Hide some more extra items (Chocohead) 
+			 * Midly fork the cropmatron at the expense of a little bit of sanity elsewhere (Chocohead) 
+			 * Fork that canning machine Not those two, the third one (Chocohead) 
+			 * Provide alternative recipe set Doesn't cover all blocks/items Adds warning for when a shaped recipe overwrites its own character definition (Chocohead) 
+			 * Provide an alternative CF sprayer (Chocohead) 
+			 * Add back 2 old reactor components (Chocohead) 
+			 * Annotate remaining tile entities (Chocohead) 
+			 * Fork cables (Chocohead) 
+			 * Allow electrolyzer picking (Chocohead) 
+			 * Fork MFE and MFSUs (Chocohead) 
+			 * Play about with texture substitution (Chocohead) 
+			 * Initial concept for TeBlock filtering (Chocohead) 
+			 * Concept for picking tile entities based on the config Persists between loads with different settings The config really just changes what an item will place (Chocohead) 
+			 * Add back the old weed-ex can (Chocohead) 
+			 * Add back extra ingots to acheive ingot parity (Chocohead) 
+			 * Make old cells work similar to buckets (Chocohead) 
+			 * Begin joint existance process (Chocohead) 
+			 * Add compressed plants and fuel cans back (Chocohead) 
+			 * Add near-depleted and re-enriched uranium back (Chocohead) 
+			 * Annotate other multi-items (Chocohead) 
+			 * Add back old cells (Chocohead) jenkins-IC2_112-67
+
+			 * Try patch old pre-1.8 configs rather than crashing loading them (Chocohead) 
+			 * Item#addInformation is client side only (Chocohead) 
+			 * Switch reactor GUI to use proper output method (Chocohead) jenkins-IC2_112-66
+
+			 * Rework redstone and comparator handling. (Aroma1997) jenkins-IC2_112-65
+
+			 * Fix personal chests not opening when looking inside (Chocohead) 
+			 * Allow the nano saber to cut cobwebs (Chocohead) jenkins-IC2_112-64
+
+			 * Reverse test stuff (Aroma1997) 
+			 * Test changelog autogeneration (Aroma1997) 
+
+		industrialcraft-2-2.8.190-ex112.jar:
+			jenkins-IC2_112-190
+
+			 * Allow non TileEntityInventory tiles to makes use of dynamic GUI slots. (estebes) jenkins-IC2_112-189
+
+			 * Add a new custom gauge. (estebes) jenkins-IC2_112-188
+
+			 * Fix wrenching fluid pipes passing null to neighbouring blocks (Chocohead) jenkins-IC2_112-187
+
+			 * New pipe textures. (estebes) jenkins-IC2_112-186
+
+			 * Fixing annoying drill sound when breaking hard blocks. (estebes) jenkins-IC2_112-185
+
+			 * Try to fix the build. (estebes) jenkins-IC2_112-184
+
+			 * Change how pipe connectivity works. (estebes) jenkins-IC2_112-183
+
+			 * Become slightly distracted from the task at hand Heat sinks still need implementing, but why not start redesigning the Steam Boiler instead? With heat no longer so clear cut the experience needs to be improved somewhat to account for it Currently doesn't do anything other than heat up and look pretty (Chocohead) 
+			 * Fix pump battery slot ignoring upgrades Fixes #2594 (Chocohead) 
+			 * Add a mechanism to average heat over time Allows summarising an analogue process a little easier Allows compacting a SolidHeat instance down to a relative float value, which is also the string representation Moves networking additions to a single place (Chocohead) 
+			 * Add a toggle group GUI element Makes for slightly easier radio buttons (Chocohead) jenkins-IC2_112-182
+
+			 * Fix Coke Kiln. (estebes) jenkins-IC2_112-181
+
+			 * Allow creating SolidHeat instances on demand Reduces object churn for large surfaces which change heat frequently (Chocohead) 
+			 * Implement a notion of conductivity Allows heat aware tiles to change the heat conductivity alongside temperature differences Also fixes a bug with heat balancing designed to avoid over sharing which still over shared (Chocohead) 
+			 * Mount specific heat capacity to SolidHeat Realistically the cases where SolidHeat is important the specific heat capacity is too Also makes SolidHeat final to encourage the JVM to be more magic (Chocohead) 
+			 * Fix heat tinting around solid blocks Will now use the surrounding block lights for each face which should stop it going completely black (Chocohead) jenkins-IC2_112-180
+
+			 * Avoid shading crop sticks Fixes #2543 (Chocohead) 
+			 * Add pair of heat (unaware) sinks Column will need some more appropriate colours (Chocohead) 
+			 * Copy less, loop more Probably actually much more expensive to what was before it, but cleaner Still feel like there's a proper/sensible way to do with too (Chocohead) 
+			 * Fix the rubber tree item model Turns out what broke in 1.9 was parent item transforms stacked instead of being ignored Thus dropping Forge's inappropriate ones makes it work again Fixes #2409 and #2558 (Chocohead) jenkins-IC2_112-179
+
+			 * Fix Crop providedQuality. (estebes) jenkins-IC2_112-178
+
+			 * Use OreDictionary for iridium related recipes. Adjust values for the Cropmatron and CropHarvester. (estebes) jenkins-IC2_112-177
+
+			 * Fix treetapping non-resin logs still consuming durability Fixes #2584 (Chocohead) 
+			 * More work on specific heat capacity (Chocohead) 
+			 * Minor cleanup (Chocohead) 
+			 * Switch to interfaces for heat awareness Begins splitting the concept of apparent temperature and true heat for modelling specific heat capacity (Chocohead) 
+			 * Avoid pushing every build as a release We've had 170 now, back to betas (Chocohead) jenkins-IC2_112-176
+
+			 * Fix Crop Harvester recipe. (estebes) jenkins-IC2_112-175
+
+			 * Fix dynamite recipes being stingy Fixes #2573 (Chocohead) 
+			 * Fix acacia and dark oak crops dropping invalid logs Fixes #2581 (Chocohead) 
+			 * Fix EU-Reader crashing when the block being read changes Fixes #2583 (Chocohead) 
+			 * Fix new crops missing localisation (Chocohead) 
+			 * Allow CropCards to customise the name of the produced seeds (Chocohead) 
+			 * Fix bronze rotor missing a translation Fixes #2570 (Chocohead) 
+			 * Avoid creating lists just to be streamed (Chocohead) 
+			 * Avoid ticking on the client without a reason (Chocohead) jenkins-IC2_112-174
+
+			 * Small fix. (estebes) jenkins-IC2_112-173
+
+			 * Small buff to crop availability to crossbreed (~20%). (estebes) jenkins-IC2_112-172
+
+			 * Rebalanced the Crop Harvester. Cropmatron now supports upgrades. Added new Crops - Oak, Spruce, Birch, Jungle, Acacia, Flax. (estebes) jenkins-IC2_112-171
+
+			 * New sulfur recipe. Fix bug with worktable container syncing. Improved recipes related to dust, crushed ores and plates. (estebes) jenkins-IC2_112-170
+
+			 * Create new release (estebes) jenkins-IC2_112-169
+
+			 * Fix a few things regarding the Classic profile. (estebes) jenkins-IC2_112-168
+
+			 * Create OreDictionary entry for the iridium ore (ingotIridium) (estebes) jenkins-IC2_112-167
+
+			 * Fix some entries (estebes) jenkins-IC2_112-166
+
+			 * Fix missing ; (estebes) jenkins-IC2_112-165
+
+			 * Added a lot more oredictionary entries (estebes) jenkins-IC2_112-164
+
+			 * Fix machines not dropping anything when broken with anything but a wrench (Chocohead) 
+			 * Fix removals failing to notify neighbours (Chocohead) jenkins-IC2_112-163
+
+			 * Implement surface removal Appears to all work at least (Chocohead) jenkins-IC2_112-162
+
+			 * Fix hot cube item model (Chocohead) 
+			 * Implement multi-surface merging Also makes some more optimisations (Chocohead) 
+			 * Fix broken lang file (Chocohead) jenkins-IC2_112-161
+
+			 * Ensure the client is kept aware of cube heat Little bit more work as it can (and does) change off thread (Chocohead) 
+			 * Log surface with temperature Super spammy but makes it clear which a cube is in (Chocohead) 
+			 * Rough colour changes for temperature Good enough for the time being (Chocohead) jenkins-IC2_112-160
+
+			 * Avoid memory churning collections so much (Chocohead) 
+			 * Temporarily work around temperature-colouring scaling not being implemented (Chocohead) 
+			 * Fix a collection of bugs Actually lets heat flow now (without deadlocking too) (Chocohead) 
+			 * Drop event notification system It's massively memory heavy for high surface areas for little gain Trades the memory savings so nodes know their neighbours (Chocohead) 
+			 * Nothing to see here Unless you're in dev, in which case there's a "hot" "cube" Also the beginnings of a semi-analogue heat transfering mechanism (Chocohead) 
+			 * Update Russian translation, thanks QuantumStatement (Chocohead) 
+			 * Update German translation, thanks rumspringa (Chocohead) 
+			 * Tape the Coke Kiln back up (Chocohead) jenkins-IC2_112-159
+
+			 * Fix API (estebes) jenkins-IC2_112-158
+
+			 * Fix generator facings (estebes) jenkins-IC2_112-157
+
+			 * Fix locale (estebes) jenkins-IC2_112-156
+
+			 * Actually fix build (estebes) jenkins-IC2_112-155
+
+			 * Fix build (estebes) jenkins-IC2_112-154
+
+			 * Refactor (estebes) 
+			 * Temporarily disable the coke kiln (estebes) 
+			 * Cleanup some code (estebes) 
+			 * Added the bronze rotor (estebes) 
+			 * Fix the coke kiln hatch recipe. Now uses an iron trapdoor (estebes) 
+			 * Improve the dynamic recipe manager (estebes) jenkins-IC2_112-153
+
+			 * Fix 2541 (estebes) jenkins-IC2_112-152
+
+			 * Turn off debugging to prevent log spam (estebes) jenkins-IC2_112-151
+
+			 * Fluid pipes internal logic improved. New Storage Box textures. (estebes) 
+			 * Improves pipes (estebes) jenkins-IC2_112-150
+
+			 * Fix pipe bounding boxes for good Could alternatively flip a static boolean to change the return of getOutlineBoundingBox() when rendering Saves cloning vanilla code but also looks clunkier (Chocohead) jenkins-IC2_112-149
+
+			 * Improve tooltips for tank and storage box. Fix storages boxes and tanks not stacking properly. (estebes) jenkins-IC2_112-148
+
+			 * Fix crash testing the internal side of pipes (Chocohead) jenkins-IC2_112-147
+
+			 * Small changes (estebes) jenkins-IC2_112-146
+
+			 * Play about with pipe hitboxes some more Sort of an attempt at compromise between a fitting and helpful hitbox (Chocohead) 
+			 * Explicitly mention how to connect pipes (Chocohead) jenkins-IC2_112-145
+
+			 * better pipe textures (estebes) jenkins-IC2_112-144
+
+			 * Fluid pipes are live (estebes) jenkins-IC2_112-143
+
+			 * Show the side about to be rotated to when wrenching (Chocohead) 
+			 * Add a utility to get the rotation based on ray trace (Chocohead) 
+			 * Move the GL repositioning into EnhancedOverlay (Chocohead) jenkins-IC2_112-142
+
+			 * Fix overlay's alpha (estebes) jenkins-IC2_112-141
+
+			 * Fix overlay interaction with pipes (estebes) jenkins-IC2_112-140
+
+			 * Only show wrench overlay on blocks that can be rotated from that side (Chocohead) 
+			 * Allow IWrenchables to suggest whether a rotation is possible Defaults to true as previously it was presumed everything was worth a try (Chocohead) 
+			 * Add more context to IEnhancedOverlayProvider (Chocohead) 
+			 * Avoid churning WrenchOverlays (Chocohead) jenkins-IC2_112-139
+
+			 * Plaster docs everywhere Just because I can (Chocohead) 
+			 * Highlight the segment being hovered (Chocohead) 
+			 * Drop the tessellator argument Realistically it's never going to be in doubt (Chocohead) 
+			 * Avoid using GameProfile#equals It checks both ID and name, which is no good if people change their names (Chocohead) 
+			 * Break overlay rendering out into a dedicated handler (Chocohead) 
+			 * Allow drawing overlays with colour directly (Chocohead) 
+			 * Use a more appropriate functional type Given we don't want exceptions but do want boolean values, BooleanSupplier is the way to go (Chocohead) jenkins-IC2_112-138
+
+			 * Fix connectivity (estebes) jenkins-IC2_112-137
+
+			 * More work on pipes (estebes) jenkins-IC2_112-136
+
+			 * More work on pipes (estebes) jenkins-IC2_112-135
+
+			 * Improve the enhanced overlay (estebes) jenkins-IC2_112-134
+
+			 * Crowbar recipe and locale (estebes) 
+			 * Fix wrench durability (estebes) 
+			 * Improve the crowbar (estebes) 
+			 * Improve wrench sounds. More work on pipes. Added the crowbar. (estebes) 
+			 * Update the simplified chinese translation (estebes) jenkins-IC2_112-133
+
+			 * New tanks and tank funcionality (estebes) 
+			 * Add the Iridium Storage Box (estebes) jenkins-IC2_112-132
+
+			 * Fix not adjusting the multipliers for the new wind equation... (Player) jenkins-IC2_112-131
+
+			 * Add translation for Creosote (estebes) 
+			 * Add recipes for the storage boxes (estebes) 
+			 * Fix refractory_bricks texture (estebes) 
+			 * Added the storage box. Fix a few thigns here an there. (estebes) 
+			 * Fix the Coke Kiln Hatch gui (estebes) jenkins-IC2_112-130
+
+			 * Fix #2531 (estebes) jenkins-IC2_112-129
+
+			 * Fix the Coke Kiln harvest tool (estebes) 
+			 * Improve the DynamicRecipeManager (estebes) jenkins-IC2_112-128
+
+			 * Make wind simulation more resistant against dodgy world height or sea level values. (Player) jenkins-IC2_112-127
+
+			 * Improve the DynamicRecipeManager (estebes) 
+			 * Small Coke Kiln fixes (estebes) jenkins-IC2_112-126
+
+			 * New multiblock - Coke Kiln (estebes) jenkins-IC2_112-125
+
+			 * Tint pipe item models rather than manually creating them (Chocohead) 
+			 * Enhance pipe models Fixes particle textures being wrong (Chocohead) 
+			 * Allow ISpecialParticleModels to completely customise particles (Chocohead) jenkins-IC2_112-124
+
+			 * Custom IFluidHandler (estebes) jenkins-IC2_112-123
+
+			 * Fix logic (estebes) jenkins-IC2_112-122
+
+			 * Small wrench fix (estebes) jenkins-IC2_112-121
+
+			 * Small wrench improvements. (estebes) jenkins-IC2_112-120
+
+			 * Add wrench tooltip with instruction. Make the wrench non-enchantable. (estebes) jenkins-IC2_112-119
+
+			 * Allow the new wrench to be used in recipes that use the old wrench. (estebes) 
+			 * Some texture and models. Improved wrenching overlay. New wrenching implementation now affects most of the ic2 teblocks. (estebes) jenkins-IC2_112-118
+
+			 * Allow disabling items from having jetpacks attached in the config (Chocohead) 
+			 * Close enough (Chocohead) jenkins-IC2_112-117
+
+			 * Remove unnecessary casts They're implict already from float/double addition/multiplication (Chocohead) 
+			 * Fix the classic Empty Cell recipe producing 15 too few (Chocohead) 
+			 * Add support for custom mining drills (Chocohead) 
+			 * Fix some items showing in classic that don't need to (Chocohead) 
+			 * Fix filling classic empty cells not consuming them in the process (Chocohead) 
+			 * Hide the lappack when using experimental (Chocohead) 
+			 * Add support for custom hazmat armour (Chocohead) 
+			 * Fix iron scaffolding appearing to be wooden Fixes #2504 (Chocohead) jenkins-IC2_112-116
+
+			 * Fix: Depleted MOX quad rod doesn't produce enough iron (estebes) jenkins-IC2_112-115
+
+			 * Fix imports (estebes) jenkins-IC2_112-114
+
+			 * Fix imports (estebes) jenkins-IC2_112-113
+
+			 * New wrench and wrench functionality (estebes) jenkins-IC2_112-112
+
+			 * Fix reactor GUI texture Fixes #2489 (Chocohead) 
+			 * Fix Block Cutting Machine GUI texture (Chocohead) 
+			 * Fix using the wrong foam sprayer in both style profiles (Chocohead) 
+			 * Allow classic MFE to charge and drain tier 3 items (Chocohead) 
+			 * Ensure foam setting takes random tick speed into account Fixes #2521 (Chocohead) 
+			 * Fix weighted item distributors failing to try lower priorities (Chocohead) 
+			 * Hopefully fix encoding enums for the last time It's a less certain outcome for single item arrays, but it avoids crashing outright (Chocohead) jenkins-IC2_112-111
+
+			 * Allow classic MFSU to charge and drain tier 4 items (Chocohead) jenkins-IC2_112-110
+
+			 * Add comparator support to the tank Fixes #2471 (Chocohead) 
+			 * Fix an IllegalAccessException using uu-world-scan Fixes #2481 (Chocohead) 
+			 * Fix GUI name with Advanced Upgrades Fixes #2473 (Chocohead) 
+			 * Notify observers when crops on crop sticks grow Fixes #2477 (Chocohead) 
+			 * Fix UU scan missing air like blocks Adds a missing Watchdog reflection exception message too (Chocohead) 
+			 * Fix machine recipe removal for multi-item outputs (Chocohead) 
+			 * Fix the armour dyeing recipe matching too readily (Chocohead) jenkins-IC2_112-109
+
+			 * Allow the tier of the Mass Fabricator and Matter Fabricator to be changed Handles #2465 (Chocohead) 
+			 * Move all profile related things into a package (Chocohead) 
+			 * Add events for profile loading and switching (Chocohead) 
+			 * Make profile names non-case sensitive (Chocohead) 
+			 * Switch profile selection to the config No more -DIC2.lotsOfFun needed (Chocohead) jenkins-IC2_112-108
+
+			 * Ensure the condenser always updates its tier too (Chocohead) 
+			 * Fix the advanced miner having an indecisive tier Fixes #2463 better (Chocohead) jenkins-IC2_112-107
+
+			 * Improve laser events a little Actually exposes the laser ItemStack within LaserShootEvent Now allows lasers to go straight through cancelled entities (Chocohead) 
+			 * Scale the Advanced Miner's tier with the Miner's (Chocohead) 
+			 * Allow putting transformer upgrades in the Condenser (Chocohead) jenkins-IC2_112-106
+
+			 * Use Forge FakePlayer instead of our ancient one. (Aroma1997) jenkins-IC2_112-105
+
+			 * Ensure IInventory actions always save Should fix #2437 (Chocohead) 
+			 * Add additional checking to HandHeldInventory crashes Should make #2453 easy to debug (Chocohead) 
+			 * Fix compressing lapis Fixes #2451 (Chocohead) jenkins-IC2_112-104
+
+			 * Fix sending enum collections over the network Fixes #2448 (Chocohead) 
+			 * Add a lapis to lapis block compression recipe Implements #2445 (Chocohead) 
+			 * Fix leg and chestplate armour values being reversed (Chocohead) jenkins-IC2_112-103
+
+			 * Remove recipe cache until it can work properly. (Player) jenkins-IC2_112-102
+
+			 * Optimize machine recipe lookup performance. (Player) jenkins-IC2_112-101
+
+			 * Fix wind + water turbines not automatically updating rotors Fixes #2422 (Chocohead) 
+			 * Potentially fix the Watchdog killing drop scans Will fix #2412 (Chocohead) 
+			 * Implement IShapedRecipe on AdvRecipe Should allow output recipe removal in Craft Tweaker again (Chocohead) 
+			 * Fix crash with classic empty cells (Chocohead) jenkins-IC2_112-100
+
+			 * Expose EnergyTiles already when they aren't fully added to the enet. (Aroma1997) jenkins-IC2_112-99
+
+			 * Fix Iron Furnace sounds (Chocohead) 
+			 * Fix adding gauges server side Fixes #2419 (Chocohead) jenkins-IC2_112-98
+
+			 * Add variety to explosion sounds depending on type (Chocohead) 
+			 * Improve networking over enums (Chocohead) 
+			 * Fix pump not switching on whilst working (Chocohead) 
+			 * Add missing audio unload in the classic Canner (Chocohead) 
+			 * Add sound to the Iron Furnace (Chocohead) 
+			 * Fix the classic Canner and Cropmatron's GUIs (Chocohead) 
+			 * Prepare canning machine for sounds (Chocohead) 
+			 * Add proper sounds to the Electric and Induction Furnaces Fixes #2413 (Chocohead) 
+			 * Allow more flexibility with AudioManager (Chocohead) 
+			 * Switch AudioManager#playOnce to be a more logical default (Chocohead) jenkins-IC2_112-97
+
+			 * Fix placing cables whilst holding an unpainted painter Fixes #2403 (Chocohead) 
+			 * Add separate volume control for IC2 audio Add ability to control volume and attenuation distance Move pre-existing audio configs into new audio section (Chocohead) jenkins-IC2_112-96
+
+			 * Protect against 0-sized inventories just in case. (Player) jenkins-IC2_112-95
+
+			 * Implement TileEntityInventory.calcRedstoneFromInvSlots without streams for better performance. (Player) jenkins-IC2_112-94
+
+			 * Add slag to OreDict. (Aroma1997) 
+			 * Made Uranium processing a bit more Factorio-like. (Aroma1997) jenkins-IC2_112-93
+
+			 * Fixed some recipes only accepting vanilla planks Fixes #2399 (Chocohead) 
+			 * Added Ukrainian translation, thanks olexn (Chocohead) 
+			 * Late load generic Block Cutting recipes to allow specific ones earlier (Chocohead) 
+			 * Explicitly log non-overriden conflicting recipes (Chocohead) 
+			 * Fix the Liquid Heat Exchanger output slots overwriting each other (Chocohead) 
+			 * Fix recipe files running into each other without final line breaks (Chocohead) 
+			 * Fix profile loading crash if additional mods aren't present (Chocohead) 
+			 * Add #equals to ProfileTarget (Chocohead) 
+			 * Add support for multiple profile texture overrides (Chocohead) 
+			 * Add support for classic compact solars (Chocohead) 
+			 * Improve loading of profiles from zips (Chocohead) 
+			 * Add folder support for profile recipes (Chocohead) 
+			 * Improve ability to cleanly switch between profiles Without restarting of course, that never fails (Chocohead) 
+			 * Move smelting recipes to ini file (Chocohead) 
+			 * Implement recipe extension, add central profile collection (Chocohead) 
+			 * Removed trailing empty column in hoe recipe (Chocohead) 
+			 * Allow profiles to change smelting recipes (Chocohead) 
+			 * Add defensive xp check to furnace recipe manager (Chocohead) 
+			 * Fix some items being hidden that shouldn't have been (Chocohead) 
+			 * Improve ease of parsing profiles (Chocohead) 
+			 * Switch out SuddenlyTextures in favour of proper profile loading Supports texture packs rather than completely hijacking the textures (Chocohead) 
+			 * Fix logged errors when reloading resource packs (Chocohead) 
+			 * Ditch SuddenlyTextures Profile loading now offers everything it did, just without hacks (Chocohead) 
+			 * Refactor utility XML methods out of GuiParser Statically imported to try minimise unnecessary changes (and keep line length down) (Chocohead) 
+			 * Fixed CF Foam recipe outputting 1/3 of the intended (original) amount (Chocohead) 
+			 * More work on recipe processing Now properly reads recipe replacement and addition files (Chocohead) 
+			 * Add profile XML parsing, begin recipe processing Removes the alt zip containing classicy things Adds in some better string representations of profile related objects Allows TextureStyle to go in hash sets/maps (Chocohead) 
+			 * Provide a better solution for the furnace recipe manager being more special Special relative to most of the other machine's generic types at least (Chocohead) 
+			 * Fix spelling mistake in the config (Chocohead) 
+			 * Rename Classic to Version (Chocohead) 
+			 * Push out version handling to ProfileManager (Chocohead) 
+			 * Add texture porting to SuddenlyTextures Only does items and blocks (excluding the new obscurator format) (Chocohead) jenkins-IC2_112-92
+
+			 * Fix the Kinetic Stirling Generator output slots overwriting each other (Chocohead) 
+			 * Fix the Stirling Kinetic Generator limiting output oddly Fixes #2397 (Chocohead) 
+			 * Fix fluid handler resolving crashes during preinit (Chocohead) jenkins-IC2_112-91
+
+			 * Register recipes earlier to try ensure IC2 loads before addons (Chocohead) 
+			 * Ensure containers aren't accidentally duplicated (Chocohead) jenkins-IC2_112-90
+
+			 * Updated JEIHandler. (Aroma1997) jenkins-IC2_112-89
+
+			 * Fix recipe loading crash (Chocohead) jenkins-IC2_112-88
+
+			 * Fix the air compressing recipe taking precedence over others (Chocohead) 
+			 * Add IRecipeInput for exact NBT tag matching (Chocohead) 
+			 * Removed unnecessary @Deprecated annotations (Chocohead) jenkins-IC2_112-87
+
+			 * Add recipe removing back Properly splits disable to IC2 recipes and purge for everything else (Chocohead) jenkins-IC2_112-86
+
+			 * Add a noise to gas vapourisation (Chocohead) 
+			 * Temporary fix for painter cleaning in JEI Fixes #2384 (Chocohead) 
+			 * Fix the old compressed air cell emptying recipe Fixes #2274 (Chocohead) 
+			 * Ensure foam and colour changes always save Fixes #2268 (Chocohead) 
+			 * Fix machine recipes with inputs that have containers Fixes #2385 (Chocohead) jenkins-IC2_112-85
+
+			 * Fix the painter cleaning recipe not working Fixes #2338 (Chocohead) 
+			 * Nerf obsidian in the block cutting machine Handles #2189 (Chocohead) 
+			 * Fix foamed cables not rendering the block behind them Fixes #2337 (Chocohead) 
+			 * Handle invalid meta values for classic cells Fixes #2383 (Chocohead) 
+			 * Pause IC2 sounds whilst the game is also paused Fixes #2343 (Chocohead) 
+			 * Add ItemHandler capability to reactor access hatches Fixes #2349 (Chocohead) jenkins-IC2_112-84
+
+			 * Fix EventReceivers not working. (Aroma1997) jenkins-IC2_112-83
+
+			 * Hopefully fix sparadic crashes from packet releasing It was experimental after all (Chocohead) 
+			 * Stop using a private field as a local variable (Chocohead) jenkins-IC2_112-82
+
+			 * Add additional information for bad fluid containers Should help with diagnosing #2375 further (Chocohead) 
+			 * Fix the nano sabre breaking blocks in creative Now matches how other swords in vanilla work Fixes #2350 (Chocohead) 
+			 * Experimental packet payload releasing Should fix #2352 without side effects (Chocohead) 
+			 * Fix hand held container item switching (Chocohead) jenkins-IC2_112-81
+
+			 * Add Item#isEnchantable override to electric armour (Chocohead) 
+			 * Fixed rotor stacks being flagged as empty if over damaged Fixes #2190, #2326, #2373 (Chocohead) 
+			 * Fixed generic warning (Chocohead) jenkins-IC2_112-80
+
+			 * Updated some translations. (Aroma1997) jenkins-IC2_112-79
+
+			 * Fix charging cropnalyzers with non-single use items (Chocohead) jenkins-IC2_112-78
+
+			 * Add/Correct solid UU recipes (Chocohead) 
+			 * Improve the windmeter to actually help with wind mills and turbines A right click shall reveal useful information why (or why not) it is working (Chocohead) 
+			 * Avoid wrapping conflicting recipe exceptions (Chocohead) jenkins-IC2_112-77
+
+			 * Improve JEI Item transfer in Industrial Workbench. (Aroma1997) jenkins-IC2_112-76
+
+			 * Fix block breaking crashing without a tile entity Fixes #2367 (Chocohead) 
+			 * Update Russian translation, thanks safron03 and QuantumStatement (Chocohead) 
+			 * Defensively assume whether a connected server IC2 has or not Fixes #2363, among others previously (Chocohead) jenkins-IC2_112-75
+
+			 * Fix crash when a BlockTileEntities is passed the wrong location Fixes #2360 (Chocohead) jenkins-IC2_112-74
+
+			 * Default out ITeBlock place handlers (Chocohead) 
+			 * Block#getSubBlocks isn't client side only anymore (Chocohead) jenkins-IC2_112-73
+
+			 * Hopefully fix loading errors once and for all (Chocohead) jenkins-IC2_112-72
+
+			 * Fix SMP (Chocohead) jenkins-IC2_112-71
+
+			 * Hopefully fix edge URISyntaxException cases (Chocohead) 
+			 * Fix torch placement on fences (Chocohead) jenkins-IC2_112-70
+
+			 * Fix splitter cable inconsistency (Chocohead) 
+			 * Improve finding the recipe owner of invalid recipes (Chocohead) 
+			 * Fix torches being placeable on cables (Chocohead) jenkins-IC2_112-69
+
+			 * This'll help (Chocohead) jenkins-IC2_112-68
+
+			 * Move recycler blacklist patch somewhere more sensible (Chocohead) 
+			 * Better handling of the Industrial Credit config (Chocohead) 
+			 * Allow the fun to never stop (Chocohead) 
+			 * Final fork for now (Chocohead) 
+			 * Hide some more extra items (Chocohead) 
+			 * Midly fork the cropmatron at the expense of a little bit of sanity elsewhere (Chocohead) 
+			 * Fork that canning machine Not those two, the third one (Chocohead) 
+			 * Provide alternative recipe set Doesn't cover all blocks/items Adds warning for when a shaped recipe overwrites its own character definition (Chocohead) 
+			 * Provide an alternative CF sprayer (Chocohead) 
+			 * Add back 2 old reactor components (Chocohead) 
+			 * Annotate remaining tile entities (Chocohead) 
+			 * Fork cables (Chocohead) 
+			 * Allow electrolyzer picking (Chocohead) 
+			 * Fork MFE and MFSUs (Chocohead) 
+			 * Play about with texture substitution (Chocohead) 
+			 * Initial concept for TeBlock filtering (Chocohead) 
+			 * Concept for picking tile entities based on the config Persists between loads with different settings The config really just changes what an item will place (Chocohead) 
+			 * Add back the old weed-ex can (Chocohead) 
+			 * Add back extra ingots to acheive ingot parity (Chocohead) 
+			 * Make old cells work similar to buckets (Chocohead) 
+			 * Begin joint existance process (Chocohead) 
+			 * Add compressed plants and fuel cans back (Chocohead) 
+			 * Add near-depleted and re-enriched uranium back (Chocohead) 
+			 * Annotate other multi-items (Chocohead) 
+			 * Add back old cells (Chocohead) jenkins-IC2_112-67
+
+			 * Try patch old pre-1.8 configs rather than crashing loading them (Chocohead) 
+			 * Item#addInformation is client side only (Chocohead) 
+			 * Switch reactor GUI to use proper output method (Chocohead) jenkins-IC2_112-66
+
+			 * Rework redstone and comparator handling. (Aroma1997) jenkins-IC2_112-65
+
+			 * Fix personal chests not opening when looking inside (Chocohead) 
+			 * Allow the nano saber to cut cobwebs (Chocohead) jenkins-IC2_112-64
+
+			 * Reverse test stuff (Aroma1997) 
+			 * Test changelog autogeneration (Aroma1997) 
+
+	Minecolonies (minecolonies-1.12.2-0.10.725-BETA-universal.jar --> minecolonies-1.12.2-0.10.749-BETA-universal.jar):
+		minecolonies-1.12.2-0.10.749-BETA-universal.jar:
+			Minecolonies Changelog
+			Version: 1.12.2-0.10.749-BETA
+
+			 * Hotfix damage and home happiness indicators beeing displayed incorrectly. (#4386) 
+			 * Rework raiders and fix raider issues. (#4331)
+
+			 * Rework raiders and fix raider issues.
+
+			 * rebalance raid sizes and improve stuck handling 
+
+		minecolonies-1.12.2-0.10.735-ALPHA-universal.jar:
+			Minecolonies Changelog
+			Version: 1.12.2-0.10.735-ALPHA
+
+			 * Hotfix damage and home happiness indicators beeing displayed incorrectly. (#4386) 
+
+		minecolonies-1.12.2-0.10.734-ALPHA-universal.jar:
+			Minecolonies Changelog
+			Version: 1.12.2-0.10.734-ALPHA
+
+			 * Rework raiders and fix raider issues. (#4331)
+
+			 * Rework raiders and fix raider issues.
+
+			 * rebalance raid sizes and improve stuck handling 
+
+	Open Modular Turrets (openmodularturrets-1.12.2-3.1.6-362.jar --> openmodularturrets-1.12.2-3.1.7-365.jar):
+		openmodularturrets-1.12.2-3.1.7-365.jar:
+			Additions
+			Changes
+
+			 * Fixes
+
+			 * fix clientside logspam in MP 
+
+		openmodularturrets-1.12.2-3.1.7-364.jar:
+			Additions
+			Changes
+
+			 * Fixes
+
+			 * fix crashes due to player NPE 
+
+		openmodularturrets-1.12.2-3.2.0-363.jar:
+			Additions
+
+			 * added a priority system for turrets and reworked targeting largely Changes
+
+			 * needs OMLib 3.2.0-250 
+			 * cleaned up Valkyrien Skies integration Fixes
+
+			 * energy usage was not settable to zero 
+			 * Crash when ray tracing turrets hit multipart entities (such as the ender dragon) 
+			 * small bug where turrets would attack unknown living entities 
+			 * Computer Craft missing functions added and bugged ones fixed 
+			 * inventory expanders only having half of their intended stacksize limit 
+
+		openmodularturrets-1.12.2-3.2.0-361.jar:
+			Additions
+
+			 * added a priority system for turrets and reworked targeting largely Changes
+
+			 * needs OMLib 3.2.0-250 
+			 * cleaned up Valkyrien Skies integration Fixes
+
+			 * fixed: energy usage was not settable to zero 
+			 * fixed: Crash when ray tracing turrets hit multipart entities (such as the ender dragon) 
+			 * fixed: small bug where turrets would attack unknown living entities 
+
+		openmodularturrets-1.12.2-3.2.0-360.jar:
+			Additions
+
+			 * added a priority system for turrets and reworked targeting largely Changes
+
+			 * needs OMLib 3.2.0-250 Fixes
+
+			 * 
+
+	Ore Excavation (OreExcavation-1.4.143.jar --> OreExcavation-1.4.150.jar):
+		OreExcavation-1.4.150.jar:
+			Added client side event for integration mods to implement context driven excavations
+
+	Reborn Core (RebornCore-1.12.2-3.19.1.521-universal.jar --> RebornCore-1.12.2-3.19.2.522-universal.jar):
+		RebornCore-1.12.2-3.19.2.522-universal.jar:
+			(modmuss50) Fix server crash #releaseBuild
+
+Generated using [ChangelogGenerator 2.0.0-pre2](https://github.com/TheRandomLabs/ChangelogGenerator).

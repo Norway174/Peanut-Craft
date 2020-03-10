@@ -1,6 +1,10 @@
 // SLIMEY GENERATOR FIX 
-recipes.remove(<extrautils2:machine>);
-recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_slime"}), [[<minecraft:slime_ball>, <minecraft:slime_ball>, <minecraft:slime_ball>],[<minecraft:slime_ball>, null, <minecraft:slime_ball>], [<minecraft:redstone>, <extrautils2:machine>, <minecraft:redstone>]]);
+recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_slime"}));
+recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_slime"}), [[<ore:slimeball>, <ore:slimeball>, <ore:slimeball>],[<ore:slimeball>, null, <ore:slimeball>], [<minecraft:redstone>, <extrautils2:machine>.withTag({Type: "extrautils2:furnace"}).onlyWithTag({Type: "extrautils2:furnace"}), <minecraft:redstone>]]);
+
+// THE BENEATH TELEPORTER
+//recipes.addShaped(<beneath:teleporterbeneath>, [[<minecraft:stone>, <minecraft:glowstone_dust>, <minecraft:stone>],[<minecraft:ender_pearl>, <minecraft:coal_block>, <minecraft:ender_pearl>], [<minecraft:stone>, <minecraft:diamond>, <minecraft:stone>]]);
+
 
 
 // ANGEL RING TWEAK HAS BEEN DISABLED. NORMAL CRAFTING RECEPIE IS ENABLED.
@@ -19,6 +23,3 @@ recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_sl
 // Makes the Angel Ring require an Empowered Diamatine and Emeradic block. As suggested by Smrots.
 //recipes.addShaped(<extrautils2:angelring>, [[<actuallyadditions:block_crystal_empowered:2>, <minecraft:gold_ingot>, <actuallyadditions:block_crystal_empowered:4>],[<minecraft:gold_ingot>, <extrautils2:chickenring:1>, <minecraft:gold_ingot>], [<minecraft:nether_star>, <minecraft:gold_ingot>, <minecraft:dragon_egg>]]);
 
-// SG Craft Fix - NOT NEEDED ANYMORE!
-//recipes.removeByRecipeName("sgcraft:rfpowerunit");
-//recipes.addShaped(<sgcraft:rfpowerunit>, [[<thermalfoundation:material:514>, <thermalexpansion:frame>, <thermalfoundation:material:514>],[<thermalexpansion:cell:*>, <thermalfoundation:material:513>, <thermalexpansion:cell:*>], [<ore:ingotInvar>, <ore:ingotCopper>, <ore:ingotInvar>]]);
